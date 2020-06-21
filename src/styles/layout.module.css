@@ -23,6 +23,7 @@
 }
 
 #menu a {
+  color: var(--menu-link-color);
 }
 
 #menu .active {

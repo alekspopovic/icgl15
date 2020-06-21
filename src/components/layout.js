@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import layoutStyles from "../styles/layout.module.css"
 import Sticky from "react-stickynode"
 import Footer from "./footer"
+// import image from "../../content/images/kalemegdan.jpg"
 
 class Layout extends React.Component {
   render() {
@@ -14,6 +15,15 @@ class Layout extends React.Component {
         <div id={layoutStyles.menu}>
           <Link activeClassName={layoutStyles.active} to="/">
             <div>home</div>
+          </Link>
+          <Link activeClassName={layoutStyles.active} to="/callForPapers">
+            <div>call for papers</div>
+          </Link>
+          <Link activeClassName={layoutStyles.active} to="/workshops">
+            <div>workshops</div>
+          </Link>
+          <Link activeClassName={layoutStyles.active} to="/committees">
+            <div>committees</div>
           </Link>
           <Link activeClassName={layoutStyles.active} to="/blog">
             <div>news</div>
@@ -41,6 +51,7 @@ class Layout extends React.Component {
         <header>
           {stickyMenu}
           {header}
+          {/* <img src={image} alt="kalemegdan" /> */}
         </header>
         <main>{children}</main>
         <Footer />

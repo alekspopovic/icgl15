@@ -1,13 +1,17 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500&display=swap"); */
 
 :root {
-  --menu-bg: black;
-  --highlight: #0f9281;
+  --menu-bg: #0c2233;
+  --highlight: #8cd579;
   --dark-highlight: #061724;
-  --body-bg: white;
-  --text: black;
+  --body-bg: #f1f1f1;
+  --content-bg: #f3f3f3;
+  --text: rgb(47, 47, 47);
   --text-menu: white;
-  --header: white;
+  --header: rgb(238, 238, 238);
+  --link-color: #22aa84;
+  --menu-link-color: #f1f1f1;
+  --shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 body {
@@ -30,7 +34,16 @@ main {
 }
 
 a {
+  color: var(--link-color);
+  box-shadow: none;
+  border-bottom: 3px solid transparent;
 }
 
 a:hover {
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 1em 0;
 }
