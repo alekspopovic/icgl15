@@ -1,0 +1,176 @@
+.blogPost {
+  width: 60%;
+  margin-left: 20%;
+  padding: 2em 5em;
+}
+
+blockquote {
+  font-size: 1em;
+}
+
+.postNavigation {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.postNavigation a {
+  color: var(--text);
+  border: 2px solid var(--highlight);
+  padding: 15px 50px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  background-color: var(--dark-bg);
+}
+
+.postNavigation a:hover {
+  color: var(--text);
+  box-shadow: none;
+  background: var(--highlight);
+}
+
+.tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.tags ul a {
+  padding: 5px 15px;
+  margin: 5px;
+  font-size: 0.8em;
+  font-weight: 400;
+  border-radius: 30px;
+  text-align: center;
+  border: 1px solid var(--highlight);
+  color: var(--text);
+}
+
+.tags ul li {
+  margin-bottom: 0;
+}
+
+.tags ul a:hover {
+  box-sizing: none;
+  background: var(--highlight);
+}
+
+section {
+  padding-bottom: 1em;
+}
+
+article section ol,
+article section ul {
+  padding-left: 35px;
+}
+
+article section h1,
+article section h2,
+article section h3 {
+  margin: 1.75em 0 1em 0;
+}
+
+article section h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1366px) {
+  .blogPost {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .blogPost {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1em;
+    padding: 2em 4em;
+  }
+
+  article header h1 {
+    font-size: 2em;
+  }
+
+  .paginationUrls {
+    width: 100%;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 2em;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0;
+    margin-top: 2em;
+  }
+
+  .postNavigation {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blogPost {
+    padding: 1em 3em;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  article {
+    width: 100%;
+  }
+
+  .blogPost {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0;
+  }
+
+  article header h1 {
+    font-size: 2em;
+  }
+
+  .paginationUrls {
+    width: 100%;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 0;
+  }
+
+  article section ol,
+  article section ul {
+    padding-left: 25px;
+    margin-left: 0;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0;
+    margin-top: 2em;
+  }
+}

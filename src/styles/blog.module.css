@@ -1,0 +1,146 @@
+.blogContent {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 49%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 1em auto;
+  padding: 2em 3em;
+  background-color: var(--dark-bg);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+article header {
+  z-index: 0;
+  margin-bottom: 1.5em;
+  font-size: 1.2em;
+}
+
+article:first-child {
+  /* flex: 0 0 100%; */
+}
+
+article header h1 {
+  margin: 0 0 10px 0;
+}
+
+header h1 a:hover {
+  color: var(--highlight);
+  border: none;
+}
+
+section {
+  margin-top: 1em;
+}
+
+.readMore {
+  text-align: center;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  margin-top: 4em;
+}
+
+.readMore a,
+.allTags a,
+.paginationUrls a {
+  color: var(--text);
+  border: 2px solid var(--highlight);
+  padding: 15px 50px;
+  text-transform: uppercase;
+  border-radius: 35px;
+}
+
+.readMore a:hover,
+.allTags a:hover,
+.paginationUrls a:hover {
+  color: var(--text);
+  box-shadow: none;
+  background: var(--highlight);
+}
+
+.date {
+  font-family: "Oswald";
+  display: inline;
+  padding: 0 10px;
+  font-size: 0.7em;
+  font-weight: 200;
+}
+
+blockquote {
+  color: var(--text);
+  border-left-color: var(--highlight);
+}
+
+.allTags {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  padding: 2em;
+}
+
+.paginationUrls {
+  width: 75%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+}
+
+.paginationUrls div {
+  color: var(--text-dark);
+  border: 2px solid var(--text-dark);
+  padding: 15px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.paginationUrls a {
+  background: var(--dark-bg);
+}
+
+@media only screen and (max-width: 1366px) {
+  .blogContent {
+    width: 65%;
+  }
+
+  article {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .blogContent {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .blogContent {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  article {
+    width: 96%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  article header h1 {
+    font-size: 2em;
+  }
+
+  .paginationUrls {
+    width: 100%;
+  }
+}

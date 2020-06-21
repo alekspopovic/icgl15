@@ -1,0 +1,36 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500&display=swap"); */
+
+:root {
+  --menu-bg: black;
+  --highlight: #0f9281;
+  --dark-highlight: #061724;
+  --body-bg: white;
+  --text: black;
+  --text-menu: white;
+  --header: white;
+}
+
+body {
+  margin: 0 0 55px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  overflow-x: hidden;
+  color: var(--text);
+  font-weight: 400;
+  background-color: var(--body-bg);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  margin-bottom: 60px;
+}
+
+a {
+}
+
+a:hover {
+}

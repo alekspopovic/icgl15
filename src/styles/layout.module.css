@@ -1,0 +1,48 @@
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--menu-bg);
+  box-shadow: 0 0 5px var(--menu-shadow);
+}
+
+#menu div {
+  font-family: "Oswald", sans-serif;
+  flex-basis: auto;
+  font-weight: 400;
+  font-size: 0.8em;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 100%;
+  line-height: 4.1em;
+  margin: 0 15px;
+  padding: 5px 10px 2px 10px;
+}
+
+#menu a:hover {
+}
+
+#menu a {
+}
+
+#menu .active {
+  border-bottom: 3px solid var(--highlight);
+}
+
+@media only screen and (max-width: 1366px) {
+}
+
+/* small monitor */
+@media only screen and (max-width: 1024px) {
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+}
+
+/* mobile */
+@media only screen and (max-width: 426px) {
+}
+
+@media only screen and (max-width: 320px) {
+}
