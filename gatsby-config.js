@@ -114,7 +114,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/blog`, `/projects`, `/aboutMe`, `/contact`],
+        precachePages: [`/blog`, `/projects`, `/aboutMe`, `/contact`], //todo change precached pages
+      },
+    },
+    {
+      resolve: `gatsby-plugin-i18n`,
+      options: {
+        langKeyDefault: "en",
+        langKeyForNull: "en",
+        prefixDefault: false,
+        useLangKeyLayout: false,
       },
     },
   ],

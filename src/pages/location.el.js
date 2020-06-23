@@ -9,6 +9,7 @@ class Location extends React.Component {
       <Layout>
         <SEO title="Location" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
+          <h1>page in Greek</h1>
           <h1>ICGL15 / Location</h1>
           <p>
             The 13th International Conference on Greek Linguistics will be held
