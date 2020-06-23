@@ -4,22 +4,24 @@
   align-items: center;
   background: var(--menu-bg);
   box-shadow: 0 0 5px var(--menu-shadow);
+
+  position: relative;
 }
 
 #menu div {
   font-family: "Oswald", sans-serif;
   flex-basis: auto;
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   cursor: pointer;
   text-transform: uppercase;
-  height: 100%;
   line-height: 4.1em;
   margin: 0 15px;
   padding: 5px 10px 2px 10px;
 }
 
 #menu a:hover {
+  color: var(--highlight);
 }
 
 #menu a {
@@ -27,7 +29,48 @@
 }
 
 #menu .active {
-  border-bottom: 3px solid var(--highlight);
+  color: var(--highlight);
+}
+
+.dropdown {
+  position: relative;
+
+  font-family: "Oswald", sans-serif;
+  flex-basis: auto;
+  font-weight: 400;
+  font-size: 0.8em;
+  cursor: pointer;
+  text-transform: uppercase;
+  line-height: 4.1em;
+  margin: 0 15px;
+  padding: 5px 10px 2px 10px;
+
+  color: var(--menu-link-color);
+}
+
+.dropdown:hover {
+  color: var(--highlight);
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: var(--menu-bg);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: auto;
+  left: -2em;
+  top: 4.6em;
+}
+
+.dropdownContent a {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
 }
 
 @media only screen and (max-width: 1366px) {

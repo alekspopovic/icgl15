@@ -7,7 +7,7 @@ class Workshops extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Home" pagePath={this.props.location.pathname} />
+        <SEO title="Workshops" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>ICGL13 / Workshops</h1>
           <p>

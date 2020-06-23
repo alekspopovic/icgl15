@@ -25,6 +25,24 @@ class Layout extends React.Component {
           <Link activeClassName={layoutStyles.active} to="/committees">
             <div>committees</div>
           </Link>
+          <div className={layoutStyles.dropdown}>
+            information
+            <div className={layoutStyles.dropdownContent}>
+              <Link activeClassName={layoutStyles.active} to="/programme">
+                <div>programme</div>
+              </Link>
+              <Link activeClassName={layoutStyles.active} to="/registration">
+                <div>registration</div>
+              </Link>
+              <Link activeClassName={layoutStyles.active} to="/accommodation">
+                <div>accommodation</div>
+              </Link>
+              <Link activeClassName={layoutStyles.active} to="/location">
+                <div>location</div>
+              </Link>
+            </div>
+          </div>
+
           <Link activeClassName={layoutStyles.active} to="/blog">
             <div>news</div>
           </Link>
