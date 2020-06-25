@@ -6,7 +6,7 @@ import contentStyles from "../styles/index.module.css"
 class Committees extends React.Component {
   render() {
     return (
-      <Layout>
+      <Layout language="en">
         <SEO title="Committees" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>ICGL13 / Committees</h1>

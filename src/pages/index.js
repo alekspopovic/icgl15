@@ -6,7 +6,7 @@ import contentStyles from "../styles/index.module.css"
 class Index extends React.Component {
   render() {
     return (
-      <Layout>
+      <Layout language="en">
         <SEO title="Home" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>International Conference on Greek Linguistics (ICGL 13)</h1>
