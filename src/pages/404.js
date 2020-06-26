@@ -15,6 +15,7 @@ class NotFoundPage extends React.Component {
         headerText={headerText}
         subHeaderText={subHeaderText}
         hideHeader={true}
+        location={this.props.location}
       >
         <SEO title="404: Not Found" />
         <div className={fourOhFourStyles.container}>

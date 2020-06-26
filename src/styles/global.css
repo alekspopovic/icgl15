@@ -39,6 +39,7 @@ a {
 }
 
 a:hover {
+  cursor: pointer;
 }
 
 h1,

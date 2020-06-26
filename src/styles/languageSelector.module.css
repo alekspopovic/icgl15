@@ -1,0 +1,26 @@
+#languageSelector {
+  position: absolute;
+  right: 0;
+  margin-right: 0 !important;
+  border-left: 1px solid var(--highlight);
+  clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+  background: var(--link-color);
+  padding-left: 4em !important;
+}
+
+#languageSelector a {
+  margin: 0 2em;
+}
+
+#languageSelector a:hover {
+  color: var(--menu-bg);
+}
+
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 426px) {
+}

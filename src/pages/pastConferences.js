@@ -6,7 +6,7 @@ import contentStyles from "../styles/index.module.css"
 class PastConferences extends React.Component {
   render() {
     return (
-      <Layout language="en">
+      <Layout language="en" location={this.props.location}>
         <SEO title="PastConferences" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>ICGL15 / Past Conferences</h1>

@@ -4,11 +4,12 @@ import layoutStyles from "../styles/layout.module.css"
 import Sticky from "react-stickynode"
 import Footer from "./footer"
 import labels from "../data/menuLabels"
+import LanguageSelector from "./languageSelector"
 // import image from "../../content/images/kalemegdan.jpg"
 
 class Layout extends React.Component {
   formatMenuUrl(url) {
-    if (this.language) {
+    if (this.language !== "en") {
       return `/${this.language}${url}`
     }
 
@@ -21,7 +22,7 @@ class Layout extends React.Component {
 
   render() {
     const { children } = this.props
-    const { headerText, subHeaderText, language } = this.props
+    const { headerText, subHeaderText, language, location } = this.props
 
     this.language = language
 
@@ -91,6 +92,8 @@ class Layout extends React.Component {
           >
             <div>{this.getMenuItemLabel("contact")}</div>
           </Link>
+
+          <LanguageSelector language={language} location={location} />
         </div>
       </Sticky>
     )
