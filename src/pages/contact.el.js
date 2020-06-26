@@ -11,7 +11,7 @@ class Contact extends React.Component {
       <Layout headerText={headerText} language="el">
         <SEO title="Contact" pagePath={this.props.location.pathname} />
         <h1>page in Greek</h1>
-        <ContactForm />
+        <ContactForm language="el" />
       </Layout>
     )
   }

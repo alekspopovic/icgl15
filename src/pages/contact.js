@@ -10,7 +10,7 @@ class Contact extends React.Component {
     return (
       <Layout headerText={headerText} language="en">
         <SEO title="Contact" pagePath={this.props.location.pathname} />
-        <ContactForm />
+        <ContactForm language="en" />
       </Layout>
     )
   }

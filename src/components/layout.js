@@ -25,8 +25,6 @@ class Layout extends React.Component {
 
     this.language = language
 
-    console.log(labels[language])
-
     let stickyMenu = (
       <Sticky innerZ={100} enabled={true}>
         <div id={layoutStyles.menu}>
