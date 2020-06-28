@@ -6,6 +6,37 @@
   box-shadow: var(--shadow);
   background: var(--content-bg);
   padding: 2em 1em;
+  margin-bottom: 2em;
+}
+
+.sidebarItem h3 {
+  border-bottom: 1px solid var(--highlight);
+}
+
+.socialIcons {
+  display: flex;
+
+  font-size: 1.7em;
+}
+
+.socialIcon {
+  margin: 0 0.5em;
+}
+
+.email {
+  margin-left: 0;
+}
+
+.facebook:hover {
+  color: #395794;
+}
+
+.twitter:hover {
+  color: #1c9deb;
+}
+
+.email:hover {
+  color: #d84c41;
 }
 
 @media only screen and (min-width: 426px) {

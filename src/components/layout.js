@@ -119,7 +119,7 @@ class Layout extends React.Component {
         </header>
         <main>
           {children}
-          <Sidebar />
+          <Sidebar language={language} />
         </main>
         <Footer />
       </div>
