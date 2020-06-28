@@ -15,7 +15,10 @@ const Sidebar = ({ language }) => {
 
   const news = useStaticQuery(graphql`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: frontmatter___date }
+        limit: 3
+      ) {
         edges {
           node {
             fields {
@@ -77,7 +80,13 @@ const Sidebar = ({ language }) => {
           </a>
         </div>
       </div>
-      <div className={sidebarStyles.importantDates}></div>
+      <div className={sidebarStyles.sidebarItem}>
+        <h3>Important Dates</h3>
+        <ul>
+          <li>Conference: 10-12th September 2021</li>
+          <li>Early bird registration deadline: 25th May</li>
+        </ul>
+      </div>
     </div>
   )
 }

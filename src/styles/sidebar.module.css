@@ -13,6 +13,15 @@
   border-bottom: 1px solid var(--highlight);
 }
 
+.sidebarItem ul {
+  padding: 0 2em;
+  margin: 0;
+}
+
+.sidebarItem li {
+  margin-bottom: 0;
+}
+
 .socialIcons {
   display: flex;
 
