@@ -55,37 +55,35 @@ const Sidebar = ({ language }) => {
         {links}
       </div>
       <div className={sidebarStyles.sidebarItem}>
-        <h3>Contact</h3>
-        <div className={sidebarStyles.socialIcons}>
-          <Link to={`${contactPrefix}/contact`}>
-            <FontAwesomeIcon
-              className={`${sidebarStyles.socialIcon} ${sidebarStyles.email}`}
-              icon={faEnvelope}
-              title="Envelope"
-            />
-          </Link>
-          <a href="facebook.com">
-            <FontAwesomeIcon
-              className={`${sidebarStyles.socialIcon} ${sidebarStyles.facebook}`}
-              icon={faFacebook}
-              title="Facebook"
-            />
-          </a>
-          <a href="twitter.com">
-            <FontAwesomeIcon
-              className={`${sidebarStyles.socialIcon} ${sidebarStyles.twitter}`}
-              icon={faTwitter}
-              title="Twitter"
-            />
-          </a>
-        </div>
-      </div>
-      <div className={sidebarStyles.sidebarItem}>
         <h3>Important Dates</h3>
         <ul>
           <li>Conference: 10-12th September 2021</li>
           <li>Early bird registration deadline: 25th May</li>
         </ul>
+      </div>
+
+      <div className={sidebarStyles.socialIcons}>
+        <Link to={`${contactPrefix}/contact`}>
+          <FontAwesomeIcon
+            className={`${sidebarStyles.socialIcon} ${sidebarStyles.email}`}
+            icon={faEnvelope}
+            title="Envelope"
+          />
+        </Link>
+        <a href="facebook.com">
+          <FontAwesomeIcon
+            className={`${sidebarStyles.socialIcon} ${sidebarStyles.facebook}`}
+            icon={faFacebook}
+            title="Facebook"
+          />
+        </a>
+        <a href="twitter.com">
+          <FontAwesomeIcon
+            className={`${sidebarStyles.socialIcon} ${sidebarStyles.twitter}`}
+            icon={faTwitter}
+            title="Twitter"
+          />
+        </a>
       </div>
     </div>
   )
