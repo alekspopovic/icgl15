@@ -5,7 +5,12 @@
   border-left: 1px solid var(--highlight);
   clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
   background: var(--link-color);
-  padding-left: 4em !important;
+  padding-left: 3em !important;
+  transition: padding 0.2s ease-in;
+}
+
+#languageSelector:hover {
+  padding-left: 5em !important;
 }
 
 #languageSelector a {

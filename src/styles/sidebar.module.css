@@ -1,0 +1,25 @@
+.sidebar {
+  margin: 2em 0;
+}
+
+.sidebarItem {
+  box-shadow: var(--shadow);
+  background: var(--content-bg);
+  padding: 2em 1em;
+}
+
+@media only screen and (min-width: 426px) {
+  .sidebar {
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar {
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .sidebar {
+    width: 25%;
+  }
+}

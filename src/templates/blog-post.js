@@ -41,6 +41,8 @@ class BlogPostTemplate extends React.Component {
         subHeaderText={subHeaderText}
         background={true}
         headerImageFluid={featuredImgFluid}
+        language="en"
+        location={this.props.location}
       >
         <SEO
           title={post.frontmatter.title}

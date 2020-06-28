@@ -15,7 +15,12 @@ class Blog extends React.Component {
     const seoTitle = index === 1 ? `Blog` : `Blog: page ${index}`
 
     return (
-      <Layout headerText={headerText} background={true}>
+      <Layout
+        headerText={headerText}
+        background={true}
+        language="en"
+        location={this.props.location}
+      >
         <SEO title={seoTitle} pagePath={this.props.location.pathname} />
         <div id="content" className={blogStyles.blogContent}>
           {group.map(({ node }) => (

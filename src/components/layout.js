@@ -5,6 +5,7 @@ import Sticky from "react-stickynode"
 import Footer from "./footer"
 import labels from "../data/menuLabels"
 import LanguageSelector from "./languageSelector"
+import Sidebar from "./sidebar"
 // import image from "../../content/images/kalemegdan.jpg"
 
 class Layout extends React.Component {
@@ -116,7 +117,10 @@ class Layout extends React.Component {
           {header}
           {/* <img src={image} alt="kalemegdan" /> */}
         </header>
-        <main>{children}</main>
+        <main>
+          {children}
+          <Sidebar />
+        </main>
         <Footer />
       </div>
     )
