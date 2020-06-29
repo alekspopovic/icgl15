@@ -84,7 +84,7 @@ class Layout extends React.Component {
             </div>
           </div>
 
-          <Link activeClassName={layoutStyles.active} to="/blog">
+          <Link activeClassName={layoutStyles.active} to="/news">
             <div>{this.getMenuItemLabel("news")}</div>
           </Link>
           <Link

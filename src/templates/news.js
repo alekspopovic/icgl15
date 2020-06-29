@@ -5,7 +5,7 @@ import PaginationUrl from "../components/paginationUrl"
 import blogStyles from "../styles/blog.module.css"
 import Link from "gatsby-link"
 
-class Blog extends React.Component {
+class News extends React.Component {
   render() {
     const headerText = "ICG15 News"
     const { group, index, first, last } = this.props.pageContext
@@ -62,11 +62,9 @@ class Blog extends React.Component {
             text="Older"
           />
         </div>
-
-        {/* <PostArchive history={postHistory} /> */}
       </Layout>
     )
   }
 }
 
-export default Blog
+export default News
