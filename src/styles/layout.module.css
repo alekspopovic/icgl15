@@ -4,20 +4,18 @@
   align-items: center;
   background: var(--menu-bg);
   box-shadow: 0 0 5px var(--menu-shadow);
-
   position: relative;
 }
 
 #menu div {
-  font-family: "Oswald", sans-serif;
   flex-basis: auto;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1rem;
   cursor: pointer;
   text-transform: uppercase;
-  line-height: 4.1em;
-  margin: 0 15px;
-  padding: 5px 10px 2px 10px;
+  line-height: 7em;
+  margin: 0 2em;
+  padding: 5px 0 2px 0;
 }
 
 #menu a:hover {
@@ -34,14 +32,11 @@
 
 .dropdown {
   position: relative;
-
-  font-family: "Oswald", sans-serif;
   flex-basis: auto;
   font-weight: 400;
   font-size: 0.8em;
   cursor: pointer;
   text-transform: uppercase;
-  line-height: 4.1em;
   margin: 0 15px;
   padding: 5px 10px 2px 10px;
 
@@ -56,12 +51,16 @@
   display: none;
   position: absolute;
   background-color: var(--menu-bg);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 250px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
   z-index: 1;
   height: auto;
-  left: -2em;
-  top: 4.6em;
+  left: -4em;
+  top: 5.5em;
+}
+
+.dropdownContent div {
+  line-height: 3em !important;
 }
 
 .dropdownContent a {
@@ -73,19 +72,49 @@
   display: block;
 }
 
+#menu div,
+.dropdown,
+h1,
+h2,
+h3 {
+  font-family: "Cinzel";
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 1366px) {
 }
 
 /* small monitor */
 @media only screen and (max-width: 1024px) {
+  #menu {
+    justify-content: flex-start;
+    padding-left: 3em;
+  }
+
+  #menu div {
+    margin: 0 1.5em;
+  }
 }
 
 /* tablet */
 @media only screen and (max-width: 768px) {
+  #menu {
+    padding-left: 0;
+    justify-content: center;
+  }
 }
 
 /* mobile */
 @media only screen and (max-width: 426px) {
+  #menu {
+    flex-wrap: wrap;
+  }
+
+  #menu div {
+    font-size: 0.8rem;
+    margin: 0 1em;
+    line-height: 4.5em;
+  }
 }
 
 @media only screen and (max-width: 320px) {

@@ -2,11 +2,12 @@
   position: absolute;
   right: 0;
   margin-right: 0 !important;
-  border-left: 1px solid var(--highlight);
   clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
   background: var(--link-color);
   padding-left: 3em !important;
   transition: padding 0.2s ease-in;
+
+  line-height: 3em !important;
 }
 
 #languageSelector:hover {
@@ -27,5 +28,20 @@
 @media only screen and (max-width: 1024px) {
 }
 
+@media only screen and (max-width: 768px) {
+  #languageSelector {
+    top: 7.4em;
+    width: 100%;
+    /* clip-path: polygon(0 0, 75% 0, 60% 100%, 0% 100%); */
+    clip-path: none;
+    padding: 0 !important;
+    line-height: 2.8em !important;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 426px) {
+  #languageSelector {
+    top: 10em;
+  }
 }

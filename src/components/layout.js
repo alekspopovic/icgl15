@@ -36,18 +36,12 @@ class Layout extends React.Component {
           >
             <div>{this.getMenuItemLabel("home")}</div>
           </Link>
-          <Link
-            activeClassName={layoutStyles.active}
-            to={this.formatMenuUrl("/callForPapers")}
-          >
-            <div>{this.getMenuItemLabel("callForPapers")}</div>
-          </Link>
-          <Link
+          {/* <Link
             activeClassName={layoutStyles.active}
             to={this.formatMenuUrl("/workshops")}
           >
             <div>{this.getMenuItemLabel("workshops")}</div>
-          </Link>
+          </Link> */}
           <Link
             activeClassName={layoutStyles.active}
             to={this.formatMenuUrl("/committees")}
@@ -57,6 +51,12 @@ class Layout extends React.Component {
           <div className={layoutStyles.dropdown}>
             {this.getMenuItemLabel("information")}
             <div className={layoutStyles.dropdownContent}>
+              <Link
+                activeClassName={layoutStyles.active}
+                to={this.formatMenuUrl("/callForPapers")}
+              >
+                <div>{this.getMenuItemLabel("callForPapers")}</div>
+              </Link>
               <Link
                 activeClassName={layoutStyles.active}
                 to={this.formatMenuUrl("/programme")}

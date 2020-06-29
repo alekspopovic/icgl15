@@ -41,8 +41,6 @@ const Sidebar = ({ language }) => {
 
   let contactPrefix = ""
 
-  console.log(language)
-
   if (language !== "en") {
     contactPrefix = language
   }
