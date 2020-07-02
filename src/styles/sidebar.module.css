@@ -7,6 +7,8 @@
   background: var(--content-bg);
   padding: 2em 1em;
   margin-bottom: 2em;
+
+  border-radius: 10px;
 }
 
 .sidebarItem h3 {
@@ -34,18 +36,6 @@
 
 .email {
   margin-left: 0;
-}
-
-.facebook:hover {
-  color: #395794;
-}
-
-.twitter:hover {
-  color: #1c9deb;
-}
-
-.email:hover {
-  color: #d84c41;
 }
 
 @media only screen and (min-width: 426px) {

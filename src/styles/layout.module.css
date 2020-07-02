@@ -115,6 +115,10 @@ h3 {
     margin: 0 1em;
     line-height: 4.5em;
   }
+
+  .header {
+    margin-top: 4em;
+  }
 }
 
 @media only screen and (max-width: 320px) {

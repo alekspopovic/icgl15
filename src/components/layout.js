@@ -102,7 +102,7 @@ class Layout extends React.Component {
     let headerTextClass
 
     let header = (
-      <div className={headerTextClass}>
+      <div className={layoutStyles.header}>
         <h1 className={layoutStyles.headerTitle}>{headerText}</h1>
         <div>
           <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2>

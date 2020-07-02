@@ -1,14 +1,14 @@
 .blogContent {
-  width: 75%;
-  margin: auto;
+  width: 50%;
+  margin: 1em 2em 2em 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 article {
-  width: 49%;
-  display: inline-block;
+  /* width: 49%; */
+  /* display: inline-block; */
   overflow: hidden;
   margin: 1em auto;
   padding: 2em 3em;
@@ -19,7 +19,6 @@ article {
 
 article header {
   z-index: 0;
-  margin-bottom: 1.5em;
   font-size: 1.2em;
 }
 
@@ -28,11 +27,10 @@ article:first-child {
 }
 
 article header h1 {
-  margin: 0 0 10px 0;
+  margin: 0 0 0.25em 0;
 }
 
 header h1 a:hover {
-  color: var(--highlight);
   border: none;
 }
 
@@ -42,35 +40,36 @@ section {
 
 .readMore {
   text-align: center;
-  font-family: "Oswald";
-  letter-spacing: 2px;
-  margin-top: 4em;
+  /* font-family: "Oswald"; */
+  /* letter-spacing: 2px; */
+  margin-top: 1em;
 }
 
 .readMore a,
 .allTags a,
 .paginationUrls a {
-  color: var(--text);
+  /* color: var(--text);
   border: 2px solid var(--highlight);
   padding: 15px 50px;
   text-transform: uppercase;
-  border-radius: 35px;
+  border-radius: 35px; */
 }
 
 .readMore a:hover,
 .allTags a:hover,
 .paginationUrls a:hover {
-  color: var(--text);
+  /* color: var(--text);
   box-shadow: none;
-  background: var(--highlight);
+  background: var(--highlight); */
 }
 
 .date {
   font-family: "Oswald";
-  display: inline;
   padding: 0 10px;
   font-size: 0.7em;
-  font-weight: 200;
+  /* display: inline-block; */
+  /* font-family: "Cinzel"; */
+  text-align: center;
 }
 
 blockquote {
@@ -93,6 +92,8 @@ blockquote {
   justify-content: space-between;
   font-family: "Oswald";
   letter-spacing: 2px;
+
+  display: none;
 }
 
 .paginationUrls div {
@@ -120,7 +121,7 @@ blockquote {
 
 @media only screen and (max-width: 1024px) {
   .blogContent {
-    width: 80%;
+    width: 100%;
   }
 }
 

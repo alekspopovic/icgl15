@@ -22,7 +22,7 @@ class News extends React.Component {
         location={this.props.location}
       >
         <SEO title={seoTitle} pagePath={this.props.location.pathname} />
-        <div id="content" className={blogStyles.blogContent}>
+        <div className={blogStyles.blogContent}>
           {group.map(({ node }) => (
             <article key={node.fields.slug}>
               <header>
@@ -40,7 +40,7 @@ class News extends React.Component {
                   }}
                 />
                 <div className={blogStyles.readMore}>
-                  <Link to={node.fields.slug}>Read more</Link>
+                  <Link to={node.fields.slug}>Read more &#187;</Link>
                 </div>
               </section>
             </article>
