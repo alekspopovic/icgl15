@@ -1,6 +1,6 @@
 .footer {
-  background: var(--menu-bg);
-  color: var(--text-menu);
+  /* background: var(--highlight-red); */
+  color: var(--highlight-red);
   text-align: center;
   font-size: 0.8em;
   position: absolute;
@@ -34,6 +34,10 @@
 
 .socialIcons a:hover i {
   transform: scale(1.2);
+}
+
+.landingFooter {
+  display: none;
 }
 
 @media only screen and (max-width: 426px) {

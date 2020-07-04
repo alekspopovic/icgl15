@@ -2,24 +2,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--menu-bg);
+  /* background: var(--menu-bg); */
   box-shadow: 0 0 5px var(--menu-shadow);
   position: relative;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #menu div {
   flex-basis: auto;
-  font-weight: 400;
   font-size: 1rem;
   cursor: pointer;
   text-transform: uppercase;
   line-height: 7em;
   margin: 0 2em;
   padding: 5px 0 2px 0;
+
+  font-family: "Montserrat";
+  font-weight: 700;
 }
 
 #menu a:hover {
-  color: var(--highlight);
+  color: var(--highlight-red);
 }
 
 #menu a {
@@ -27,7 +33,7 @@
 }
 
 #menu .active {
-  color: var(--highlight);
+  color: var(--highlight-red);
 }
 
 .dropdown {
@@ -44,13 +50,13 @@
 }
 
 .dropdown:hover {
-  color: var(--highlight);
+  color: var(--highlight-red);
 }
 
 .dropdownContent {
   display: none;
   position: absolute;
-  background-color: var(--menu-bg);
+  background-color: var(--transparent-highlight-red);
   min-width: 250px;
   /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
   z-index: 1;
@@ -72,13 +78,41 @@
   display: block;
 }
 
-#menu div,
 .dropdown,
 h1,
 h2,
 h3 {
-  font-family: "Cinzel";
+  font-family: "Montserrat";
   font-weight: 700;
+}
+
+.landingHeader {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background: linear-gradient(
+      135deg,
+      var(--transparent-highlight-red) 0%,
+      var(--transparent-highlight-blue) 100%
+    ),
+    url("https://i.imgur.com/aId6MsG.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerTitle {
+  color: var(--header);
+  text-shadow: 4px 4px var(--highlight-red), -4px -4px var(--highlight-blue);
+
+  font-size: 4em;
+  width: 60%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1366px) {

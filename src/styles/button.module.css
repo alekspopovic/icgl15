@@ -1,0 +1,25 @@
+.button {
+  color: var(--header);
+  background: var(--highlight-red);
+  padding: 1em 3em;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.button:hover {
+  color: var(--highlight-pink);
+}
+
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 426px) {
+}

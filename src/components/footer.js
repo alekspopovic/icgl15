@@ -2,15 +2,23 @@ import React from "react"
 import footerStyles from "../styles/footer.module.css"
 
 const Footer = props => {
-  const { footerNoOffset } = props
+  const { footerNoOffset, isSidebarDisabled } = props
   let offsetClass
 
   if (footerNoOffset) {
     offsetClass = footerStyles.noOffset
   }
 
+  let landingFooterClass
+
+  if (isSidebarDisabled) {
+    landingFooterClass = footerStyles.landingFooter
+  }
+
   return (
-    <footer className={`${footerStyles.footer} ${offsetClass}`}>
+    <footer
+      className={`${footerStyles.footer} ${offsetClass} ${landingFooterClass}`}
+    >
       {/* <div className={footerStyles.socialIcons}>
         <a
           target="_blank"

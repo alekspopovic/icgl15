@@ -3,7 +3,7 @@
   right: 0;
   margin-right: 0 !important;
   clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
-  background: var(--link-color);
+  background: var(--highlight-red);
   padding-left: 3em !important;
   transition: padding 0.2s ease-in;
 
@@ -19,7 +19,7 @@
 }
 
 #languageSelector a:hover {
-  color: var(--menu-bg);
+  color: var(--highlight-pink);
 }
 
 @media only screen and (max-width: 1366px) {

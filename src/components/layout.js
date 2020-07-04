@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import layoutStyles from "../styles/layout.module.css"
-import Sticky from "react-stickynode"
 import Footer from "./footer"
 import labels from "../data/menuLabels"
 import LanguageSelector from "./languageSelector"
 import Sidebar from "./sidebar"
-// import image from "../../content/images/kalemegdan.jpg"
+import Button from "./button"
 
 class Layout extends React.Component {
   formatMenuUrl(url) {
@@ -23,106 +22,104 @@ class Layout extends React.Component {
 
   render() {
     const { children } = this.props
-    const { headerText, subHeaderText, language, location } = this.props
+    const {
+      headerText,
+      subHeaderText,
+      language,
+      location,
+      isSidebarDisabled,
+    } = this.props
 
     this.language = language
 
     let stickyMenu = (
-      <Sticky innerZ={100} enabled={true}>
-        <div id={layoutStyles.menu}>
-          <Link
-            activeClassName={layoutStyles.active}
-            to={this.formatMenuUrl("/")}
-          >
-            <div>{this.getMenuItemLabel("home")}</div>
-          </Link>
-          {/* <Link
-            activeClassName={layoutStyles.active}
-            to={this.formatMenuUrl("/workshops")}
-          >
-            <div>{this.getMenuItemLabel("workshops")}</div>
-          </Link> */}
-          <Link
-            activeClassName={layoutStyles.active}
-            to={this.formatMenuUrl("/committees")}
-          >
-            <div>{this.getMenuItemLabel("committees")}</div>
-          </Link>
-          <div className={layoutStyles.dropdown}>
-            {this.getMenuItemLabel("information")}
-            <div className={layoutStyles.dropdownContent}>
-              <Link
-                activeClassName={layoutStyles.active}
-                to={this.formatMenuUrl("/callForPapers")}
-              >
-                <div>{this.getMenuItemLabel("callForPapers")}</div>
-              </Link>
-              <Link
-                activeClassName={layoutStyles.active}
-                to={this.formatMenuUrl("/programme")}
-              >
-                <div>{this.getMenuItemLabel("programme")}</div>
-              </Link>
-              <Link
-                activeClassName={layoutStyles.active}
-                to={this.formatMenuUrl("/registration")}
-              >
-                <div>{this.getMenuItemLabel("registration")}</div>
-              </Link>
-              <Link
-                activeClassName={layoutStyles.active}
-                to={this.formatMenuUrl("/accommodation")}
-              >
-                <div>{this.getMenuItemLabel("accommodation")}</div>
-              </Link>
-              <Link
-                activeClassName={layoutStyles.active}
-                to={this.formatMenuUrl("/location")}
-              >
-                <div>{this.getMenuItemLabel("location")}</div>
-              </Link>
-            </div>
+      <div id={layoutStyles.menu}>
+        <Link
+          activeClassName={layoutStyles.active}
+          to={this.formatMenuUrl("/")}
+        >
+          <div>{this.getMenuItemLabel("home")}</div>
+        </Link>
+        <Link
+          activeClassName={layoutStyles.active}
+          to={this.formatMenuUrl("/committees")}
+        >
+          <div>{this.getMenuItemLabel("committees")}</div>
+        </Link>
+        <div className={layoutStyles.dropdown}>
+          {this.getMenuItemLabel("information")}
+          <div className={layoutStyles.dropdownContent}>
+            <Link
+              activeClassName={layoutStyles.active}
+              to={this.formatMenuUrl("/callForPapers")}
+            >
+              <div>{this.getMenuItemLabel("callForPapers")}</div>
+            </Link>
+            <Link
+              activeClassName={layoutStyles.active}
+              to={this.formatMenuUrl("/programme")}
+            >
+              <div>{this.getMenuItemLabel("programme")}</div>
+            </Link>
+            <Link
+              activeClassName={layoutStyles.active}
+              to={this.formatMenuUrl("/registration")}
+            >
+              <div>{this.getMenuItemLabel("registration")}</div>
+            </Link>
+            <Link
+              activeClassName={layoutStyles.active}
+              to={this.formatMenuUrl("/accommodation")}
+            >
+              <div>{this.getMenuItemLabel("accommodation")}</div>
+            </Link>
+            <Link
+              activeClassName={layoutStyles.active}
+              to={this.formatMenuUrl("/location")}
+            >
+              <div>{this.getMenuItemLabel("location")}</div>
+            </Link>
           </div>
-
-          <Link activeClassName={layoutStyles.active} to="/news">
-            <div>{this.getMenuItemLabel("news")}</div>
-          </Link>
-          <Link
-            activeClassName={layoutStyles.active}
-            to={this.formatMenuUrl("/contact")}
-          >
-            <div>{this.getMenuItemLabel("contact")}</div>
-          </Link>
-
-          <LanguageSelector language={language} location={location} />
         </div>
-      </Sticky>
-    )
 
-    let headerTextClass
+        <Link activeClassName={layoutStyles.active} to="/news">
+          <div>{this.getMenuItemLabel("news")}</div>
+        </Link>
+        <Link
+          activeClassName={layoutStyles.active}
+          to={this.formatMenuUrl("/contact")}
+        >
+          <div>{this.getMenuItemLabel("contact")}</div>
+        </Link>
 
-    let header = (
-      <div className={layoutStyles.header}>
-        <h1 className={layoutStyles.headerTitle}>{headerText}</h1>
-        <div>
-          <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2>
-        </div>
+        <LanguageSelector language={language} location={location} />
       </div>
     )
 
+    let sidebar = !isSidebarDisabled ? <Sidebar language={language} /> : null
+
+    let landingHeaderClass, button
+
+    if (isSidebarDisabled) {
+      landingHeaderClass = layoutStyles.landingHeader
+
+      button = <Button isExternal={true} url="google.com" text="Register Now" />
+    }
+
     return (
-      <div>
-        <header>
-          {stickyMenu}
-          {header}
-          {/* <img src={image} alt="kalemegdan" /> */}
+      <React.Fragment>
+        {stickyMenu}
+        <header className={landingHeaderClass}>
+          <h1 className={layoutStyles.headerTitle}>{headerText}</h1>
+          <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2>
+          {button}
         </header>
         <main>
           {children}
-          <Sidebar language={language} />
+          {sidebar}
         </main>
-        <Footer />
-      </div>
+        <Footer isSidebarDisabled={isSidebarDisabled} />
+      </React.Fragment>
     )
   }
 }
