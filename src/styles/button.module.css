@@ -6,10 +6,38 @@
   font-family: "Montserrat";
   font-size: 1.2em;
   font-weight: 600;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
 }
 
-.button:hover {
-  color: var(--highlight-pink);
+.button:hover,
+.button:focus {
+  color: var(--highlight-red);
+}
+
+.button::before {
+  content: "";
+  background: var(--header);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  z-index: -1;
+
+  transition: transform 0.3s ease-in;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.button:hover::before,
+.button:focus::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 @media only screen and (max-width: 1366px) {

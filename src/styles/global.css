@@ -9,9 +9,9 @@
   --highlight-red: #e34674;
   --highlight-pink: #e0b8c3;
   --highlight-blue: #60ffff;
-  --transparent-highlight-red: #e346757e;
-  --transparent-highlight-blue: #60ffff7c;
-  --dark-highlight: #061724;
+  --transparent-highlight-red: #e3467563;
+  --transparent-highlight-blue: #60ffff65;
+  --dark-highlight: #535353;
   --body-bg: #f1f1f1;
   --content-bg: #f3f3f3;
   --text: rgb(59, 59, 59);
@@ -25,7 +25,7 @@
 body {
   margin: 0 0 55px;
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   overflow-x: hidden;
   color: var(--text);

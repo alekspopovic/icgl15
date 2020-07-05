@@ -1,0 +1,63 @@
+.socialIcons {
+  position: absolute;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-evenly;
+  bottom: 1em;
+
+  width: 300px;
+  margin: 0 auto;
+}
+
+.socialIcon {
+  background: var(--highlight-red);
+  color: var(--header);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+
+.socialIcon:before {
+  content: "";
+  background: var(--header);
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: transform 0.3s ease-in;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.socialIcon:hover {
+  color: var(--highlight-red);
+}
+
+.socialIcon:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.email {
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 426px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1366px) {
+}

@@ -6,6 +6,8 @@ import labels from "../data/menuLabels"
 import LanguageSelector from "./languageSelector"
 import Sidebar from "./sidebar"
 import Button from "./button"
+import LogoImage from "../assets/Logo.svg"
+import SocialIcons from "./socialIcons"
 
 class Layout extends React.Component {
   formatMenuUrl(url) {
@@ -34,6 +36,9 @@ class Layout extends React.Component {
 
     let stickyMenu = (
       <div id={layoutStyles.menu}>
+        <Link to="/">
+          <img className={layoutStyles.logo} src={LogoImage} alt="logo" />
+        </Link>
         <Link
           activeClassName={layoutStyles.active}
           to={this.formatMenuUrl("/")}
@@ -98,12 +103,14 @@ class Layout extends React.Component {
 
     let sidebar = !isSidebarDisabled ? <Sidebar language={language} /> : null
 
-    let landingHeaderClass, button
+    let landingHeaderClass, button, socialIcons
 
     if (isSidebarDisabled) {
       landingHeaderClass = layoutStyles.landingHeader
 
       button = <Button isExternal={true} url="google.com" text="Register Now" />
+
+      socialIcons = <SocialIcons language={language} />
     }
 
     return (
@@ -113,6 +120,7 @@ class Layout extends React.Component {
           <h1 className={layoutStyles.headerTitle}>{headerText}</h1>
           <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2>
           {button}
+          {socialIcons}
         </header>
         <main>
           {children}

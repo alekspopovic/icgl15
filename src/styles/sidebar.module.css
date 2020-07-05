@@ -24,28 +24,10 @@
   margin-bottom: 0;
 }
 
-.socialIcons {
-  display: flex;
-  font-size: 1.5em;
-  justify-content: center;
-}
-
-.socialIcon {
-  margin: 0 10px;
-}
-
-.email {
-  margin-left: 0;
-}
-
 @media only screen and (min-width: 426px) {
-  .sidebar {
-  }
 }
 
 @media only screen and (min-width: 768px) {
-  .sidebar {
-  }
 }
 
 @media only screen and (min-width: 1366px) {
