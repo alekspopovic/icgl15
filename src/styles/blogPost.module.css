@@ -24,7 +24,7 @@ blockquote {
   padding: 15px 50px;
   text-transform: uppercase;
   display: inline-block;
-  font-family: "Oswald";
+  /* font-family: "Oswald"; */
   letter-spacing: 2px;
   background-color: var(--dark-bg);
 }

@@ -2,10 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: var(--menu-bg); */
   box-shadow: 0 0 5px var(--menu-shadow);
   position: relative;
-
   position: fixed;
   top: 0;
   width: 100%;
@@ -19,8 +17,6 @@
   line-height: 7em;
   margin: 0 2em;
   padding: 5px 0 2px 0;
-
-  font-family: "Montserrat";
   font-weight: 700;
 }
 
@@ -82,7 +78,7 @@
 h1,
 h2,
 h3 {
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   font-weight: 700;
 }
 
@@ -115,8 +111,6 @@ h3 {
 
 .headerTitle {
   color: var(--header);
-  /* text-shadow: -4px 4px var(--dark-highlight); */
-
   font-size: 4em;
   width: 60%;
   text-align: center;
@@ -130,14 +124,18 @@ h3 {
   height: 100px;
 }
 
+.menuToggle {
+  display: none;
+}
+
 @media only screen and (max-width: 1366px) {
 }
 
 /* small monitor */
 @media only screen and (max-width: 1024px) {
   #menu {
-    justify-content: flex-start;
-    padding-left: 3em;
+    justify-content: center;
+    padding-right: 4em;
   }
 
   #menu div {
@@ -148,8 +146,13 @@ h3 {
 /* tablet */
 @media only screen and (max-width: 768px) {
   #menu {
-    padding-left: 0;
+    padding-right: 0;
     justify-content: center;
+  }
+
+  .logo {
+    position: static;
+    margin: 1em 2em 0 0;
   }
 }
 
@@ -157,6 +160,7 @@ h3 {
 @media only screen and (max-width: 426px) {
   #menu {
     flex-wrap: wrap;
+    display: none;
   }
 
   #menu div {
@@ -167,6 +171,48 @@ h3 {
 
   .header {
     margin-top: 4em;
+  }
+
+  .headerTitle {
+    font-size: 2.5em;
+    width: 80%;
+  }
+
+  .menuToggle {
+    display: flex;
+    position: absolute;
+    top: 2em;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 50px;
+    height: 5px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.3s;
+    background-color: white;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-16px, 15px);
+    transform: rotate(-45deg) translate(-16px, 15px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-16px, -15px);
+    transform: rotate(45deg) translate(-16px, -15px);
   }
 }
 

@@ -39,12 +39,12 @@ class Layout extends React.Component {
         <Link to="/">
           <img className={layoutStyles.logo} src={LogoImage} alt="logo" />
         </Link>
-        <Link
+        {/* <Link
           activeClassName={layoutStyles.active}
           to={this.formatMenuUrl("/")}
         >
           <div>{this.getMenuItemLabel("home")}</div>
-        </Link>
+        </Link> */}
         <Link
           activeClassName={layoutStyles.active}
           to={this.formatMenuUrl("/committees")}
@@ -115,6 +115,11 @@ class Layout extends React.Component {
 
     return (
       <React.Fragment>
+        <div className={layoutStyles.menuToggle}>
+          <div className={layoutStyles.bar1}></div>
+          <div className={layoutStyles.bar2}></div>
+          <div className={layoutStyles.bar3}></div>
+        </div>
         {stickyMenu}
         <header className={landingHeaderClass}>
           <h1 className={layoutStyles.headerTitle}>{headerText}</h1>

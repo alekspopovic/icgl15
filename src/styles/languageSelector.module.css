@@ -13,6 +13,8 @@
   transition: all 0.3s ease-in;
   position: relative;
   display: inline-block;
+  /* font-family: "Orbitron"; */
+  font-size: 0.8em;
 }
 
 #languageSelector a:before {
@@ -37,14 +39,6 @@
   border-radius: 0 10px 10px 0;
 }
 
-/* #languageSelector a:nth-child(1):before {
-  border-radius: 10px 0 0 10px;
-}
-
-#languageSelector a:nth-child(2):before {
-  border-radius: 0 10px 10px 0;
-} */
-
 #languageSelector a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
@@ -58,13 +52,11 @@
 
 @media only screen and (max-width: 768px) {
   #languageSelector {
-    top: 7.4em;
+    top: 8em;
     width: 100%;
-    /* clip-path: polygon(0 0, 75% 0, 60% 100%, 0% 100%); */
-    clip-path: none;
-    padding: 0 !important;
-    line-height: 2.8em !important;
     text-align: center;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 

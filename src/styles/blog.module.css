@@ -64,7 +64,7 @@ section {
 }
 
 .date {
-  font-family: "Oswald";
+  /* font-family: "Oswald"; */
   padding: 0 10px;
   font-size: 0.7em;
   /* display: inline-block; */
@@ -90,7 +90,7 @@ blockquote {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
-  font-family: "Oswald";
+  /* font-family: "Oswald"; */
   letter-spacing: 2px;
 
   display: none;
