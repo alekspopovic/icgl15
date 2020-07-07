@@ -39,7 +39,8 @@
   border-radius: 0 10px 10px 0;
 }
 
-#languageSelector a:hover::before {
+#languageSelector a:hover::before,
+#languageSelector a:focus::before {
   transform-origin: left;
   transform: scaleX(1);
 }
@@ -62,6 +63,7 @@
 
 @media only screen and (max-width: 426px) {
   #languageSelector {
-    top: 10em;
+    bottom: 1em;
+    top: initial;
   }
 }

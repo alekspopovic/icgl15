@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import layoutStyles from "../styles/layout.module.css"
 import Footer from "./footer"
@@ -9,132 +9,168 @@ import Button from "./button"
 import LogoImage from "../assets/Logo.svg"
 import SocialIcons from "./socialIcons"
 
-class Layout extends React.Component {
-  formatMenuUrl(url) {
-    if (this.language !== "en") {
-      return `/${this.language}${url}`
+const Layout = props => {
+  const formatMenuUrl = (url, language) => {
+    if (language !== "en") {
+      return `/${language}${url}`
     }
 
     return url
   }
 
-  getMenuItemLabel(item) {
-    return labels[this.language][item]
+  const getMenuItemLabel = (item, language) => {
+    return labels[language][item]
   }
 
-  render() {
-    const { children } = this.props
-    const {
-      headerText,
-      subHeaderText,
-      language,
-      location,
-      isSidebarDisabled,
-    } = this.props
+  const { children } = props
+  const {
+    headerText,
+    subHeaderText,
+    language,
+    location,
+    isSidebarDisabled,
+  } = props
 
-    this.language = language
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-    let stickyMenu = (
-      <div id={layoutStyles.menu}>
-        <Link to="/">
-          <img className={layoutStyles.logo} src={LogoImage} alt="logo" />
-        </Link>
-        {/* <Link
-          activeClassName={layoutStyles.active}
-          to={this.formatMenuUrl("/")}
-        >
-          <div>{this.getMenuItemLabel("home")}</div>
-        </Link> */}
-        <Link
-          activeClassName={layoutStyles.active}
-          to={this.formatMenuUrl("/committees")}
-        >
-          <div>{this.getMenuItemLabel("committees")}</div>
-        </Link>
-        <div className={layoutStyles.dropdown}>
-          {this.getMenuItemLabel("information")}
-          <div className={layoutStyles.dropdownContent}>
-            <Link
-              activeClassName={layoutStyles.active}
-              to={this.formatMenuUrl("/callForPapers")}
-            >
-              <div>{this.getMenuItemLabel("callForPapers")}</div>
-            </Link>
-            <Link
-              activeClassName={layoutStyles.active}
-              to={this.formatMenuUrl("/programme")}
-            >
-              <div>{this.getMenuItemLabel("programme")}</div>
-            </Link>
-            <Link
-              activeClassName={layoutStyles.active}
-              to={this.formatMenuUrl("/registration")}
-            >
-              <div>{this.getMenuItemLabel("registration")}</div>
-            </Link>
-            <Link
-              activeClassName={layoutStyles.active}
-              to={this.formatMenuUrl("/accommodation")}
-            >
-              <div>{this.getMenuItemLabel("accommodation")}</div>
-            </Link>
-            <Link
-              activeClassName={layoutStyles.active}
-              to={this.formatMenuUrl("/location")}
-            >
-              <div>{this.getMenuItemLabel("location")}</div>
-            </Link>
-          </div>
-        </div>
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
 
-        <Link activeClassName={layoutStyles.active} to="/news">
-          <div>{this.getMenuItemLabel("news")}</div>
-        </Link>
-        <Link
-          activeClassName={layoutStyles.active}
-          to={this.formatMenuUrl("/contact")}
-        >
-          <div>{this.getMenuItemLabel("contact")}</div>
-        </Link>
-
-        <LanguageSelector language={language} location={location} />
-      </div>
-    )
-
-    let sidebar = !isSidebarDisabled ? <Sidebar language={language} /> : null
-
-    let landingHeaderClass, button, socialIcons
-
-    if (isSidebarDisabled) {
-      landingHeaderClass = layoutStyles.landingHeader
-
-      button = <Button isExternal={true} url="google.com" text="Register Now" />
-
-      socialIcons = <SocialIcons language={language} />
+  const toggleMenu = () => {
+    if (isSubMenuOpen) {
+      toggleSubMenu()
+    } else {
+      setIsMenuOpen(!isMenuOpen)
     }
-
-    return (
-      <React.Fragment>
-        <div className={layoutStyles.menuToggle}>
-          <div className={layoutStyles.bar1}></div>
-          <div className={layoutStyles.bar2}></div>
-          <div className={layoutStyles.bar3}></div>
-        </div>
-        {stickyMenu}
-        <header className={landingHeaderClass}>
-          <h1 className={layoutStyles.headerTitle}>{headerText}</h1>
-          <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2>
-          {button}
-          {socialIcons}
-        </header>
-        <main>
-          {children}
-          {sidebar}
-        </main>
-        <Footer isSidebarDisabled={isSidebarDisabled} />
-      </React.Fragment>
-    )
   }
+
+  const toggleSubMenu = () => {
+    setIsSubMenuOpen(!isSubMenuOpen)
+  }
+
+  const openSubMenu = () => {
+    if (!isSubMenuOpen) {
+      setIsSubMenuOpen(true)
+    }
+  }
+
+  const closeSubMenu = () => {
+    if (isSubMenuOpen) {
+      setIsSubMenuOpen(false)
+    }
+  }
+
+  let stickyMenu = (
+    <div id={layoutStyles.menu} className={isMenuOpen ? layoutStyles.show : ""}>
+      <Link to="/">
+        <img className={layoutStyles.logo} src={LogoImage} alt="logo" />
+      </Link>
+      <Link
+        activeClassName={layoutStyles.active}
+        to={formatMenuUrl("/committees", language)}
+      >
+        <div>{getMenuItemLabel("committees", language)}</div>
+      </Link>
+      <div
+        className={layoutStyles.dropdown}
+        onClick={toggleSubMenu}
+        onKeyDown={openSubMenu}
+        role="button"
+        tabIndex={0}
+      >
+        {getMenuItemLabel("information", language)}
+        <div
+          className={`${layoutStyles.dropdownContent} ${
+            isSubMenuOpen ? layoutStyles.showSubMenu : ""
+          }`}
+        >
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/callForPapers", language)}
+          >
+            <div>{getMenuItemLabel("callForPapers", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/programme", language)}
+          >
+            <div>{getMenuItemLabel("programme", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/registration", language)}
+          >
+            <div>{getMenuItemLabel("registration", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/accommodation", language)}
+          >
+            <div>{getMenuItemLabel("accommodation", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/location", language)}
+            onBlur={closeSubMenu}
+          >
+            <div>{getMenuItemLabel("location", language)}</div>
+          </Link>
+        </div>
+      </div>
+
+      <Link activeClassName={layoutStyles.active} to="/news">
+        <div>{getMenuItemLabel("news", language)}</div>
+      </Link>
+      <Link
+        activeClassName={layoutStyles.active}
+        to={formatMenuUrl("/contact", language)}
+      >
+        <div>{getMenuItemLabel("contact", language)}</div>
+      </Link>
+
+      <LanguageSelector language={language} location={location} />
+    </div>
+  )
+
+  let sidebar = !isSidebarDisabled ? <Sidebar language={language} /> : null
+
+  let landingHeaderClass, button, socialIcons
+
+  if (isSidebarDisabled) {
+    landingHeaderClass = layoutStyles.landingHeader
+
+    button = <Button isExternal={true} url="google.com" text="Register Now" />
+
+    socialIcons = <SocialIcons language={language} />
+  }
+
+  let pageTitle = headerText ? headerText : "Placeholder Page Title"
+
+  return (
+    <React.Fragment>
+      <button
+        className={`${layoutStyles.menuToggle} ${
+          isMenuOpen ? layoutStyles.open : ""
+        }`}
+        onClick={toggleMenu}
+      >
+        <div className={layoutStyles.bar1}></div>
+        <div className={layoutStyles.bar2}></div>
+        <div className={layoutStyles.bar3}></div>
+      </button>
+      {stickyMenu}
+      <header className={`${layoutStyles.header} ${landingHeaderClass}`}>
+        <h1 className={layoutStyles.headerTitle}>{pageTitle}</h1>
+        {/* <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2> */}
+        {button}
+        {socialIcons}
+      </header>
+      <main>
+        {children}
+        {sidebar}
+      </main>
+      <Footer isSidebarDisabled={isSidebarDisabled} />
+    </React.Fragment>
+  )
 }
 
 export default Layout

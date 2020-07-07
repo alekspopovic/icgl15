@@ -9,6 +9,7 @@ class Index extends React.Component {
         language="sr"
         location={this.props.location}
         isSidebarDisabled={true}
+        headerText="Internacionalna konferencija grčke lingvistike"
       >
         <SEO title="Home" pagePath={this.props.location.pathname} />
       </Layout>
