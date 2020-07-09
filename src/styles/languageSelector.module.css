@@ -13,7 +13,7 @@
   transition: all 0.3s ease-in;
   position: relative;
   display: inline-block;
-  /* font-family: "Orbitron"; */
+  border: 2px solid transparent;
   font-size: 0.8em;
 }
 
@@ -33,10 +33,12 @@
 
 #languageSelector a:nth-child(1) {
   border-radius: 10px 0 0 10px;
+  border-right: none;
 }
 
 #languageSelector a:nth-child(2) {
   border-radius: 0 10px 10px 0;
+  border-left: none;
 }
 
 #languageSelector a:hover::before,

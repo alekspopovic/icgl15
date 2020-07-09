@@ -3,7 +3,7 @@
   background: var(--highlight-red);
   padding: 1em 3em;
   border-radius: 10px;
-  /* font-family: "Montserrat"; */
+  border: 2px solid transparent;
   font-size: 1em;
   font-weight: 600;
   position: relative;
