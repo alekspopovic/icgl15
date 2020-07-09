@@ -81,6 +81,25 @@
   padding: 0 !important;
 }
 
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translateY(1em);
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .dropdownContent::before {
   position: absolute;
   content: "";
@@ -114,6 +133,7 @@
 
 .dropdown:hover .dropdownContent {
   display: block;
+  animation: fadeInFromNone 0.3s ease-in;
 }
 
 .dropdown,
@@ -140,7 +160,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
 
-  height: 40vh;
+  height: 50vh;
 }
 
 .landingHeader {
@@ -252,7 +272,7 @@ h3 {
   } */
 
   .headerTitle {
-    font-size: 2.5em;
+    font-size: 2em;
     width: 95%;
   }
 

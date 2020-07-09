@@ -69,7 +69,7 @@ const Layout = props => {
     <div
       id={layoutStyles.menu}
       className={`${isMenuOpen ? layoutStyles.show : ""} ${
-        inView ? "" : layoutStyles.inView
+        inView || isMenuOpen ? "" : layoutStyles.inView
       }`}
     >
       <Link to="/">

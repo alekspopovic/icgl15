@@ -1,8 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import kebabCase from "lodash.kebabcase"
+// import kebabCase from "lodash.kebabcase"
 
 import blogPostStyles from "../styles/blogPost.module.css"
 
@@ -10,7 +10,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     // const { previous, next } = this.props.pageContext
-    const tags = post.frontmatter.tags || []
+    // const tags = post.frontmatter.tags || []
 
     // let postNavigation
 
@@ -52,7 +52,7 @@ class BlogPostTemplate extends React.Component {
         />
         <article className={blogPostStyles.blogPost}>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr />
+          {/* <hr />
           <div className={blogPostStyles.tags}>
             <ul>
               {tags.map(tag => (
@@ -61,7 +61,7 @@ class BlogPostTemplate extends React.Component {
                 </Link>
               ))}
             </ul>
-          </div>
+          </div> */}
         </article>
         {/* {postNavigation} */}
       </Layout>

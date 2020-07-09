@@ -6,7 +6,7 @@
 
 :root {
   --menu-bg: #0c2233;
-  --highlight: #8cd579;
+  --highlight: #e47d9c;
   --highlight-red: #e34674;
   --highlight-pink: #e0b8c3;
   --highlight-blue: #60ffff;
@@ -18,7 +18,7 @@
   --text: rgb(59, 59, 59);
   --text-menu: white;
   --header: #e5e5e5;
-  --link-color: #22aa84;
+  --link-color: var(--highlight-red);
   --menu-link-color: #f1f1f1;
   --shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }

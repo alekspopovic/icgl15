@@ -39,7 +39,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges
-  let tags = []
+  // let tags = []
   let postHistory = {}
 
   posts.forEach((post, index) => {
@@ -58,9 +58,9 @@ exports.createPages = async ({ graphql, actions }) => {
 
     // Get tags from each post
 
-    if (post.node.frontmatter.tags) {
-      tags = tags.concat(post.node.frontmatter.tags)
-    }
+    // if (post.node.frontmatter.tags) {
+    //   tags = tags.concat(post.node.frontmatter.tags)
+    // }
   })
 
   createPaginatedPages({
@@ -72,19 +72,19 @@ exports.createPages = async ({ graphql, actions }) => {
     context: { postHistory },
   })
 
-  tags = removeDuplicateTags(tags)
+  // tags = removeDuplicateTags(tags)
 
-  const tagTemplate = path.resolve("src/templates/tags.js")
+  // const tagTemplate = path.resolve("src/templates/tags.js")
   // Make tag pages
-  tags.forEach(tag => {
-    createPage({
-      path: `/tags/${kebabCase(tag)}/`,
-      component: tagTemplate,
-      context: {
-        tag,
-      },
-    })
-  })
+  // tags.forEach(tag => {
+  //   createPage({
+  //     path: `/tags/${kebabCase(tag)}/`,
+  //     component: tagTemplate,
+  //     context: {
+  //       tag,
+  //     },
+  //   })
+  // })
 }
 
 var removeDuplicateTags = array => {
