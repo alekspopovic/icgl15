@@ -41,6 +41,7 @@
     "react-accessible-accordion": "^3.0.1",
     "react-dom": "npm:@hot-loader/react-dom@^16.11.0",
     "react-helmet": "^5.2.1",
+    "react-intersection-observer": "^8.26.2",
     "react-stickynode": "^2.1.1",
     "react-typography": "^0.16.19",
     "typeface-merriweather": "0.0.72",

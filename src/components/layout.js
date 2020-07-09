@@ -1,4 +1,6 @@
 import React, { useState } from "react"
+import { useInView } from "react-intersection-observer"
+// import { motion } from "framer-motion"
 import { Link } from "gatsby"
 import layoutStyles from "../styles/layout.module.css"
 import Footer from "./footer"
@@ -25,11 +27,15 @@ const Layout = props => {
   const { children } = props
   const {
     headerText,
-    subHeaderText,
+    // subHeaderText,
     language,
     location,
     isSidebarDisabled,
   } = props
+
+  const [ref, inView] = useInView({
+    rootMargin: "-100px 0px 0px 0px",
+  })
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -60,9 +66,20 @@ const Layout = props => {
   }
 
   let stickyMenu = (
-    <div id={layoutStyles.menu} className={isMenuOpen ? layoutStyles.show : ""}>
+    <div
+      id={layoutStyles.menu}
+      className={`${isMenuOpen ? layoutStyles.show : ""} ${
+        inView ? "" : layoutStyles.inView
+      }`}
+    >
       <Link to="/">
         <img className={layoutStyles.logo} src={LogoImage} alt="logo" />
+      </Link>
+      <Link
+        activeClassName={layoutStyles.active}
+        to={formatMenuUrl("/", language)}
+      >
+        <div>{getMenuItemLabel("home", language)}</div>
       </Link>
       <Link
         activeClassName={layoutStyles.active}
@@ -158,7 +175,10 @@ const Layout = props => {
         <div className={layoutStyles.bar3}></div>
       </button>
       {stickyMenu}
-      <header className={`${layoutStyles.header} ${landingHeaderClass}`}>
+      <header
+        className={`${layoutStyles.header} ${landingHeaderClass}`}
+        ref={ref}
+      >
         <h1 className={layoutStyles.headerTitle}>{pageTitle}</h1>
         {/* <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2> */}
         {button}

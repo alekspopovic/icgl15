@@ -10,7 +10,7 @@ class Index extends React.Component {
         location={this.props.location}
         isSidebarDisabled={true}
         headerText="
-        Διεθνές Συνέδριο για την Ελληνική Γλωσσολογία"
+        15ο Διεθνές Συνέδριο για την Ελληνική Γλωσσολογία"
       >
         <SEO title="Home" pagePath={this.props.location.pathname} />
       </Layout>

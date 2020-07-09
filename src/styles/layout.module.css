@@ -8,7 +8,11 @@
   top: 0;
   width: 100%;
 
-  /* background: linear-gradient(
+  transition: background 0.7s ease-in;
+}
+
+#menu.inView {
+  background: linear-gradient(
       135deg,
       rgba(0, 0, 0, 0.6) 0%,
       rgba(0, 0, 0, 0.4) 100%
@@ -17,7 +21,7 @@
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 }
 
 #menu div {
@@ -72,8 +76,21 @@
   z-index: 1;
   height: auto;
   left: -4em;
-  top: 5.5em;
+  top: 7.45em;
   padding: 0 !important;
+}
+
+.dropdownContent::before {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 1.5em solid transparent;
+  border-right: 1.5em solid transparent;
+  border-bottom: 1.5em solid var(--highlight-red);
+  border-left: 1.5em solid transparent;
+  top: -3em;
+  left: 4em;
 }
 
 .dropdownContent .active {
@@ -213,7 +230,7 @@ h3 {
 
   #menu div {
     margin: 0;
-    line-height: 4.5em;
+    line-height: 3.5em;
   }
 
   .logo {
@@ -260,9 +277,18 @@ h3 {
     background-color: white;
   }
 
+  .open {
+    padding-right: 2em;
+  }
+
   .open .bar1 {
     -webkit-transform: rotate(-45deg) translate(-16px, 5px);
     transform: rotate(-45deg) translate(-16px, 5px);
+
+    transform: translateX(-16px);
+
+    transform: rotate(-45deg) translateY(21px);
+    /* translate(21px, 1px); */
   }
 
   .open .bar2 {
@@ -272,6 +298,11 @@ h3 {
   .open .bar3 {
     -webkit-transform: rotate(45deg) translate(-16px, -5px);
     transform: rotate(45deg) translate(-16px, -5px);
+
+    transform: translateX(-16px);
+
+    transform: rotate(45deg) translateY(-21px);
+    /* translate(-21px, -1px); */
   }
 
   .dropdownContent {
