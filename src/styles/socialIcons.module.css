@@ -9,6 +9,8 @@
 .socialIcons.outsideSidebar {
   position: absolute;
   bottom: 1em;
+  width: 300px;
+  justify-content: space-evenly;
 }
 
 .socialIcon {

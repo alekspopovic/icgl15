@@ -169,7 +169,7 @@ const Layout = props => {
       <button
         className={`${layoutStyles.menuToggle} ${
           isMenuOpen ? layoutStyles.open : ""
-        }`}
+        } ${inView ? "" : layoutStyles.menuToggleInView}`}
         onClick={toggleMenu}
       >
         <div className={layoutStyles.bar1}></div>
@@ -186,7 +186,11 @@ const Layout = props => {
         {button}
         {socialIcons}
       </header>
-      <main>
+      <main
+        style={
+          isSidebarDisabled ? { paddingBottom: 0 } : { paddingBottom: 3 + "em" }
+        }
+      >
         {children}
         {sidebar}
       </main>

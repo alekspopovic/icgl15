@@ -1,6 +1,6 @@
 .footer {
-  /* background: var(--highlight-red); */
-  color: var(--highlight-red);
+  background: var(--text);
+  color: var(--header);
   text-align: center;
   font-size: 0.8em;
   position: absolute;
