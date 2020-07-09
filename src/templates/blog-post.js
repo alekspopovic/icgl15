@@ -63,7 +63,7 @@ class BlogPostTemplate extends React.Component {
             </ul>
           </div>
         </article>
-        {postNavigation}
+        {/* {postNavigation} */}
       </Layout>
     )
   }

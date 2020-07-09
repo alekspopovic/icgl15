@@ -8,7 +8,7 @@
   top: 0;
   width: 100%;
 
-  transition: background 0.7s ease-in;
+  transition: background 0.3s ease-in;
 }
 
 #menu.inView {
