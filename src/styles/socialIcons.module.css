@@ -1,12 +1,14 @@
 .socialIcons {
-  position: absolute;
   display: flex;
   font-size: 1.5em;
   justify-content: space-evenly;
-  bottom: 1em;
-
-  width: 300px;
+  /* width: 300px; */
   margin: 0 auto;
+}
+
+.socialIcons.outsideSidebar {
+  position: absolute;
+  bottom: 1em;
 }
 
 .socialIcon {
@@ -60,5 +62,8 @@
 @media only screen and (min-width: 768px) {
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1024px) {
+  .socialIcons {
+    max-width: 300px;
+  }
 }

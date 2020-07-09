@@ -9,29 +9,29 @@ import blogPostStyles from "../styles/blogPost.module.css"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const { previous, next } = this.props.pageContext
+    // const { previous, next } = this.props.pageContext
     const tags = post.frontmatter.tags || []
 
-    let postNavigation
+    // let postNavigation
 
     let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
 
-    if (previous || next) {
-      postNavigation = (
-        <div className={blogPostStyles.postNavigation}>
-          {previous && (
-            <Link to={previous.fields.slug} rel="prev">
-              ← {previous.frontmatter.title}
-            </Link>
-          )}
-          {next && (
-            <Link to={next.fields.slug} rel="next">
-              {next.frontmatter.title} →
-            </Link>
-          )}
-        </div>
-      )
-    }
+    // if (previous || next) {
+    //   postNavigation = (
+    //     <div className={blogPostStyles.postNavigation}>
+    //       {previous && (
+    //         <Link to={previous.fields.slug} rel="prev">
+    //           ← {previous.frontmatter.title}
+    //         </Link>
+    //       )}
+    //       {next && (
+    //         <Link to={next.fields.slug} rel="next">
+    //           {next.frontmatter.title} →
+    //         </Link>
+    //       )}
+    //     </div>
+    //   )
+    // }
 
     let subHeaderText = `${post.frontmatter.date} | Aleks Popovic`
 

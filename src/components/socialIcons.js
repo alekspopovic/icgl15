@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 
-const SocialIcons = ({ language }) => {
+const SocialIcons = ({ language, isSidebarDisabled }) => {
   let contactPrefix = ""
 
   if (language !== "en") {
@@ -14,7 +14,11 @@ const SocialIcons = ({ language }) => {
   }
 
   return (
-    <div className={socialIconsStyles.socialIcons}>
+    <div
+      className={`${socialIconsStyles.socialIcons} ${
+        isSidebarDisabled ? socialIconsStyles.outsideSidebar : ""
+      }`}
+    >
       <Link
         className={socialIconsStyles.socialIcon}
         to={`${contactPrefix}/contact`}

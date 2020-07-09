@@ -157,7 +157,9 @@ const Layout = props => {
 
     button = <Button isExternal={true} url="google.com" text="Register Now" />
 
-    socialIcons = <SocialIcons language={language} />
+    socialIcons = (
+      <SocialIcons isSidebarDisabled={isSidebarDisabled} language={language} />
+    )
   }
 
   let pageTitle = headerText ? headerText : "Placeholder Page Title"
