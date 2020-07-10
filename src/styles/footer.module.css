@@ -6,7 +6,6 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  /* height: 40px; */
   width: 100%;
   overflow: hidden;
   padding: 15px 0;
@@ -14,26 +13,6 @@
 
 .footer.noOffset {
   bottom: 0;
-}
-
-.socialIcons {
-  margin-bottom: 10px;
-  font-size: 1.8em;
-}
-
-.socialIcons a {
-  padding: 0 15px;
-  transition: scale 0.3s;
-  color: var(--header);
-}
-
-.socialIcons a:hover {
-  border: none;
-  color: var(--highlight);
-}
-
-.socialIcons a:hover i {
-  transform: scale(1.2);
 }
 
 .landingFooter {

@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Button from "../components/button"
 // import kebabCase from "lodash.kebabcase"
 
 import blogPostStyles from "../styles/blogPost.module.css"
@@ -9,29 +10,32 @@ import blogPostStyles from "../styles/blogPost.module.css"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    // const { previous, next } = this.props.pageContext
-    // const tags = post.frontmatter.tags || []
+    const { previous, next } = this.props.pageContext
 
-    // let postNavigation
+    let postNavigation
 
     let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
 
-    // if (previous || next) {
-    //   postNavigation = (
-    //     <div className={blogPostStyles.postNavigation}>
-    //       {previous && (
-    //         <Link to={previous.fields.slug} rel="prev">
-    //           ← {previous.frontmatter.title}
-    //         </Link>
-    //       )}
-    //       {next && (
-    //         <Link to={next.fields.slug} rel="next">
-    //           {next.frontmatter.title} →
-    //         </Link>
-    //       )}
-    //     </div>
-    //   )
-    // }
+    if (previous || next) {
+      postNavigation = (
+        <div className={blogPostStyles.postNavigation}>
+          {previous && (
+            <Button
+              isExternal={false}
+              url={previous.fields.slug}
+              text={`← ${previous.frontmatter.title}`}
+            />
+          )}
+          {next && (
+            <Button
+              isExternal={false}
+              url={next.fields.slug}
+              text={`${next.frontmatter.title} →`}
+            />
+          )}
+        </div>
+      )
+    }
 
     let subHeaderText = `${post.frontmatter.date} | Aleks Popovic`
 
@@ -43,6 +47,7 @@ class BlogPostTemplate extends React.Component {
         headerImageFluid={featuredImgFluid}
         language="en"
         location={this.props.location}
+        isBlogPostPage={true}
       >
         <SEO
           title={post.frontmatter.title}
@@ -52,18 +57,8 @@ class BlogPostTemplate extends React.Component {
         />
         <article className={blogPostStyles.blogPost}>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          {/* <hr />
-          <div className={blogPostStyles.tags}>
-            <ul>
-              {tags.map(tag => (
-                <Link key={kebabCase(tag)} to={`/tags/${kebabCase(tag)}`}>
-                  <li>{tag}</li>
-                </Link>
-              ))}
-            </ul>
-          </div> */}
         </article>
-        {/* {postNavigation} */}
+        {postNavigation}
       </Layout>
     )
   }

@@ -27,10 +27,10 @@ const Layout = props => {
   const { children } = props
   const {
     headerText,
-    // subHeaderText,
     language,
     location,
     isSidebarDisabled,
+    isBlogPostPage,
   } = props
 
   const [ref, inView] = useInView({
@@ -182,13 +182,15 @@ const Layout = props => {
         ref={ref}
       >
         <h1 className={layoutStyles.headerTitle}>{pageTitle}</h1>
-        {/* <h2 className={layoutStyles.headerSubTitle}>{subHeaderText}</h2> */}
         {button}
         {socialIcons}
       </header>
       <main
         style={
-          isSidebarDisabled ? { paddingBottom: 0 } : { paddingBottom: 3 + "em" }
+          (isSidebarDisabled
+            ? { paddingBottom: 0 }
+            : { paddingBottom: 3 + "em" },
+          isBlogPostPage ? { paddingBottom: 8 + "em" } : { paddingBottom: 0 })
         }
       >
         {children}

@@ -12,7 +12,7 @@
 }
 
 .sidebarItem h3 {
-  border-bottom: 1px solid var(--highlight);
+  border-bottom: 1px solid var(--highlight-red);
 }
 
 .sidebarItem ul {
