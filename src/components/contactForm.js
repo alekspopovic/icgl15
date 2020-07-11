@@ -2,6 +2,7 @@ import React from "react"
 import contactListStyles from "../styles/contactList.module.css"
 import "font-awesome/css/font-awesome.min.css"
 import labels from "../data/contactLabels"
+import buttonStyles from "../styles/button.module.css"
 
 class ContactForm extends React.Component {
   getContactItemLabel(item) {
@@ -50,7 +51,7 @@ class ContactForm extends React.Component {
           ></input>
           <input type="hidden" name="_replyto"></input>
           <div>
-            <button type="submit" className={contactListStyles.formControl}>
+            <button type="submit" className={buttonStyles.button}>
               {this.getContactItemLabel("submitLabel")}
             </button>
           </div>

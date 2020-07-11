@@ -150,7 +150,7 @@ const Layout = props => {
 
   let sidebar = !isSidebarDisabled ? <Sidebar language={language} /> : null
 
-  let landingHeaderClass, button, socialIcons
+  let landingHeaderClass, button, socialIcons, mainBottomPadding
 
   if (isSidebarDisabled) {
     landingHeaderClass = layoutStyles.landingHeader
@@ -160,6 +160,12 @@ const Layout = props => {
     socialIcons = (
       <SocialIcons isSidebarDisabled={isSidebarDisabled} language={language} />
     )
+
+    mainBottomPadding = layoutStyles.mainBottomNoPadding
+  }
+
+  if (isBlogPostPage) {
+    mainBottomPadding = layoutStyles.mainBottomLargePadding
   }
 
   let pageTitle = headerText ? headerText : "Placeholder Page Title"
@@ -185,14 +191,7 @@ const Layout = props => {
         {button}
         {socialIcons}
       </header>
-      <main
-        style={
-          (isSidebarDisabled
-            ? { paddingBottom: 0 }
-            : { paddingBottom: 3 + "em" },
-          isBlogPostPage ? { paddingBottom: 8 + "em" } : { paddingBottom: 0 })
-        }
-      >
+      <main className={mainBottomPadding}>
         {children}
         {sidebar}
       </main>

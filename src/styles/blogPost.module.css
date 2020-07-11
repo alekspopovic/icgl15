@@ -61,6 +61,20 @@ article section h2 {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .blogPost {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .postNavigation {
+    position: static;
+    width: 100%;
+    margin-top: 2em;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .blogPost {
     width: 100%;
@@ -88,12 +102,6 @@ article section h2 {
   nav {
     width: 100%;
     margin: 0;
-    margin-top: 2em;
-  }
-
-  .postNavigation {
-    position: static;
-    width: 100%;
     margin-top: 2em;
   }
 }

@@ -7,12 +7,20 @@
   background: var(--content-bg);
   padding: 2em 1em;
   margin-bottom: 2em;
+  border-radius: 5px;
+}
 
-  border-radius: 10px;
+.sidebarItem.red {
+  background: var(--highlight-red);
+  color: var(--content-bg);
 }
 
 .sidebarItem h3 {
   border-bottom: 1px solid var(--highlight-red);
+}
+
+.sidebarItem.red h3 {
+  border-bottom: 1px solid var(--content-bg);
 }
 
 .sidebarItem ul {

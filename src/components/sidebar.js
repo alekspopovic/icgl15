@@ -38,7 +38,7 @@ const Sidebar = ({ language }) => {
         <h3>Recent News</h3>
         {links}
       </div>
-      <div className={sidebarStyles.sidebarItem}>
+      <div className={`${sidebarStyles.sidebarItem} ${sidebarStyles.red}`}>
         <h3>Important Dates</h3>
         <ul>
           <li>Conference: 10-12th September 2021</li>

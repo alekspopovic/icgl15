@@ -10,9 +10,9 @@ article {
   overflow: hidden;
   margin: 1em auto;
   padding: 2em 3em;
-  background-color: var(--dark-bg);
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: var(--content-bg);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
 }
 
 article header {

@@ -114,12 +114,12 @@
 }
 
 .dropdownContent .active {
-  background: var(--header);
+  background: var(--content-bg);
 }
 
 .dropdownContent a:hover,
 .dropdownContent a:focus {
-  background: var(--header);
+  background: var(--content-bg);
 }
 
 .dropdownContent div {
@@ -190,6 +190,14 @@ h3 {
 
 .menuToggle {
   display: none;
+}
+
+.mainBottomNoPadding {
+  padding-bottom: 0 !important;
+}
+
+.mainBottomLargePadding {
+  padding-bottom: 8em !important;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -307,6 +315,7 @@ h3 {
     margin: 5px 0;
     transition: 0.3s;
     background-color: white;
+    border-radius: 10px;
   }
 
   .open {
@@ -353,6 +362,8 @@ h3 {
 
     transform: translateX(-100%);
 
+    animation: none !important;
+
     transition: transform 0.3s ease-in;
   }
 
@@ -363,7 +374,7 @@ h3 {
   .dropdownContent.showSubMenu a:hover,
   .dropdownContent.showSubMenu a:focus,
   .dropdownContent a.active {
-    background: var(--header) !important;
+    background: var(--content-bg) !important;
     color: var(--highlight-red) !important;
   }
 }

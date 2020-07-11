@@ -1,12 +1,11 @@
 .contact {
   text-align: center;
   width: 50%;
-  margin: 1em auto 4em auto;
-  background: var(--dark-bg);
+  background: var(--content-bg);
   padding: 2em 3em 1em 3em;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 10px;
-
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  margin: 2em 2em 2em 0;
   height: 100%;
 }
 
@@ -70,6 +69,13 @@ form div {
 @media only screen and (max-width: 1366px) {
   .contact {
     width: 70%;
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact {
+    width: 100%;
     margin-top: 2em;
   }
 }

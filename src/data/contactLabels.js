@@ -4,7 +4,7 @@ const labels = {
     namePlaceholder: "name",
     emailPlaceholder: "email",
     messagePlaceholder: "message",
-    submitLabel: "send",
+    submitLabel: "Send",
   },
   sr: {
     heading: "Pošaljite nam poruku!",

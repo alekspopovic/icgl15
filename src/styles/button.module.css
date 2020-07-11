@@ -15,11 +15,13 @@
 .button:hover,
 .button:focus {
   color: var(--highlight-red);
+  border: 2px solid transparent;
+  cursor: pointer;
 }
 
 .button::before {
   content: "";
-  background: var(--header);
+  background: var(--content-bg);
   position: absolute;
   top: 0;
   left: 0;
