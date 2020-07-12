@@ -8,46 +8,84 @@
   top: 0;
   width: 100%;
   z-index: 5;
+  padding: 3em 0;
+
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   transition: background 0.3s ease-in;
 }
 
-#menu.inView {
+#menu::before {
+  opacity: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   background: linear-gradient(
       135deg,
       rgba(0, 0, 0, 0.6) 0%,
       rgba(0, 0, 0, 0.4) 100%
     ),
-    url("https://i.imgur.com/aId6MsG.jpg");
+    url("../assets/Banner.svg"),
+    linear-gradient(var(--header-bg) 0%, #ffffff 100%);
 
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  transform: translateY(-100%);
+  transition: all 0.4s ease-in;
+}
+
+#menu.inView::before {
+  opacity: 1;
+  transform: translateY(0);
+  animation: menuBackground 0.4s ease-in;
+}
+
+@keyframes menuBackground {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #menu div {
   flex-basis: auto;
-  font-size: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
   text-transform: uppercase;
-  line-height: 7em;
+  line-height: 3em;
   margin: 0 2em;
   padding: 5px 0 2px 0;
+  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-weight: 700;
 }
 
 #menu a:hover,
 #menu a:focus {
-  color: var(--highlight-red);
+  color: var(--highlight-secondary);
   outline: none;
 }
 
 #menu a {
   color: var(--menu-link-color);
+  border-radius: 5px;
 }
 
 #menu .active {
-  color: var(--highlight-red);
+  color: var(--highlight-primary);
+  background-color: var(--content-bg);
 }
 
 .dropdown {
@@ -65,19 +103,20 @@
 
 .dropdown:hover,
 .dropdown:focus {
-  color: var(--highlight-red);
+  color: var(--highlight-secondary);
   outline: none;
 }
 
 .dropdownContent {
   display: none;
   position: absolute;
-  background-color: var(--highlight-red);
+  background-color: var(--highlight-primary);
   min-width: 250px;
   z-index: 1;
   height: auto;
   left: -4em;
-  top: 7.45em;
+  top: 6.1em;
+  border-radius: 5px;
   padding: 0 !important;
 }
 
@@ -107,7 +146,7 @@
   height: 0px;
   border-top: 1.5em solid transparent;
   border-right: 1.5em solid transparent;
-  border-bottom: 1.5em solid var(--highlight-red);
+  border-bottom: 1.5em solid var(--highlight-primary);
   border-left: 1.5em solid transparent;
   top: -3em;
   left: 4em;
@@ -144,6 +183,7 @@ h3 {
 }
 
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,29 +191,37 @@ h3 {
 
   background: linear-gradient(
       135deg,
-      rgba(0, 0, 0, 0.6) 0%,
-      rgba(0, 0, 0, 0.4) 100%
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
     ),
-    url("https://i.imgur.com/aId6MsG.jpg");
+    url("../assets/Banner.svg"),
+    linear-gradient(var(--header-bg) 0%, #ffffff 100%);
 
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: var(--header-bg);
 
   height: 60vh;
 }
 
-.landingHeader {
+.banner {
+  position: absolute;
+  bottom: -1px;
+  margin-bottom: 0;
+}
+
+.header.landingHeader {
   height: 100vh;
 }
 
-.landingHeader .headerTitle {
+.header.landingHeader .headerTitle {
   margin-bottom: 1em;
 }
 
 .headerTitle {
   color: var(--header);
-  font-size: 4em;
+  font-size: 5em;
   width: 60%;
   text-align: center;
 
@@ -181,11 +229,12 @@ h3 {
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   left: 2em;
   top: 1em;
-  width: 100px;
-  height: 100px;
+  width: 280px;
+  height: 125px;
+  z-index: 5;
 }
 
 .menuToggle {
@@ -201,58 +250,42 @@ h3 {
 }
 
 @media only screen and (max-width: 1366px) {
+  .logo {
+    width: 225px;
+    height: 125px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   #menu {
     justify-content: center;
     padding-right: 4em;
-  }
-
-  #menu div {
-    margin: 0 1.5em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #menu {
-    padding-right: 0;
-    justify-content: center;
-  }
-
-  .logo {
-    position: static;
-    margin: 1em 2em 0 0;
-  }
-
-  .headerTitle {
-    width: 80%;
-    font-size: 2.5em;
-    padding-top: 2em;
-  }
-}
-
-@media only screen and (max-width: 426px) {
-  #menu {
     flex-wrap: wrap;
-    background: linear-gradient(
-        135deg,
-        rgba(0, 0, 0, 0.6) 0%,
-        rgba(0, 0, 0, 0.4) 100%
-      ),
-      url("https://i.imgur.com/aId6MsG.jpg");
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 100%;
     z-index: 2;
     flex-direction: column;
+    padding-right: 0;
+    justify-content: center;
+    z-index: 6;
 
     transform: translateX(-100%);
 
     transition: transform 0.3s ease-in;
+  }
+
+  #menu div {
+    margin: 0 1.5em;
+    padding: 0 2em;
+  }
+
+  #menu::before {
+    opacity: 1;
+    transform: translateY(0);
+    background: url("../assets/Banner.svg"), var(--highlight-primary);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   #menu link {
@@ -265,36 +298,53 @@ h3 {
     transform: translateX(0);
   }
 
+  #menu.show .active {
+    background-color: var(--content-bg);
+  }
+
   #menu div {
     margin: 0;
     line-height: 3.5em;
   }
 
   .logo {
-    margin: 0;
+    position: absolute;
+    margin: 1em 2em 0 0;
+  }
+
+  .header {
+    height: 40vh;
   }
 
   .headerTitle {
+    width: 80%;
     font-size: 2em;
-    width: 95%;
+    padding-top: 2em;
+  }
+
+  .header.landingHeader .headerTitle {
+    margin-bottom: 2em;
   }
 
   .menuToggle {
     display: flex;
     position: fixed;
-    top: 2em;
-    text-align: center;
-    width: 100%;
+    top: 4em;
+    right: 6em;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: 3;
+    z-index: 7;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    transition: all 0.4s ease-in;
     border: none;
   }
 
-  .menuToggle.menuToggleInView div {
-    background-color: var(--highlight-red);
+  .menuToggle.menuToggleInView {
+    background-color: var(--highlight-primary);
   }
 
   .menuToggle.open.menuToggleInView div {
@@ -323,11 +373,6 @@ h3 {
   }
 
   .open .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-16px, 5px);
-    transform: rotate(-45deg) translate(-16px, 5px);
-
-    transform: translateX(-16px);
-
     transform: rotate(-45deg) translateY(21px);
   }
 
@@ -336,11 +381,6 @@ h3 {
   }
 
   .open .bar3 {
-    -webkit-transform: rotate(45deg) translate(-16px, -5px);
-    transform: rotate(45deg) translate(-16px, -5px);
-
-    transform: translateX(-16px);
-
     transform: rotate(45deg) translateY(-21px);
   }
 
@@ -350,7 +390,7 @@ h3 {
     left: 0;
     display: flex !important;
 
-    background: var(--highlight-red);
+    background: var(--highlight-primary);
 
     width: 100%;
     height: 100%;
@@ -375,7 +415,38 @@ h3 {
   .dropdownContent.showSubMenu a:focus,
   .dropdownContent a.active {
     background: var(--content-bg) !important;
-    color: var(--highlight-red) !important;
+    color: var(--highlight-primary) !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 426px) {
+  .header {
+    height: 60vh;
+  }
+
+  .headerTitle {
+    padding-top: 4em;
+    text-align: left;
+  }
+
+  .header.landingHeader .headerTitle {
+    padding: 0;
+  }
+
+  .logo {
+    width: 250px;
+    height: 120px;
+    margin: 0;
+    top: 4em;
+    left: 2.5em;
+  }
+
+  .menuToggle {
+    top: 1em;
+    right: 1em;
   }
 }
 

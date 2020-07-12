@@ -21,7 +21,7 @@
 }
 
 .contact a:hover {
-  color: var(--highlight-red);
+  color: var(--highlight-primary);
   box-shadow: none;
 }
 

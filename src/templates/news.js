@@ -26,11 +26,11 @@ class News extends React.Component {
           {group.map(({ node }) => (
             <article key={node.fields.slug}>
               <header>
-                <h1>
+                <h2>
                   <Link to={node.fields.slug}>
                     {node.frontmatter.title || node.fields.slug}
                   </Link>
-                </h1>
+                </h2>
                 <div className={blogStyles.date}>{node.frontmatter.date}</div>
               </header>
               <section>

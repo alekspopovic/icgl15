@@ -1,6 +1,6 @@
 .button {
   color: var(--header);
-  background: var(--highlight-red);
+  background: var(--highlight-primary);
   padding: 1em 3em;
   border-radius: 10px;
   border: 2px solid transparent;
@@ -10,11 +10,12 @@
   z-index: 1;
   overflow: hidden;
   transition: all 0.3s ease-in;
+  font-family: var(--font-heading);
 }
 
 .button:hover,
 .button:focus {
-  color: var(--highlight-red);
+  color: var(--highlight-primary);
   border: 2px solid transparent;
   cursor: pointer;
 }

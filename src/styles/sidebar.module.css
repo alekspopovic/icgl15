@@ -11,12 +11,12 @@
 }
 
 .sidebarItem.red {
-  background: var(--highlight-red);
+  background: var(--highlight-primary);
   color: var(--content-bg);
 }
 
 .sidebarItem h3 {
-  border-bottom: 1px solid var(--highlight-red);
+  border-bottom: 1px solid var(--highlight-primary);
 }
 
 .sidebarItem.red h3 {

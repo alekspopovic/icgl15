@@ -34,7 +34,7 @@ const Layout = props => {
   } = props
 
   const [ref, inView] = useInView({
-    rootMargin: "-100px 0px 0px 0px",
+    rootMargin: "-150px 0px 0px 0px",
   })
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -72,9 +72,9 @@ const Layout = props => {
         inView || isMenuOpen ? "" : layoutStyles.inView
       }`}
     >
-      <Link to="/">
+      {/* <Link to="/">
         <img className={layoutStyles.logo} src={LogoImage} alt="logo" />
-      </Link>
+      </Link> */}
       <Link
         activeClassName={layoutStyles.active}
         to={formatMenuUrl("/", language)}
@@ -191,6 +191,9 @@ const Layout = props => {
         {button}
         {socialIcons}
       </header>
+      <Link to="/">
+        <img className={layoutStyles.logo} src={LogoImage} alt="logo" />
+      </Link>
       <main className={mainBottomPadding}>
         {children}
         {sidebar}

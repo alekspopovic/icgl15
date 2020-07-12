@@ -7,13 +7,13 @@
 
 .socialIcons.outsideSidebar {
   position: absolute;
-  bottom: 1em;
+  bottom: 3em;
   width: 300px;
   justify-content: space-evenly;
 }
 
 .socialIcon {
-  background: var(--highlight-red);
+  background: var(--highlight-primary);
   color: var(--header);
   border-radius: 50%;
   border: 2px solid transparent;
@@ -45,7 +45,7 @@
 }
 
 .socialIcon:hover {
-  color: var(--highlight-red);
+  color: var(--highlight-primary);
 }
 
 .socialIcon:hover::before {
