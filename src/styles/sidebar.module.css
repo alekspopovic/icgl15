@@ -10,7 +10,7 @@
   border-radius: 5px;
 }
 
-.sidebarItem.red {
+.sidebarItem.highlighted {
   background: var(--highlight-primary);
   color: var(--content-bg);
 }
@@ -19,7 +19,7 @@
   border-bottom: 1px solid var(--highlight-primary);
 }
 
-.sidebarItem.red h3 {
+.sidebarItem.highlighted h3 {
   border-bottom: 1px solid var(--content-bg);
 }
 
@@ -30,6 +30,15 @@
 
 .sidebarItem li {
   margin-bottom: 0;
+}
+
+.imageContainer {
+  width: 60%;
+  margin: auto;
+}
+
+.facultyLogo {
+  border-radius: 50%;
 }
 
 @media only screen and (min-width: 426px) {

@@ -1,12 +1,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import sidebarStyles from "../styles/sidebar.module.css"
 import "font-awesome/css/font-awesome.min.css"
 import NewsLink from "./newsLink"
 import SocialIcons from "./socialIcons"
 
 const Sidebar = ({ language }) => {
-  const news = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: frontmatter___date }
@@ -25,10 +26,31 @@ const Sidebar = ({ language }) => {
           }
         }
       }
+      uniImage: file(relativePath: { eq: "university.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      facultyImage: file(relativePath: { eq: "faculty.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      sponsorBlockAndRoll: file(relativePath: { eq: "blockandroll.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
-  const links = news.allMarkdownRemark.edges.map(edge => (
+  const links = data.allMarkdownRemark.edges.map(edge => (
     <NewsLink key={edge.node.id} news={edge.node} />
   ))
 
@@ -38,12 +60,50 @@ const Sidebar = ({ language }) => {
         <h3>Recent News</h3>
         {links}
       </div>
-      <div className={`${sidebarStyles.sidebarItem} ${sidebarStyles.red}`}>
+      <div
+        className={`${sidebarStyles.sidebarItem} ${sidebarStyles.highlighted}`}
+      >
         <h3>Important Dates</h3>
         <ul>
-          <li>Conference: 10-12th September 2021</li>
-          <li>Early bird registration deadline: 25th May</li>
+          <li>Conference: 16-19th September 2021</li>
+          <li>Early bird registration deadline: </li>
         </ul>
+      </div>
+      <div className={sidebarStyles.sidebarItem}>
+        <div className={sidebarStyles.imageContainer}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://www.bg.ac.rs/"
+          >
+            <Img fluid={data.uniImage.childImageSharp.fluid} />
+          </a>
+        </div>
+      </div>
+      <div className={sidebarStyles.sidebarItem}>
+        <div className={sidebarStyles.imageContainer}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://www.fil.bg.ac.rs/"
+          >
+            <Img
+              fluid={data.facultyImage.childImageSharp.fluid}
+              className={sidebarStyles.facultyLogo}
+            />
+          </a>
+        </div>
+      </div>
+      <div className={sidebarStyles.sidebarItem}>
+        <div className={sidebarStyles.imageContainer}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.block.rs/"
+          >
+            <Img fluid={data.sponsorBlockAndRoll.childImageSharp.fluid} />
+          </a>
+        </div>
       </div>
 
       <SocialIcons language={language} />
