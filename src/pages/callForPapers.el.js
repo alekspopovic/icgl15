@@ -6,25 +6,36 @@ import contentStyles from "../styles/index.module.css"
 class CallForPapers extends React.Component {
   render() {
     return (
-      <Layout language="el" location={this.props.location}>
+      <Layout
+        language="el"
+        location={this.props.location}
+        headerText="Πρόσκληση υποβολής περιλήψεων"
+      >
         <SEO title="Call for Papers" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h1>page in Greek</h1>
-          <h1>ICGL15 / Call for Papers)</h1>
+          <h2>16-19 Σεπτεμβρίου 2021</h2>
+          <h3>1η Πρόσκληση υποβολής περιλήψεων</h3>
+          <p>Αγαπητοί/ές Συνάδελφοι,</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            mollis et ligula eget faucibus. Vestibulum varius aliquam risus a
-            volutpat. Aenean efficitur auctor ligula, et luctus nisi tincidunt
-            quis. Curabitur facilisis lobortis orci, ut egestas diam bibendum
-            eu. In in feugiat justo. Sed tempor neque felis, eu blandit odio
-            porttitor vel. Mauris suscipit, ante non sollicitudin vulputate,
-            turpis risus tempus orci, sed venenatis dolor urna bibendum erat.
-            Morbi posuere eget est sit amet euismod. Mauris malesuada lectus
-            viverra risus mollis maximus. Duis nibh nisl, sodales eu
-            pellentesque nec, interdum ut erat. Sed nec est lectus. Phasellus
-            malesuada elementum augue ac sodales. Vestibulum auctor velit vitae
-            orci tristique imperdiet. Praesent id congue metus, sit amet
-            fermentum neque. Nam a efficitur mauris.
+            Το Τμήμα Νεοελληνικών Σπουδών του Πανεπιστημίου του Βελιγραδίου με
+            χαρά σας ανακοινώνει τη διοργάνωση του 15 ου Διεθνούς Συνεδρίου
+            Ελληνικής Γλωσσολογίας, το οποίο θα πραγματοποιηθεί στο Βελιγράδι,{" "}
+            <strong>16-19 Σεπτεμβρίου 2021</strong>.
+          </p>
+          <p>
+            To Διεθνές Συνέδριο Ελληνικής Γλωσσολογίας πραγματοποιείται κάθε δύο
+            χρόνια από το 1993 και είναι αφιερωμένο σε όλες τις πτυχές της
+            γλωσσολογικής μελέτης και ανάλυσης της Ελληνικής.
+          </p>
+          <p>
+            Το συνέδριο προσκαλεί συμμετοχές που αφορούν οποιαδήποτε θεματική
+            περιοχή της Ελληνικής Γλωσσολογίας (συμπεριλαμβανομένων της ανάλυσης
+            λόγου, ανάλυσης συνομιλίας, γλωσσολογίας σωμάτων κειμένων,
+            διαλεκτολογίας, διδακτικής της γλώσσας, εφαρμοσμένης γλωσσολογίας,
+            ιστορικής γλωσσολογίας, κοινωνιογλωσσολογίας, λεξικολογίας,
+            λεξικογραφίας, μορφολογίας, νευρογλωσσολογίας, πραγματολογίας,
+            σημασιολογίας, σύνταξης, υπολογιστικής γλωσσολογίας, φωνητικής,
+            φωνολογίας, ψυχογλωσσολογίας).
           </p>
           <hr />
         </div>

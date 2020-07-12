@@ -72,9 +72,6 @@ const Layout = props => {
         inView || isMenuOpen ? "" : layoutStyles.inView
       }`}
     >
-      {/* <Link to="/">
-        <img className={layoutStyles.logo} src={LogoImage} alt="logo" />
-      </Link> */}
       <Link
         activeClassName={layoutStyles.active}
         to={formatMenuUrl("/", language)}
@@ -133,7 +130,12 @@ const Layout = props => {
           </Link>
         </div>
       </div>
-
+      <Link
+        activeClassName={layoutStyles.active}
+        to={formatMenuUrl("/pastConferences", language)}
+      >
+        <div>{getMenuItemLabel("pastConferences", language)}</div>
+      </Link>
       <Link activeClassName={layoutStyles.active} to="/news">
         <div>{getMenuItemLabel("news", language)}</div>
       </Link>
