@@ -1,15 +1,11 @@
 import React, { useState } from "react"
-import { useInView } from "react-intersection-observer"
-// import { motion } from "framer-motion"
 import { Link } from "gatsby"
 import layoutStyles from "../styles/layout.module.css"
 import Footer from "./footer"
 import labels from "../data/menuLabels"
 import LanguageSelector from "./languageSelector"
 import Sidebar from "./sidebar"
-import Button from "./button"
 import LogoImage from "../assets/Logo.svg"
-import SocialIcons from "./socialIcons"
 
 const Layout = props => {
   const formatMenuUrl = (url, language) => {
@@ -25,17 +21,7 @@ const Layout = props => {
   }
 
   const { children } = props
-  const {
-    headerText,
-    language,
-    location,
-    isSidebarDisabled,
-    isBlogPostPage,
-  } = props
-
-  const [ref, inView] = useInView({
-    rootMargin: "-150px 0px 0px 0px",
-  })
+  const { language, location, isSidebarDisabled, isBlogPostPage } = props
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -66,12 +52,7 @@ const Layout = props => {
   }
 
   let stickyMenu = (
-    <div
-      id={layoutStyles.menu}
-      className={`${isMenuOpen ? layoutStyles.show : ""} ${
-        inView || isMenuOpen ? "" : layoutStyles.inView
-      }`}
-    >
+    <div id={layoutStyles.menu} className={isMenuOpen ? layoutStyles.show : ""}>
       <Link
         activeClassName={layoutStyles.active}
         to={formatMenuUrl("/", language)}
@@ -97,12 +78,6 @@ const Layout = props => {
             isSubMenuOpen ? layoutStyles.showSubMenu : ""
           }`}
         >
-          <Link
-            activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/callForPapers", language)}
-          >
-            <div>{getMenuItemLabel("callForPapers", language)}</div>
-          </Link>
           <Link
             activeClassName={layoutStyles.active}
             to={formatMenuUrl("/programme", language)}
@@ -152,47 +127,26 @@ const Layout = props => {
 
   let sidebar = !isSidebarDisabled ? <Sidebar language={language} /> : null
 
-  let landingHeaderClass, button, socialIcons, mainBottomPadding
-
-  if (isSidebarDisabled) {
-    landingHeaderClass = layoutStyles.landingHeader
-
-    button = <Button isExternal={true} url="google.com" text="Register Now" />
-
-    socialIcons = (
-      <SocialIcons isSidebarDisabled={isSidebarDisabled} language={language} />
-    )
-
-    mainBottomPadding = layoutStyles.mainBottomNoPadding
-  }
+  let mainBottomPadding
 
   if (isBlogPostPage) {
     mainBottomPadding = layoutStyles.mainBottomLargePadding
   }
-
-  let pageTitle = headerText ? headerText : "Placeholder Page Title"
 
   return (
     <React.Fragment>
       <button
         className={`${layoutStyles.menuToggle} ${
           isMenuOpen ? layoutStyles.open : ""
-        } ${inView ? "" : layoutStyles.menuToggleInView}`}
+        }`}
         onClick={toggleMenu}
       >
         <div className={layoutStyles.bar1}></div>
         <div className={layoutStyles.bar2}></div>
         <div className={layoutStyles.bar3}></div>
       </button>
+      <div className={layoutStyles.banner}></div>
       {stickyMenu}
-      <header
-        className={`${layoutStyles.header} ${landingHeaderClass}`}
-        ref={ref}
-      >
-        <h1 className={layoutStyles.headerTitle}>{pageTitle}</h1>
-        {button}
-        {socialIcons}
-      </header>
       <Link to="/">
         <img className={layoutStyles.logo} src={LogoImage} alt="logo" />
       </Link>

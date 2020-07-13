@@ -9,15 +9,40 @@ class Registration extends React.Component {
       <Layout language="sr" location={this.props.location}>
         <SEO title="Registration" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h1>page in Serbian</h1>
-          <h1>ICGL15 / Registration</h1>
-          <p>
-            Please click here to register for ICGL15 (link opens in new tab).
-          </p>
-          <p>
-            Important Note: The early bird offer deadline has been extended to
-            30th May – but this is not yet shown on the registration page.
-          </p>
+          <h1>Registracija</h1>
+          <table>
+            <tr>
+              <th>Categories</th>
+              <th>Early (Until 21/6/2021)</th>
+              <th>Late (After 22/6/2019)</th>
+            </tr>
+            <tr>
+              <td>Presenter/Author (Regular)</td>
+              <td>80 euro</td>
+              <td>
+                100 euro <strong>(excluding bank transaction fee)</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>Presenter/Author (Student)</td>
+              <td>40 euro</td>
+              <td>
+                60 euro <strong>(excluding bank transaction fee)</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>Attendee (Regular)</td>
+              <td>80 euro</td>
+              <td>
+                100 euro <strong>(excluding bank transaction fee)</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>Attendee (Student)</td>
+              <td>free of charge</td>
+              <td>free of charge</td>
+            </tr>
+          </table>
         </div>
       </Layout>
     )

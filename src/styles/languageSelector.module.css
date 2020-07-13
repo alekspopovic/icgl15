@@ -1,7 +1,9 @@
 #languageSelector {
-  position: absolute;
+  position: fixed;
   right: 0;
+  top: 5em;
   line-height: 1.5em !important;
+  z-index: 10;
 }
 
 #languageSelector a {
@@ -23,7 +25,7 @@
 
 #languageSelector a:before {
   content: "";
-  background: var(--header);
+  background: var(--content-bg);
   position: absolute;
   left: 0;
   bottom: 0;
