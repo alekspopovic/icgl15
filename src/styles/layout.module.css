@@ -213,6 +213,14 @@ h3 {
   padding-bottom: 8em !important;
 }
 
+.extraWide {
+  display: block !important;
+}
+
+.extraWide > div {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1366px) {
   .logo {
     width: 225px;

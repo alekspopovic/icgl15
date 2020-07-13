@@ -4,7 +4,7 @@ import languageSelectorStyles from "../styles/languageSelector.module.css"
 
 class LanguageSelector extends React.Component {
   render() {
-    const { language, location } = this.props
+    const { language, location, isBlogPostPage } = this.props
 
     let languageList = { sr: "srpski", en: "english", el: "Ελληνικά" }
 
@@ -21,7 +21,7 @@ class LanguageSelector extends React.Component {
     for (var key in languageList) {
       let languagePath = ""
 
-      if (key !== "en") {
+      if (key !== "en" && !pageName.includes("news") && !isBlogPostPage) {
         languagePath = `/${key}/`
       }
 

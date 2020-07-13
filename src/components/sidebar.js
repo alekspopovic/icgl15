@@ -6,7 +6,7 @@ import "font-awesome/css/font-awesome.min.css"
 import NewsLink from "./newsLink"
 import SocialIcons from "./socialIcons"
 
-const Sidebar = ({ language }) => {
+const Sidebar = ({ language, extraWide }) => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
@@ -55,7 +55,11 @@ const Sidebar = ({ language }) => {
   ))
 
   return (
-    <div className={sidebarStyles.sidebar}>
+    <div
+      className={`${sidebarStyles.sidebar} ${
+        extraWide ? sidebarStyles.wide : ""
+      }`}
+    >
       <div className={sidebarStyles.sidebarItem}>
         <h3>Recent News</h3>
         {links}

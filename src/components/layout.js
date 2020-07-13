@@ -21,7 +21,13 @@ const Layout = props => {
   }
 
   const { children } = props
-  const { language, location, isSidebarDisabled, isBlogPostPage } = props
+  const {
+    language,
+    location,
+    isSidebarDisabled,
+    isBlogPostPage,
+    extraWide,
+  } = props
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -121,11 +127,17 @@ const Layout = props => {
         <div>{getMenuItemLabel("contact", language)}</div>
       </Link>
 
-      <LanguageSelector language={language} location={location} />
+      <LanguageSelector
+        language={language}
+        location={location}
+        isBlogPostPage={isBlogPostPage}
+      />
     </div>
   )
 
-  let sidebar = !isSidebarDisabled ? <Sidebar language={language} /> : null
+  let sidebar = !isSidebarDisabled ? (
+    <Sidebar language={language} extraWide={extraWide} />
+  ) : null
 
   let mainBottomPadding
 
@@ -150,7 +162,11 @@ const Layout = props => {
       <Link to="/">
         <img className={layoutStyles.logo} src={LogoImage} alt="logo" />
       </Link>
-      <main className={mainBottomPadding}>
+      <main
+        className={`${mainBottomPadding} ${
+          extraWide ? layoutStyles.extraWide : ""
+        }`}
+      >
         {children}
         {sidebar}
       </main>

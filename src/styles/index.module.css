@@ -5,6 +5,7 @@
   height: 100%;
 }
 
+.content h1,
 .content h2,
 .content h3 {
   text-align: center;
@@ -29,5 +30,13 @@ th {
   .content {
     width: 50%;
     margin: 2em 2em 2em 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }

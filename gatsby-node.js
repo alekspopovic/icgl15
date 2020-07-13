@@ -24,7 +24,6 @@ exports.createPages = async ({ graphql, actions }) => {
                 date(formatString: "DD.MM.YYYY")
                 title
                 description
-                tags
               }
             }
           }
@@ -87,11 +86,11 @@ exports.createPages = async ({ graphql, actions }) => {
   // })
 }
 
-var removeDuplicateTags = array => {
-  return array.filter((elem, pos, arr) => {
-    return arr.indexOf(elem) == pos
-  })
-}
+// var removeDuplicateTags = array => {
+//   return array.filter((elem, pos, arr) => {
+//     return arr.indexOf(elem) == pos
+//   })
+// }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions

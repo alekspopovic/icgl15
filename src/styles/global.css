@@ -4,8 +4,10 @@
 :root {
   /* --highlight-primary: #e34674; */
   --highlight-primary: #3abeab;
+  --highlight-primary: #00aec0;
   /* --highlight-secondary: #e0b8c3; */
   --highlight-secondary: #84d4c8;
+  --highlight-secondary: #22d5e9;
   --header-bg: #c3e9fb;
   --header-bg: #74d3ff;
   --header-bg: #c3e9fb;
@@ -30,7 +32,10 @@ body {
   color: var(--text);
   font-weight: 400;
   background-color: var(body-bg);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.12'%3E%3Cpolygon fill='%2354c6b5' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%236fcdc0' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%2389d5ca' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23a4dcd4' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23bee4de' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23d9ebe9' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23f3f3f3' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #f3f3f3;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.2'%3E%3Cpolygon fill='%23d0e9ec' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23aedfe4' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%238bd5dd' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%2368ccd6' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%2345c2cf' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%2323b8c7' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%2300aec0' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.12'%3E%3Cpolygon fill='%2354c6b5' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%236fcdc0' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%2389d5ca' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23a4dcd4' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23bee4de' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23d9ebe9' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23f3f3f3' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E"); */
   /* background by SVGBackgrounds.com */
   background-attachment: fixed;
   background-size: cover;
@@ -80,6 +85,11 @@ button:focus .bar1 {
 
 :focus {
   outline: thin dotted;
+}
+
+::selection {
+  background-color: var(--highlight-primary);
+  color: var(--content-bg);
 }
 
 @media only screen and (min-width: 426px) {

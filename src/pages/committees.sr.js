@@ -9,7 +9,7 @@ class Committees extends React.Component {
       <Layout language="sr" location={this.props.location}>
         <SEO title="Committees" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h1>To be announced</h1>
+          <h2>To be announced</h2>
         </div>
       </Layout>
     )

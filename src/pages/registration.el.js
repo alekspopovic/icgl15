@@ -11,37 +11,41 @@ class Registration extends React.Component {
         <div className={contentStyles.content}>
           <h1>Σγγραφή</h1>
           <table>
-            <tr>
-              <th>Categories</th>
-              <th>Early (Until 21/6/2021)</th>
-              <th>Late (After 22/6/2019)</th>
-            </tr>
-            <tr>
-              <td>Presenter/Author (Regular)</td>
-              <td>80 euro</td>
-              <td>
-                100 euro <strong>(excluding bank transaction fee)</strong>
-              </td>
-            </tr>
-            <tr>
-              <td>Presenter/Author (Student)</td>
-              <td>40 euro</td>
-              <td>
-                60 euro <strong>(excluding bank transaction fee)</strong>
-              </td>
-            </tr>
-            <tr>
-              <td>Attendee (Regular)</td>
-              <td>80 euro</td>
-              <td>
-                100 euro <strong>(excluding bank transaction fee)</strong>
-              </td>
-            </tr>
-            <tr>
-              <td>Attendee (Student)</td>
-              <td>free of charge</td>
-              <td>free of charge</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Categories</th>
+                <th>Early (Until 21/6/2021)</th>
+                <th>Late (After 22/6/2019)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Presenter/Author (Regular)</td>
+                <td>80 euro</td>
+                <td>
+                  100 euro <strong>(excluding bank transaction fee)</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>Presenter/Author (Student)</td>
+                <td>40 euro</td>
+                <td>
+                  60 euro <strong>(excluding bank transaction fee)</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>Attendee (Regular)</td>
+                <td>80 euro</td>
+                <td>
+                  100 euro <strong>(excluding bank transaction fee)</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>Attendee (Student)</td>
+                <td>free of charge</td>
+                <td>free of charge</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </Layout>
