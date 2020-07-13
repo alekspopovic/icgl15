@@ -14,6 +14,9 @@ article {
   background-color: var(--content-bg);
   border-radius: 5px;
   box-shadow: var(--shadow);
+  height: 100%;
+
+  border: 2px solid var(--highlight-primary);
 }
 
 article header {

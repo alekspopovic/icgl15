@@ -8,6 +8,8 @@
   padding: 2em 1em;
   margin-bottom: 2em;
   border-radius: 5px;
+
+  border: 2px solid var(--highlight-primary);
 }
 
 .sidebarItem.highlighted {
