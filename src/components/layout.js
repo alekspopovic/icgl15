@@ -104,6 +104,18 @@ const Layout = props => {
           </Link>
           <Link
             activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/touristGuide", language)}
+          >
+            <div>{getMenuItemLabel("touristGuide", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/travelInfo", language)}
+          >
+            <div>{getMenuItemLabel("travelInfo", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
             to={formatMenuUrl("/location", language)}
             onBlur={closeSubMenu}
           >

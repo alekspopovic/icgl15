@@ -11,14 +11,14 @@ const labels = {
     namePlaceholder: "ime",
     emailPlaceholder: "email",
     messagePlaceholder: "poruka",
-    submitLabel: "pošalji",
+    submitLabel: "Pošalji",
   },
   el: {
     heading: "Στείλτε μας μήνυμα!",
-    namePlaceholder: "όνομα",
-    emailPlaceholder: "ηλεκτρονικη διευθυνση",
-    messagePlaceholder: "μήνυμα",
-    submitLabel: "στείλετε",
+    namePlaceholder: "Όνομα",
+    emailPlaceholder: "Ηλεκτρονική διεύθυνση",
+    messagePlaceholder: "Μήνυμα",
+    submitLabel: "Στείλετε",
   },
 }
 

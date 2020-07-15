@@ -9,12 +9,7 @@ class Programme extends React.Component {
       <Layout language="en" location={this.props.location}>
         <SEO title="Programme" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h1>Conference and workshop programme</h1>
-          <p>
-            The FINAL ICGL15 conference and workshop programme is available
-            here.
-          </p>
-          <p>A book of abstracts is now available.</p>
+          <h2>To be announced</h2>
         </div>
       </Layout>
     )

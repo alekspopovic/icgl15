@@ -14,6 +14,11 @@ class ContactForm extends React.Component {
 
     this.language = language
 
+    const displayMessage = e => {
+      e.preventDefault()
+      alert("Not implemented yet.")
+    }
+
     return (
       <div className={contactListStyles.contact}>
         <h2>{this.getContactItemLabel("heading")}</h2>
@@ -51,7 +56,11 @@ class ContactForm extends React.Component {
           ></input>
           <input type="hidden" name="_replyto"></input>
           <div>
-            <button type="submit" className={buttonStyles.button}>
+            <button
+              onClick={displayMessage}
+              type="submit"
+              className={buttonStyles.button}
+            >
               {this.getContactItemLabel("submitLabel")}
             </button>
           </div>

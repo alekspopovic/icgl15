@@ -23,7 +23,7 @@ const SocialIcons = ({ language, isSidebarDisabled }) => {
         className={socialIconsStyles.socialIcon}
         to={`${contactPrefix}/contact`}
       >
-        <FontAwesomeIcon icon={faEnvelope} title="Envelope" />
+        <FontAwesomeIcon icon={faEnvelope} title="Email" />
       </Link>
       <a className={socialIconsStyles.socialIcon} href="facebook.com">
         <FontAwesomeIcon icon={faFacebook} title="Facebook" />

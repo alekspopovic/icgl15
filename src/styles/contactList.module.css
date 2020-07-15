@@ -7,6 +7,7 @@
   border-radius: 5px;
   margin: 2em 2em 2em 0;
   height: 100%;
+  border: 2px solid var(--highlight-primary);
 }
 
 .contactButton {

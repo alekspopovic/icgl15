@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
 import Hotels from "../components/hotels"
+import Rentals from "../components/rentals"
 
 class Accommodation extends React.Component {
   render() {
@@ -11,6 +12,8 @@ class Accommodation extends React.Component {
         <SEO title="Accommodation" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>Smeštaj</h1>
+          <h2>Privatno iznajmljivanje</h2>
+          <Rentals />
           <h2>Obližnji hoteli</h2>
           <Hotels />
         </div>

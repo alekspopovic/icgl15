@@ -269,6 +269,11 @@ h3 {
     line-height: 3.5em;
   }
 
+  .extraWide {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
   .logo {
     margin: 1em 2em 0 0;
   }

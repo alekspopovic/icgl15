@@ -9,16 +9,7 @@ class Location extends React.Component {
       <Layout language="el" location={this.props.location}>
         <SEO title="Location" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h1>page in Greek</h1>
-          <h1>ICGL15 / Location</h1>
-          <p>
-            The 13th International Conference on Greek Linguistics will be held
-            at the University of Westminster, on its central London campus in
-            New Cavendish Street. The full address is
-          </p>
-          <p>
-            University of Westminster 115 New Cavendish Street, London, W1W 6UW
-          </p>
+          <h2>To be announced</h2>
         </div>
       </Layout>
     )

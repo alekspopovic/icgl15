@@ -83,6 +83,10 @@ button:focus .bar1 {
   outline: none;
 }
 
+ul {
+  margin-left: 2em;
+}
+
 :focus {
   outline: thin dotted;
 }

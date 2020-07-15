@@ -3,6 +3,8 @@
   background: var(--content-bg);
   padding: 2em 1em;
   height: 100%;
+  border: 2px solid var(--highlight-primary);
+  border-radius: 5px;
 }
 
 .content h1,
@@ -41,5 +43,22 @@ th {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+  }
+
+  td,
+  th {
+    text-align: center;
+    font-size: 0.9em !important;
+    max-width: initial;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .content h1 {
+    font-size: 2em;
+  }
+
+  .content h2 {
+    font-size: 1.5em;
   }
 }

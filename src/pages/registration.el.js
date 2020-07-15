@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
+import PaymentInstructions from "../../static/payment_instructions.pdf"
+import Button from "../components/button"
 
 class Registration extends React.Component {
   render() {
@@ -47,6 +49,12 @@ class Registration extends React.Component {
               </tr>
             </tbody>
           </table>
+          <Button
+            isExternal={true}
+            url={PaymentInstructions}
+            text="Λήψη οδηγιών πληρωμής"
+            isCentered={true}
+          />
         </div>
       </Layout>
     )

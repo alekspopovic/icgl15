@@ -3,17 +3,17 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
 
-class Workshops extends React.Component {
+class TravelInfo extends React.Component {
   render() {
+    console.log(this.props.location)
     return (
       <Layout language="sr" location={this.props.location}>
-        <SEO title="Workshops" pagePath={this.props.location.pathname} />
+        <SEO title="TravelInfo" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h1>ICGL13 / Workshops</h1>
+          <h1>Putne informacije</h1>
         </div>
       </Layout>
     )
   }
 }
-
-export default Workshops
+export default TravelInfo
