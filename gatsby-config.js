@@ -7,7 +7,7 @@ module.exports = {
     social: {
       twitter: ``,
     },
-    image: "", // header image/logo here when available
+    image: "src/assets/Logo.svg", // header image/logo here when available
   },
   plugins: [
     {
@@ -98,10 +98,10 @@ module.exports = {
         name: `15th International Conference on Greek Linguistics`,
         short_name: `ICGL15`,
         start_url: `/`,
-        background_color: ``,
-        theme_color: ``,
+        background_color: `#00aec0`,
+        theme_color: `#00aec0`,
         display: `minimal-ui`,
-        // icon: `src/assets/icon.svg`,
+        icon: `src/assets/Logo.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -114,7 +114,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/blog`, `/projects`, `/aboutMe`, `/contact`], //todo change precached pages
+        precachePages: [
+          `/`,
+          `/accommodation`,
+          `/contact`,
+          `/location`,
+          `/pastConferences`,
+          `/registration`,
+          `/touristGuide`,
+          `/travelInfo`,
+        ], //todo change precached pages
       },
     },
     {
