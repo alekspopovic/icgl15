@@ -56,8 +56,14 @@ const Footer = props => {
           <i className="fa fa-github"></i>
         </a>
       </div> */}
-      © {new Date().getFullYear()}, Built with{" "}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>, by Aleks Popovic
+      Faculty of Philology © {new Date().getFullYear()} | Built by{" "}
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://aleksandarpopovic.com/"
+      >
+        Aleksandar Popovic
+      </a>
     </footer>
   )
 }
