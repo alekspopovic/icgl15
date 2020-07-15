@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `icgl15-test`, //todo change/remove before uploading to live
   siteMetadata: {
     title: `15th International Conference on Greek Linguistics`,
     author: `Aleks Popovic`,

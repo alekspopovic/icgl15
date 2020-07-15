@@ -14,11 +14,12 @@ class LanguageSelector extends React.Component {
 
     let pageName = location.pathname
 
-    if (
-      location.pathname.includes("/el/") ||
-      location.pathname.includes("/sr/")
-    ) {
-      pageName = location.pathname.split("/")[2]
+    if (pageName.includes("/icgl15-test")) {
+      pageName = pageName.replace("/icgl15-test", "")
+    }
+
+    if (pageName.includes("/el") || pageName.includes("/sr")) {
+      pageName = pageName.split("/")[2]
     }
 
     for (var key in languageList) {
