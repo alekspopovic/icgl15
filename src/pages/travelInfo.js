@@ -11,20 +11,20 @@ class TravelInfo extends React.Component {
       <Layout language="en" location={this.props.location}>
         <SEO title="TravelInfo" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h1>Travel Info - ACCESS TO BELGRADE</h1>
+          <h1>Travel Info - REACHING BELGRADE</h1>
           <h2>By airplane</h2>
           <p>
             If you prefer travelling by plane, Belgrade is served by Nikola
             Tesla International Airport (BEG), situated just 18 kilometers from
             the city center. The airport receives various flights from European
-            cities and also receives a number of transatlantic flights as well
-            as flights from the Middle East and Africa.
+            cities and it also receives a number of transatlantic flights as
+            well as flights from the Middle East and Africa.
           </p>
           <p>
             The airport is well connected with the city center through public
-            transportation (GSP) bus line number 72 and taxis. The average
-            taxi’s price to the city center is approximately 1,500-2,000 Dinars
-            (15-20 €).
+            transportation (GSP) bus line number 72 and taxis. The average taxi
+            fare to the city center is approximately 1,500-2,000 Dinars
+            (15-20€).
           </p>
           <h3>Carriers:</h3>
           <p>
@@ -252,16 +252,16 @@ class TravelInfo extends React.Component {
             </a>
             .
           </p>
-          <h2>By coach bus</h2>
+          <h2>By bus</h2>
           <p>
             Belgrade is well served by coaches and they are the cheapest mean of
             transportation within the city and all towns in Serbia. Regular bus
             lines connect Belgrade with all parts of Serbia meanwhile
             international bus lines operate to all Belgrade’s surrounding areas
             and most European countries. The two major coach stations are
-            located one next the other, in the city center, near the Central
+            located one next to the other, in the city center, near the Central
             Railway Station. Tickets can be purchased at the main bus station
-            (Glavna autobuska stanica).
+            (Glavna autobus kastanica).
           </p>
           <p>
             You can find more information about the timetables and prices at the
@@ -296,14 +296,14 @@ class TravelInfo extends React.Component {
           </p>
           <h2>By car</h2>
           <p>
-            Foreign drivers in Serbia need to have a valid international driving
-            license and an international insurance, which can also be bought at
-            the border. The two main international roads going through Belgrade
-            are the E-70 and the E-75. They are in relatively good conditions
-            but you will have to pay on several pay tolls to Belgrade. Meanwhile
-            local roads may lack of sufficient road signs so it is better to
-            bring always a detailed map with you. Speed limits are in accordance
-            with international standards (e.g. on a highway the maximum speed is
+            Foreign drivers in Serbia are required to have a valid international
+            driving license and an international insurance, which can also be
+            bought at the border. The two main international roads going through
+            Belgrade are the E-70 and the E-75. They are in a relatively good
+            condition but you have to pay several tolls to Belgrade. Local roads
+            lack sufficient road signs, therefore, it is better to bring always
+            a detailed map with you. Speed limits are in accordance with the
+            international standards (e.g. on a highway the maximum speed is
             120km/hour).
           </p>
           <p>Distance from Belgrade to the main European cities:</p>
@@ -342,8 +342,8 @@ class TravelInfo extends React.Component {
           <p>
             On the other hand, people from other countries should get in touch
             with the Serbian Embassy or Consular Office in their own country and
-            apply for an entry visa. The details of the procedure can vary, but
-            you may be asked to provide some of the following documentation:
+            apply for an entry visa. The details of the procedure can vary. You
+            may be asked to provide some of the following documentation:
             invitation letter from a Serbian resident or organization, voucher
             from your accommodation provider (e.g. hotel) medical insurance,
             proof of sufficient funds for the trip (bank account or credit
@@ -351,40 +351,39 @@ class TravelInfo extends React.Component {
             ticket or photographs.
           </p>
           <p>
-            On their arrival in Belgrade, foreign citizens need to register at
-            local police station within 24 hours (If you are staying in a hotel,
-            the hotel performs this registration for you automatically).
-            Registration is free for the first three months of staying,
+            Upon their arrival in Belgrade, foreign citizens need to register at
+            a local police station within 24 hours (if you are staying at a
+            hotel, the hotel performs this registration for you automatically).
+            Registration is free for the first three months of your stay,
             regardless of the purpose of the visit, but if you want to stay in
-            Serbia for a longer period for the purpose of education, scientific
-            research, employment, tourism, engagement in a professional
-            activity, medical treatment, or marriage, you are obliged to apply
-            for a temporary resident status before the three-month period
-            expires.
+            Serbia for a longer period for purposes such as education,
+            scientific research, employment, tourism, engagement in a
+            professional activity, medical treatment, or marriage, you are
+            obliged to apply for a temporary resident status before the
+            three-month period expires.
           </p>
           <h1>ACCESS TO THE FACULTY OF PHILOLOGY</h1>
           <p>
             The Faculty of Philology is located in the center of Belgrade, near
-            the pedestrian zone and the main pedestrian street Knez Mihajlova.
-            The address is Studentski trg 3 and the faculty can be reached by
-            taxi, public transportation or by foot.
+            the pedestrian zone and the main pedestrian street, Knez Mihajlova.
+            The address is Studentski trg 3 and the Faculty can be reached by
+            taxi, public transportation or on foot.
           </p>
           <h2>By bus</h2>
           <h3>From the Airport Nikola Tesla</h3>
           <p>
             The airport is well connected with the city center through public
             transportation (GSP) bus line number 72. The trip by bus takes
-            around 1 hour. In order to get to the Faculty of Philology you
-            should get off at the last station (Zeleni venac) and then walk
+            approximately 1 hour. In order to get to the Faculty of Philology
+            you should get off at the last station (Zeleni Venac) and then walk
             around 10 minutes.
           </p>
           <p>
-            Paper tickets can be purchased in the vehicle from the driver in
-            daily traffic and they cost 150 dinars (around 1,50 €).
-            Additionally, electronic tickets (BUS PLUS) outside the subscription
-            mode for multiple rides can be found in the shops, with one ride
-            costing 89 dinars (around 0,90 €). The daily electronic ticket costs
-            250 dinars (around 2,50 €).
+            Paper tickets can be purchased on the bus from the bus driver and
+            they cost 150 dinars (around 1,50 €). Additionally, electronic
+            tickets (BUS PLUS) for multiple rides can be found in small shops or
+            kiosks, with one ride costing 89 dinars (around 0,90 €). The daily
+            electronic ticket costs 250 dinars (around 2,50 €).
           </p>
           <p>
             More information about tickets and public transportation can be
@@ -400,19 +399,18 @@ class TravelInfo extends React.Component {
           </p>
           <img src={map} alt="faculty location" />
           <p>
-            The second option is the minibus A1, which has its last stop at the
-            Slavija square. The price of the ticket is 300 dinars (around 3 €)
-            and it is much quicker than the regular bus line. From the Slavija
-            square, you can reach the faculty by one of the trolley buses or
-            buses (number 31, 29, E9).
+            The second option is the minibus A1; its last stop being the Slavija
+            square. The ticket costs 300 dinars (around 3 €) and the mini bus is
+            much quicker than the regular bus line. From the Slavija square, you
+            can reach the Faculty by one of the trolley buses or buses (number
+            31, 29, E9).
           </p>
           <p>
-            Paper tickets can be purchased in the vehicle from the driver in
-            daily traffic and they cost 150 dinars (around 1,50 €).
-            Additionally, electronic tickets (BUS PLUS) outside the subscription
-            mode for multiple rides can be found in the shops, with one ride
-            costing 89 dinars (around 0,90 €). The daily electronic ticket costs
-            250 dinars (around 2,50 €).{" "}
+            Paper tickets can be purchased on the bus by the bus driver and they
+            cost 150 dinars (around 1,50 €). Additionally, electronic tickets
+            (BUS PLUS) for multiple rides can be found in shops or kiosks, with
+            one ride costing 89 dinars (around 0,90 €). The daily electronic
+            ticket costs 250 dinars (around 2,50 €).
           </p>
           <p>
             More information about tickets and public transportation can be
@@ -428,16 +426,16 @@ class TravelInfo extends React.Component {
           <h3>From the main bus station</h3>
           <p>
             From the main bus station, you can take the buses no. 52, 53 and 56,
-            from the station “Kamenicka”, until the the last station (Zeleni
-            venac) and then walk around 10 minutes, as already explained.
+            from the station “Kamenicka”, until the last station (Zeleni Venac)
+            and then walk 10 minutes approximately, as it was previously
+            explained.
           </p>
           <p>
-            Paper tickets can be purchased in the vehicle from the driver in
-            daily traffic and they cost 150 dinars (around 1,50 €).
-            Additionally, electronic tickets (BUS PLUS) outside the subscription
-            mode for multiple rides can be found in the shops, with one ride
-            costing 89 dinars (around 0,90 €). The daily electronic ticket costs
-            250 dinars (around 2,50 €).
+            Paper tickets can be purchased on the bus from the bus driver and
+            they cost 150 dinars (around 1,50 €). Additionally, electronic
+            tickets (BUS PLUS) for multiple rides can be found in shops or
+            kiosks, with one ride costing 89 dinars (around 0,90 €). The daily
+            electronic ticket costs 250 dinars (around 2,50 €).
           </p>
           <p>
             More information about tickets and public transportation can be
@@ -453,17 +451,16 @@ class TravelInfo extends React.Component {
           </p>
           <h3>From the railway station</h3>
           <p>
-            From the railway station take the bus no. 95 until the the last
-            station (Zeleni venac) and then walk around 10 minutes, as already
+            From the railway station take the bus no. 95 until the last station
+            (Zeleni Venac) and then walk around 10 minutes, as already
             mentioned*.
           </p>
           <p>
-            Paper tickets can be purchased in the vehicle from the driver in
-            daily traffic and they cost 150 dinars (around 1,50 €).
-            Additionally, electronic tickets (BUS PLUS) outside the subscription
-            mode for multiple rides can be found in the shops, with one ride
-            costing 89 dinars (around 0,90 €). The daily electronic ticket costs
-            250 dinars (around 2,50 €).
+            Paper tickets can be purchased on the vehicle from the driver and
+            they cost 150 dinars (around 1,50 €). Additionally, electronic
+            tickets (BUS PLUS) for multiple rides can be found in the shops or
+            kiosks, with one ride costing 89 dinars (around 0,90 €). The daily
+            electronic ticket costs 250 dinars (around 2,50 €).
           </p>
           <p>
             More information about tickets and public transportation can be
@@ -479,8 +476,8 @@ class TravelInfo extends React.Component {
           </p>
           <p>
             * The information about public transportation will be updated due to
-            changes in traffic after the end of reconstructions of certain city
-            areas and roads.
+            changes in traffic after the completion of reconstructions of
+            certain city areas and roads.
           </p>
           <h2>By taxi</h2>
           <h3>From the Airport Nikola Tesla</h3>
