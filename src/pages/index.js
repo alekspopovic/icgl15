@@ -11,7 +11,7 @@ class CallForPapers extends React.Component {
         location={this.props.location}
         headerText="Call for Papers"
       >
-        <SEO title="Call for Papers" pagePath={this.props.location.pathname} />
+        <SEO title="ICGL15" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h2>16-19 September 2021</h2>
           <h3>1st Call for papers</h3>
