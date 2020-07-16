@@ -11,7 +11,7 @@ class Registration extends React.Component {
       <Layout language="el" location={this.props.location}>
         <SEO title="Registration" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h1>Σγγραφή</h1>
+          <h1>Εγγραφή</h1>
           <table>
             <thead>
               <tr>
