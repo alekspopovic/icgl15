@@ -6,7 +6,7 @@ class LanguageSelector extends React.Component {
   render() {
     const { language, location, isBlogPostPage } = this.props
 
-    let languageList = { sr: "srpski", en: "english", el: "Ελληνικά" }
+    let languageList = { sr: "srpski", en: "english", el: "Ελληνικα" }
 
     delete languageList[language]
 
