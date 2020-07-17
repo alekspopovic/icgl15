@@ -418,5 +418,17 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-height: 426px) {
+  #menu {
+    padding-right: 40%;
+  }
+
+  .menuToggle {
+    top: 1.5em;
+    right: 4em;
+  }
+
+  .dropdownContent.showSubMenu {
+    transform: translateX(-20%);
+  }
 }

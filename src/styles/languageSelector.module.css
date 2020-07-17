@@ -59,7 +59,9 @@
 
 @media only screen and (max-width: 1024px) {
   #languageSelector {
-    top: 12em;
+    /* top: 12em; */
+    top: initial;
+    bottom: 4em;
     width: 100%;
     text-align: center;
     margin: 0 !important;
@@ -83,6 +85,14 @@
 @media only screen and (max-width: 426px) {
   #languageSelector {
     bottom: 4em;
+    top: initial;
+  }
+}
+
+@media only screen and (max-height: 426px) {
+  #languageSelector {
+    bottom: 2em;
+    right: -10em;
     top: initial;
   }
 }
