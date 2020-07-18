@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import layoutStyles from "../styles/layout.module.css"
 import Footer from "./footer"
 import labels from "../data/menuLabels"
-import LanguageSelector from "./languageSelector"
 import Sidebar from "./sidebar"
 import LogoImage from "../assets/Logo.svg"
 
@@ -138,17 +137,16 @@ const Layout = props => {
       >
         <div>{getMenuItemLabel("contact", language)}</div>
       </Link>
-
-      <LanguageSelector
-        language={language}
-        location={location}
-        isBlogPostPage={isBlogPostPage}
-      />
     </div>
   )
 
   let sidebar = !isSidebarDisabled ? (
-    <Sidebar language={language} extraWide={extraWide} />
+    <Sidebar
+      language={language}
+      extraWide={extraWide}
+      location={location}
+      isBlogPostPage={isBlogPostPage}
+    />
   ) : null
 
   let mainBottomPadding

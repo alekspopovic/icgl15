@@ -1,7 +1,7 @@
 #languageSelector {
-  position: fixed;
-  right: 0;
-  top: 5em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
   line-height: 1.5em !important;
   z-index: 10;
 }
@@ -9,6 +9,7 @@
 #languageSelector a {
   background: var(--highlight-primary);
   padding: 1em 2em;
+  padding: 15px 15px 10px 15px;
   transition: all 0.3s ease-in;
   z-index: 1;
   overflow: hidden;
@@ -16,11 +17,12 @@
   position: relative;
   display: inline-block;
   border: 2px solid transparent;
-  font-size: 0.8em;
+  /* font-size: 0.8em; */
 }
 
 #languageSelector a:hover {
   color: var(--highlight-primary);
+  cursor: pointer;
 }
 
 #languageSelector a:before {
@@ -54,20 +56,17 @@
   transform: scaleX(1);
 }
 
+#languageSelector img {
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 1366px) {
 }
 
 @media only screen and (max-width: 1024px) {
-  #languageSelector {
-    /* top: 12em; */
-    top: initial;
-    bottom: 4em;
-    width: 100%;
-    text-align: center;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
   #languageSelector a:nth-child(1) {
     border: 3px solid var(--header);
     border-right: none;

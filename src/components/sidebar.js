@@ -5,8 +5,9 @@ import sidebarStyles from "../styles/sidebar.module.css"
 import "font-awesome/css/font-awesome.min.css"
 import NewsLink from "./newsLink"
 import SocialIcons from "./socialIcons"
+import LanguageSelector from "./languageSelector"
 
-const Sidebar = ({ language, extraWide }) => {
+const Sidebar = ({ language, extraWide, location, isBlogPostPage }) => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
@@ -109,6 +110,12 @@ const Sidebar = ({ language, extraWide }) => {
           </a>
         </div>
       </div>
+
+      <LanguageSelector
+        language={language}
+        location={location}
+        isBlogPostPage={isBlogPostPage}
+      />
 
       <SocialIcons language={language} />
     </div>
