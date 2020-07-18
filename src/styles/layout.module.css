@@ -223,8 +223,8 @@ h3 {
 
 @media only screen and (max-width: 1366px) {
   .logo {
-    width: 225px;
-    height: 125px;
+    width: 150px;
+    height: 100px;
   }
 }
 
@@ -275,7 +275,10 @@ h3 {
   }
 
   .logo {
-    margin: 1em 2em 0 0;
+    top: 0;
+    left: 1em;
+    width: 125px;
+    height: 100px;
   }
 
   .header {
