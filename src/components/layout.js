@@ -58,12 +58,54 @@ const Layout = props => {
 
   let stickyMenu = (
     <div id={layoutStyles.menu} className={isMenuOpen ? layoutStyles.show : ""}>
-      <Link
-        activeClassName={layoutStyles.active}
-        to={formatMenuUrl("/", language)}
-      >
-        <div>{getMenuItemLabel("home", language)}</div>
-      </Link>
+      <div className={layoutStyles.dropdown}>
+        <Link to={formatMenuUrl("/", language)}>
+          {getMenuItemLabel("home", language)}
+        </Link>
+        <div
+          className={`${layoutStyles.dropdownContent} ${
+            layoutStyles.alignDropdownOne
+          } ${isSubMenuOpen ? layoutStyles.showSubMenu : ""}`}
+        >
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/callForPapers", language)}
+          >
+            <div>{getMenuItemLabel("callForPapers", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/registration", language)}
+          >
+            <div>{getMenuItemLabel("registration", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/programme", language)}
+          >
+            <div>{getMenuItemLabel("programme", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/bookOfAbstracts", language)}
+          >
+            <div>{getMenuItemLabel("bookOfAbstracts", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/proceedings", language)}
+          >
+            <div>{getMenuItemLabel("proceedings", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/statistics", language)}
+          >
+            <div>{getMenuItemLabel("statistics", language)}</div>
+          </Link>
+        </div>
+      </div>
+
       <Link
         activeClassName={layoutStyles.active}
         to={formatMenuUrl("/committees", language)}
@@ -80,21 +122,9 @@ const Layout = props => {
         {getMenuItemLabel("information", language)}
         <div
           className={`${layoutStyles.dropdownContent} ${
-            isSubMenuOpen ? layoutStyles.showSubMenu : ""
-          }`}
+            layoutStyles.alignDropdownThree
+          } ${isSubMenuOpen ? layoutStyles.showSubMenu : ""}`}
         >
-          <Link
-            activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/programme", language)}
-          >
-            <div>{getMenuItemLabel("programme", language)}</div>
-          </Link>
-          <Link
-            activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/registration", language)}
-          >
-            <div>{getMenuItemLabel("registration", language)}</div>
-          </Link>
           <Link
             activeClassName={layoutStyles.active}
             to={formatMenuUrl("/accommodation", language)}

@@ -81,13 +81,28 @@
   display: none;
   position: absolute;
   background-color: var(--highlight-primary);
-  min-width: 250px;
   z-index: 1;
   height: auto;
-  left: -4em;
-  top: 5em;
+  top: 4.9em;
   border-radius: 5px;
-  padding: 0 !important;
+  border: 2px solid var(--highlight-primary);
+}
+
+.alignDropdownOne {
+  left: -7.75em;
+}
+
+.alignDropdownTwo {
+  left: -7.75em;
+}
+
+.alignDropdownThree {
+  left: -5.25em;
+}
+
+.dropdownContent div {
+  white-space: nowrap;
+  text-align: center;
 }
 
 @keyframes fadeInFromNone {
@@ -119,7 +134,8 @@
   border-bottom: 1.5em solid var(--highlight-primary);
   border-left: 1.5em solid transparent;
   top: -3em;
-  left: 4em;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .dropdownContent .active {
@@ -141,7 +157,7 @@
 }
 
 .dropdown:hover .dropdownContent {
-  display: block;
+  display: inline-block;
   animation: fadeInFromNone 0.3s ease-in;
 }
 

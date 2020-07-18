@@ -14,6 +14,9 @@ const labels = {
     contact: "contact",
     touristGuide: "tourist guide",
     travelInfo: "travel info",
+    bookOfAbstracts: "book of abstracts",
+    proceedings: "proceedings",
+    statistics: "statistics",
   },
   sr: {
     home: "početna",
@@ -44,8 +47,11 @@ const labels = {
     pastConferences: "ΠΡΟΗΓΟΥΜΕΝΑ ΣΥΝΕΔΡΙΑ",
     news: "ΝΕΑ",
     contact: "ΕΠΙΚΟΙΝΩΝΙΑ",
-    touristGuide: "Τουριστικός Οδηγός",
-    travelInfo: "Πληροφορίες Ταξιδιού",
+    touristGuide: "ΤΟΥΡΙΣΤΙΚΟΣ ΟΔΗΓΟΣ",
+    travelInfo: "ΠΛΗΡΟΦΟΡΙΕΣ ΤΑΞΙΔΙΟΥ",
+    bookOfAbstracts: "ΒΙΒΛΙΟ ΠΕΡΙΛΗΨΕΩΝ",
+    proceedings: "ΠΡΑΚΤΙΚΑ",
+    statistics: "ΣΤΑΤΙΣΤΙΚΗ",
   },
 }
 
