@@ -4,7 +4,7 @@
   align-items: center;
   box-shadow: none;
   position: fixed;
-  top: 13.95em;
+  top: 10em;
   width: 100%;
   z-index: 5;
   /* padding: 3em 0; */
@@ -16,7 +16,7 @@
 
 .banner {
   width: 100%;
-  height: 14em;
+  height: 10em;
   position: fixed;
   top: 0;
   left: 0;
@@ -223,8 +223,8 @@ h3 {
 
 @media only screen and (max-width: 1366px) {
   .logo {
-    width: 150px;
-    height: 100px;
+    width: 220px;
+    height: 120px;
   }
 }
 
@@ -390,6 +390,10 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
+  .logo {
+    width: 100px;
+    height: 80px;
+  }
 }
 
 @media only screen and (max-width: 426px) {
@@ -407,11 +411,9 @@ h3 {
   }
 
   .logo {
-    width: 250px;
+    width: 150px;
     height: 120px;
     margin: 0;
-    top: 3em;
-    left: 1em;
   }
 
   .menuToggle {
