@@ -1,23 +1,21 @@
 #languageSelector {
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
-  line-height: 1.5em !important;
+  line-height: 1em !important;
   z-index: 10;
+  margin: 0 2em;
 }
 
 #languageSelector a {
   background: var(--highlight-primary);
   padding: 1em 2em;
-  padding: 15px 15px 10px 15px;
+  padding: 10px 15px 7px 15px;
   transition: all 0.3s ease-in;
   z-index: 1;
   overflow: hidden;
   transition: all 0.3s ease-in;
   position: relative;
   display: inline-block;
-  border: 2px solid transparent;
-  /* font-size: 0.8em; */
 }
 
 #languageSelector a:hover {
@@ -57,7 +55,7 @@
 }
 
 #languageSelector img {
-  width: 50px;
+  width: 35px;
   margin: 0;
   padding: 0;
   border-radius: 5px;
@@ -67,14 +65,8 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  #languageSelector a:nth-child(1) {
-    border: 3px solid var(--header);
-    border-right: none;
-  }
-
-  #languageSelector a:nth-child(2) {
-    border: 3px solid var(--header);
-    border-left: none;
+  #languageSelector {
+    margin-top: 2em !important;
   }
 }
 

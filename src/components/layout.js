@@ -5,6 +5,7 @@ import Footer from "./footer"
 import labels from "../data/menuLabels"
 import Sidebar from "./sidebar"
 import LogoImage from "../assets/Logo.svg"
+import LanguageSelector from "./languageSelector"
 
 const Layout = props => {
   const formatMenuUrl = (url, language) => {
@@ -58,13 +59,25 @@ const Layout = props => {
 
   let stickyMenu = (
     <div id={layoutStyles.menu} className={isMenuOpen ? layoutStyles.show : ""}>
-      <div className={layoutStyles.dropdown}>
-        <Link to={formatMenuUrl("/", language)}>
-          {getMenuItemLabel("home", language)}
-        </Link>
+      <Link
+        activeClassName={layoutStyles.active}
+        to={formatMenuUrl("/", language)}
+      >
+        <div> {getMenuItemLabel("home", language)}</div>
+      </Link>
+      <div
+        className={layoutStyles.dropdown}
+        onClick={toggleSubMenu}
+        onKeyDown={openSubMenu}
+        role="button"
+        tabIndex={0}
+      >
+        <div>{getMenuItemLabel("abstracts", language)}</div>
         <div
           className={`${layoutStyles.dropdownContent} ${
-            layoutStyles.alignDropdownOne
+            language === "en"
+              ? layoutStyles.alignEngOne
+              : layoutStyles.alignGrOne
           } ${isSubMenuOpen ? layoutStyles.showSubMenu : ""}`}
         >
           <Link
@@ -106,12 +119,41 @@ const Layout = props => {
         </div>
       </div>
 
-      <Link
-        activeClassName={layoutStyles.active}
-        to={formatMenuUrl("/committees", language)}
+      <div
+        className={layoutStyles.dropdown}
+        onClick={toggleSubMenu}
+        onKeyDown={openSubMenu}
+        role="button"
+        tabIndex={0}
       >
         <div>{getMenuItemLabel("committees", language)}</div>
-      </Link>
+        <div
+          className={`${layoutStyles.dropdownContent} ${
+            language === "en"
+              ? layoutStyles.alignEngTwo
+              : layoutStyles.alignGrTwo
+          } ${isSubMenuOpen ? layoutStyles.showSubMenu : ""}`}
+        >
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/organizingCommittee", language)}
+          >
+            <div>{getMenuItemLabel("organizingCommittee", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/scientificCommittee", language)}
+          >
+            <div>{getMenuItemLabel("scientificCommittee", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/reviewers", language)}
+          >
+            <div>{getMenuItemLabel("reviewers", language)}</div>
+          </Link>
+        </div>
+      </div>
       <div
         className={layoutStyles.dropdown}
         onClick={toggleSubMenu}
@@ -122,7 +164,9 @@ const Layout = props => {
         {getMenuItemLabel("information", language)}
         <div
           className={`${layoutStyles.dropdownContent} ${
-            layoutStyles.alignDropdownThree
+            language === "en"
+              ? layoutStyles.alignEngThree
+              : layoutStyles.alignGrThree
           } ${isSubMenuOpen ? layoutStyles.showSubMenu : ""}`}
         >
           <Link
@@ -167,16 +211,17 @@ const Layout = props => {
       >
         <div>{getMenuItemLabel("contact", language)}</div>
       </Link>
+
+      <LanguageSelector
+        language={language}
+        location={location}
+        isBlogPostPage={isBlogPostPage}
+      />
     </div>
   )
 
   let sidebar = !isSidebarDisabled ? (
-    <Sidebar
-      language={language}
-      extraWide={extraWide}
-      location={location}
-      isBlogPostPage={isBlogPostPage}
-    />
+    <Sidebar language={language} extraWide={extraWide} />
   ) : null
 
   let mainBottomPadding

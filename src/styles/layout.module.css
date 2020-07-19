@@ -7,7 +7,6 @@
   top: 10em;
   width: 100%;
   z-index: 5;
-  /* padding: 3em 0; */
 
   background: var(--highlight-primary);
 
@@ -29,7 +28,7 @@
   background-size: contain;
 }
 
-#menu div {
+#menu a div {
   flex-basis: auto;
   font-size: 1rem;
   cursor: pointer;
@@ -50,7 +49,6 @@
 
 #menu a {
   color: var(--menu-link-color);
-  /* border-radius: 5px; */
 }
 
 #menu .active {
@@ -62,11 +60,9 @@
   position: relative;
   flex-basis: auto;
   font-weight: 400;
-  font-size: 0.8em;
   cursor: pointer;
   text-transform: uppercase;
-  margin: 0 15px;
-  padding: 5px 10px 2px 10px;
+  margin: 0 2em;
 
   color: var(--menu-link-color);
 }
@@ -83,26 +79,39 @@
   background-color: var(--highlight-primary);
   z-index: 1;
   height: auto;
-  top: 4.9em;
+  top: 4em;
   border-radius: 5px;
   border: 2px solid var(--highlight-primary);
 }
 
-.alignDropdownOne {
-  left: -7.75em;
+.alignEngOne {
+  left: -4.5em;
 }
 
-.alignDropdownTwo {
-  left: -7.75em;
+.alignEngTwo {
+  left: -5em;
 }
 
-.alignDropdownThree {
-  left: -5.25em;
+.alignEngThree {
+  left: -1em;
+}
+
+.alignGrOne {
+  left: -8.25em;
+}
+
+.alignGrTwo {
+  left: -6em;
+}
+
+.alignGrThree {
+  left: -2.25em;
 }
 
 .dropdownContent div {
   white-space: nowrap;
   text-align: center;
+  line-height: 3.5em;
 }
 
 @keyframes fadeInFromNone {
@@ -241,6 +250,11 @@ h3 {
   .logo {
     width: 220px;
     height: 120px;
+  }
+
+  #menu a div {
+    margin: 0 1em;
+    font-size: 0.9em;
   }
 }
 
