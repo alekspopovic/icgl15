@@ -49,9 +49,8 @@ html {
 main {
   display: block;
   width: 100%;
-
-  padding-top: 13em;
   padding-bottom: 3em;
+  padding-top: 8.5em;
 }
 
 a {
@@ -107,6 +106,7 @@ ul {
     width: 80%;
     margin: 0 auto;
     display: block;
+    padding-top: 10em;
   }
 }
 
@@ -114,6 +114,7 @@ ul {
   main {
     margin: 0 auto;
     display: block;
+    padding-top: 10em;
   }
 }
 
@@ -122,5 +123,6 @@ ul {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding-top: 13em;
   }
 }

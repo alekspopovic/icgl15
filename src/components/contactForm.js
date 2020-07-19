@@ -20,51 +20,58 @@ class ContactForm extends React.Component {
     }
 
     return (
-      <div className={contactListStyles.contact}>
-        <h2>{this.getContactItemLabel("heading")}</h2>
-        <form target="_blank" action="FORM ACTION URL HERE" method="POST">
-          <input
-            type="text"
-            name="name"
-            className={contactListStyles.formControl}
-            placeholder={this.getContactItemLabel("namePlaceholder")}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            className={contactListStyles.formControl}
-            placeholder={this.getContactItemLabel("emailPlaceholder")}
-            required
-          />
-          <textarea
-            placeholder={this.getContactItemLabel("messagePlaceholder")}
-            className={contactListStyles.formControl}
-            name="message"
-            rows="5"
-            required
-          ></textarea>
-          <input
-            type="hidden"
-            name="_next"
-            value="SITE HOME PAGE URL HERE"
-          ></input>
-          <input
-            type="hidden"
-            name="_subject"
-            value="New message submitted on ICGL15 contact form"
-          ></input>
-          <input type="hidden" name="_replyto"></input>
-          <div>
-            <button
-              onClick={displayMessage}
-              type="submit"
-              className={buttonStyles.button}
-            >
-              {this.getContactItemLabel("submitLabel")}
-            </button>
-          </div>
-        </form>
+      <div className={contactListStyles.contactContent}>
+        <div
+          className={`${contactListStyles.contactItem} ${contactListStyles.contactInfo}`}
+        >
+          Address Info
+        </div>
+        <div className={contactListStyles.contactItem}>
+          <h2>{this.getContactItemLabel("heading")}</h2>
+          <form target="_blank" action="FORM ACTION URL HERE" method="POST">
+            <input
+              type="text"
+              name="name"
+              className={contactListStyles.formControl}
+              placeholder={this.getContactItemLabel("namePlaceholder")}
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              className={contactListStyles.formControl}
+              placeholder={this.getContactItemLabel("emailPlaceholder")}
+              required
+            />
+            <textarea
+              placeholder={this.getContactItemLabel("messagePlaceholder")}
+              className={contactListStyles.formControl}
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+            <input
+              type="hidden"
+              name="_next"
+              value="SITE HOME PAGE URL HERE"
+            ></input>
+            <input
+              type="hidden"
+              name="_subject"
+              value="New message submitted on ICGL15 contact form"
+            ></input>
+            <input type="hidden" name="_replyto"></input>
+            <div>
+              <button
+                onClick={displayMessage}
+                type="submit"
+                className={buttonStyles.button}
+              >
+                {this.getContactItemLabel("submitLabel")}
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     )
   }
