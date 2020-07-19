@@ -22,23 +22,18 @@ class ContactForm extends React.Component {
 
     this.language = language
 
-    const displayMessage = e => {
-      e.preventDefault()
-      alert("Not implemented yet.")
-    }
-
     return (
       <div className={contactListStyles.contactContent}>
         <div
           className={`${contactListStyles.contactItem} ${contactListStyles.contactInfo}`}
         >
-          <h2>Contact Info</h2>
+          <h2>{this.getContactItemLabel("info")}</h2>
           <p>
             <FontAwesomeIcon
               className={contactListStyles.contactIcon}
               icon={faMapMarkerAlt}
               title="address"
-            />{" "}
+            />
             Studentski Trg 3, 11000 Beograd (Студентски трг 3, 11000 Београд)
           </p>
           <p>
@@ -60,7 +55,11 @@ class ContactForm extends React.Component {
         </div>
         <div className={contactListStyles.contactItem}>
           <h2>{this.getContactItemLabel("heading")}</h2>
-          <form target="_blank" action="FORM ACTION URL HERE" method="POST">
+          <form
+            target="_blank"
+            action="https://formsubmit.co/8283715e05ca45c0023e1973e99ab73e"
+            method="POST"
+          >
             <input
               type="text"
               name="name"
@@ -85,7 +84,7 @@ class ContactForm extends React.Component {
             <input
               type="hidden"
               name="_next"
-              value="SITE HOME PAGE URL HERE"
+              value="https://aleksandarpopovic.com/" //todo ubaciti link sajta kada bude live
             ></input>
             <input
               type="hidden"
@@ -95,7 +94,7 @@ class ContactForm extends React.Component {
             <input type="hidden" name="_replyto"></input>
             <div>
               <button
-                onClick={displayMessage}
+                // onClick={displayMessage}
                 type="submit"
                 className={buttonStyles.button}
               >

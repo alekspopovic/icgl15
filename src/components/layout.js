@@ -221,6 +221,12 @@ const Layout = props => {
       >
         <div>{getMenuItemLabel("pastConferences", language)}</div>
       </Link>
+      <Link
+        activeClassName={layoutStyles.active}
+        to={formatMenuUrl("/sponsors/", language)}
+      >
+        <div>{getMenuItemLabel("sponsors", language)}</div>
+      </Link>
       <Link activeClassName={layoutStyles.active} to="/news/">
         <div>{getMenuItemLabel("news", language)}</div>
       </Link>

@@ -22,6 +22,7 @@ const labels = {
     scientificCommittee: "scientific committee",
     reviewers: "reviewers",
     socialProgramme: "social programme",
+    sponsors: "sponsors",
   },
   sr: {
     home: "početna",
@@ -62,6 +63,7 @@ const labels = {
     scientificCommittee: "ΕΠΙΣΤΗΜΟΝΙΚΗ ΕΠΙΤΡΟΠΗ",
     reviewers: "ΑΞΙΟΛΟΓΗΤΕΣ",
     socialProgramme: "ΚΟΙΝΩΝΙΚΟ ΠΡΟΓΡΑΜΜΑ",
+    sponsors: "ΧΟΡΗΓΟΙ",
   },
 }
 

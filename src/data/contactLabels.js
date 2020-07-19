@@ -5,6 +5,7 @@ const labels = {
     emailPlaceholder: "email",
     messagePlaceholder: "message",
     submitLabel: "Send",
+    info: "Contact Info",
   },
   sr: {
     heading: "Pošaljite nam poruku!",
@@ -19,6 +20,7 @@ const labels = {
     emailPlaceholder: "Ηλεκτρονική διεύθυνση",
     messagePlaceholder: "Μήνυμα",
     submitLabel: "Στείλετε",
+    info: "Επικοινωνία",
   },
 }
 
