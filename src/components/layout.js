@@ -202,6 +202,12 @@ const Layout = props => {
           </Link>
           <Link
             activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/socialProgramme", language)}
+          >
+            <div>{getMenuItemLabel("socialProgramme", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
             to={formatMenuUrl("/location", language)}
             onBlur={closeSubMenues}
           >
