@@ -30,31 +30,42 @@ const Layout = props => {
   } = props
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false)
+  const [isAbstractsMenuOpen, setIsAbstractsMenuOpen] = useState(false)
+  const [isCommitteesMenuOpen, setIsCommitteesMenuOpen] = useState(false)
+  const [isInformationMenuOpen, setIsInformationMenuOpen] = useState(false)
 
   const toggleMenu = () => {
-    if (isSubMenuOpen) {
-      toggleSubMenu()
+    if (isAbstractsMenuOpen) {
+      setIsAbstractsMenuOpen(false)
+    } else if (isCommitteesMenuOpen) {
+      setIsCommitteesMenuOpen(false)
+    } else if (isInformationMenuOpen) {
+      setIsInformationMenuOpen(false)
     } else {
       setIsMenuOpen(!isMenuOpen)
     }
   }
 
-  const toggleSubMenu = () => {
-    setIsSubMenuOpen(!isSubMenuOpen)
-  }
-
-  const openSubMenu = () => {
-    if (!isSubMenuOpen) {
-      setIsSubMenuOpen(true)
+  const openSubMenu = submenu => {
+    if (submenu === "abstracts") {
+      if (!isAbstractsMenuOpen) {
+        setIsAbstractsMenuOpen(true)
+      }
+    } else if (submenu === "committees") {
+      if (!isCommitteesMenuOpen) {
+        setIsCommitteesMenuOpen(true)
+      }
+    } else if (submenu === "information") {
+      if (!isInformationMenuOpen) {
+        setIsInformationMenuOpen(true)
+      }
     }
   }
 
-  const closeSubMenu = () => {
-    if (isSubMenuOpen) {
-      setIsSubMenuOpen(false)
-    }
+  const closeSubMenues = () => {
+    setIsAbstractsMenuOpen(false)
+    setIsCommitteesMenuOpen(false)
+    setIsInformationMenuOpen(false)
   }
 
   let stickyMenu = (
@@ -67,8 +78,8 @@ const Layout = props => {
       </Link>
       <div
         className={layoutStyles.dropdown}
-        onClick={toggleSubMenu}
-        onKeyDown={openSubMenu}
+        onClick={() => openSubMenu("abstracts")}
+        onKeyDown={() => openSubMenu("abstracts")}
         role="button"
         tabIndex={0}
       >
@@ -78,7 +89,7 @@ const Layout = props => {
             language === "en"
               ? layoutStyles.alignEngOne
               : layoutStyles.alignGrOne
-          } ${isSubMenuOpen ? layoutStyles.showSubMenu : ""}`}
+          } ${isAbstractsMenuOpen ? layoutStyles.showSubMenu : ""}`}
         >
           <Link
             activeClassName={layoutStyles.active}
@@ -113,6 +124,7 @@ const Layout = props => {
           <Link
             activeClassName={layoutStyles.active}
             to={formatMenuUrl("/statistics", language)}
+            onBlur={closeSubMenues}
           >
             <div>{getMenuItemLabel("statistics", language)}</div>
           </Link>
@@ -121,8 +133,8 @@ const Layout = props => {
 
       <div
         className={layoutStyles.dropdown}
-        onClick={toggleSubMenu}
-        onKeyDown={openSubMenu}
+        onClick={() => openSubMenu("committees")}
+        onKeyDown={() => openSubMenu("committees")}
         role="button"
         tabIndex={0}
       >
@@ -132,7 +144,7 @@ const Layout = props => {
             language === "en"
               ? layoutStyles.alignEngTwo
               : layoutStyles.alignGrTwo
-          } ${isSubMenuOpen ? layoutStyles.showSubMenu : ""}`}
+          } ${isCommitteesMenuOpen ? layoutStyles.showSubMenu : ""}`}
         >
           <Link
             activeClassName={layoutStyles.active}
@@ -149,6 +161,7 @@ const Layout = props => {
           <Link
             activeClassName={layoutStyles.active}
             to={formatMenuUrl("/reviewers", language)}
+            onBlur={closeSubMenues}
           >
             <div>{getMenuItemLabel("reviewers", language)}</div>
           </Link>
@@ -156,8 +169,8 @@ const Layout = props => {
       </div>
       <div
         className={layoutStyles.dropdown}
-        onClick={toggleSubMenu}
-        onKeyDown={openSubMenu}
+        onClick={() => openSubMenu("information")}
+        onKeyDown={() => openSubMenu("information")}
         role="button"
         tabIndex={0}
       >
@@ -167,7 +180,7 @@ const Layout = props => {
             language === "en"
               ? layoutStyles.alignEngThree
               : layoutStyles.alignGrThree
-          } ${isSubMenuOpen ? layoutStyles.showSubMenu : ""}`}
+          } ${isInformationMenuOpen ? layoutStyles.showSubMenu : ""}`}
         >
           <Link
             activeClassName={layoutStyles.active}
@@ -190,7 +203,7 @@ const Layout = props => {
           <Link
             activeClassName={layoutStyles.active}
             to={formatMenuUrl("/location", language)}
-            onBlur={closeSubMenu}
+            onBlur={closeSubMenues}
           >
             <div>{getMenuItemLabel("location", language)}</div>
           </Link>
