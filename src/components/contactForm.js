@@ -4,6 +4,14 @@ import "font-awesome/css/font-awesome.min.css"
 import labels from "../data/contactLabels"
 import buttonStyles from "../styles/button.module.css"
 
+import "font-awesome/css/font-awesome.min.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faMapMarkerAlt,
+  faPhoneAlt,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons"
+
 class ContactForm extends React.Component {
   getContactItemLabel(item) {
     return labels[this.language][item]
@@ -24,7 +32,31 @@ class ContactForm extends React.Component {
         <div
           className={`${contactListStyles.contactItem} ${contactListStyles.contactInfo}`}
         >
-          Address Info
+          <h2>Contact Info</h2>
+          <p>
+            <FontAwesomeIcon
+              className={contactListStyles.contactIcon}
+              icon={faMapMarkerAlt}
+              title="address"
+            />{" "}
+            Studentski Trg 3, 11000 Beograd (Студентски трг 3, 11000 Београд)
+          </p>
+          <p>
+            <FontAwesomeIcon
+              className={contactListStyles.contactIcon}
+              icon={faPhoneAlt}
+              title="phone"
+            />
+            +381-11-202-16-09
+          </p>
+          <p>
+            <FontAwesomeIcon
+              className={contactListStyles.contactIcon}
+              icon={faEnvelope}
+              title="email"
+            />
+            <a href="mailto:icgl15@fil.bg.ac.rs">icgl15@fil.bg.ac.rs</a>
+          </p>
         </div>
         <div className={contactListStyles.contactItem}>
           <h2>{this.getContactItemLabel("heading")}</h2>

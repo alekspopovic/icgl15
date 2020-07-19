@@ -13,7 +13,14 @@
 }
 
 .contactInfo {
-  /* margin-top: 0; */
+  text-align: left;
+}
+
+.contactIcon {
+  color: var(--highlight-primary);
+  font-size: 1.5em;
+  margin-right: 0.5em;
+  transform: translateY(3px);
 }
 
 .contactButton {
@@ -22,20 +29,11 @@
   border: 1px solid;
 }
 
-.contactContent a {
-  color: var(--text);
-  font-size: 0.8em;
-}
-
-.contactContent a:hover {
-  color: var(--highlight-primary);
-  box-shadow: none;
-}
-
 .contactContent h2 {
   margin-top: 0;
   margin-bottom: 2em;
   font-weight: 400;
+  text-align: center;
 }
 
 .formControl {

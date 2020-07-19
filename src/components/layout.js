@@ -93,37 +93,37 @@ const Layout = props => {
         >
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/callForPapers", language)}
+            to={formatMenuUrl("/callForPapers/", language)}
           >
             <div>{getMenuItemLabel("callForPapers", language)}</div>
           </Link>
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/registration", language)}
+            to={formatMenuUrl("/registration/", language)}
           >
             <div>{getMenuItemLabel("registration", language)}</div>
           </Link>
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/programme", language)}
+            to={formatMenuUrl("/programme/", language)}
           >
             <div>{getMenuItemLabel("programme", language)}</div>
           </Link>
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/bookOfAbstracts", language)}
+            to={formatMenuUrl("/bookOfAbstracts/", language)}
           >
             <div>{getMenuItemLabel("bookOfAbstracts", language)}</div>
           </Link>
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/proceedings", language)}
+            to={formatMenuUrl("/proceedings/", language)}
           >
             <div>{getMenuItemLabel("proceedings", language)}</div>
           </Link>
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/statistics", language)}
+            to={formatMenuUrl("/statistics/", language)}
             onBlur={closeSubMenues}
           >
             <div>{getMenuItemLabel("statistics", language)}</div>
@@ -148,19 +148,19 @@ const Layout = props => {
         >
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/organizingCommittee", language)}
+            to={formatMenuUrl("/organizingCommittee/", language)}
           >
             <div>{getMenuItemLabel("organizingCommittee", language)}</div>
           </Link>
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/scientificCommittee", language)}
+            to={formatMenuUrl("/scientificCommittee/", language)}
           >
             <div>{getMenuItemLabel("scientificCommittee", language)}</div>
           </Link>
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/reviewers", language)}
+            to={formatMenuUrl("/reviewers/", language)}
             onBlur={closeSubMenues}
           >
             <div>{getMenuItemLabel("reviewers", language)}</div>
@@ -184,31 +184,31 @@ const Layout = props => {
         >
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/accommodation", language)}
+            to={formatMenuUrl("/accommodation/", language)}
           >
             <div>{getMenuItemLabel("accommodation", language)}</div>
           </Link>
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/touristGuide", language)}
+            to={formatMenuUrl("/touristGuide/", language)}
           >
             <div>{getMenuItemLabel("touristGuide", language)}</div>
           </Link>
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/travelInfo", language)}
+            to={formatMenuUrl("/travelInfo/", language)}
           >
             <div>{getMenuItemLabel("travelInfo", language)}</div>
           </Link>
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/socialProgramme", language)}
+            to={formatMenuUrl("/socialProgramme/", language)}
           >
             <div>{getMenuItemLabel("socialProgramme", language)}</div>
           </Link>
           <Link
             activeClassName={layoutStyles.active}
-            to={formatMenuUrl("/location", language)}
+            to={formatMenuUrl("/location/", language)}
             onBlur={closeSubMenues}
           >
             <div>{getMenuItemLabel("location", language)}</div>
@@ -217,16 +217,16 @@ const Layout = props => {
       </div>
       <Link
         activeClassName={layoutStyles.active}
-        to={formatMenuUrl("/pastConferences", language)}
+        to={formatMenuUrl("/pastConferences/", language)}
       >
         <div>{getMenuItemLabel("pastConferences", language)}</div>
       </Link>
-      <Link activeClassName={layoutStyles.active} to="/news">
+      <Link activeClassName={layoutStyles.active} to="/news/">
         <div>{getMenuItemLabel("news", language)}</div>
       </Link>
       <Link
         activeClassName={layoutStyles.active}
-        to={formatMenuUrl("/contact", language)}
+        to={formatMenuUrl("/contact/", language)}
       >
         <div>{getMenuItemLabel("contact", language)}</div>
       </Link>

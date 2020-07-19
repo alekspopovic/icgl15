@@ -105,13 +105,10 @@
   line-height: 3.5em;
 }
 
-.dropdownContent .active {
-  background: var(--content-bg);
-}
-
 .dropdownContent a:hover,
-.dropdownContent a:focus {
-  background: var(--highlight-primary);
+.dropdownContent a:focus,
+.dropdownContent a.active {
+  background: var(--highlight-primary) !important;
   color: var(--content-bg) !important;
 }
 
