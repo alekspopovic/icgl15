@@ -13,7 +13,7 @@ class Index extends React.Component {
       >
         <SEO title="ICGL15" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <p>Dear Colleagues,</p>
+          <p className={contentStyles.paddingTop}>Dear Colleagues,</p>
           <p>
             The Department of Modern Greek Studies, Faculty of Philology,
             University of Belgrade, is pleased to announce the 15th

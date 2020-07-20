@@ -13,7 +13,7 @@ class Index extends React.Component {
       >
         <SEO title="ICGL15" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <p>Αγαπητοί/ές Συνάδελφοι,</p>
+          <p className={contentStyles.paddingTop}>Αγαπητοί/ές Συνάδελφοι,</p>
           <p>
             Το Τμήμα Νεοελληνικών Σπουδών του Πανεπιστημίου του Βελιγραδίου με
             χαρά σας ανακοινώνει τη διοργάνωση του 15 ου Διεθνούς Συνεδρίου

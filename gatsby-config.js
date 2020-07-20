@@ -123,7 +123,8 @@ module.exports = {
           `/pastConferences`,
           `/registration`,
           `/touristGuide`,
-          `/travelInfo`,
+          `/travelInfoBelgrade`,
+          `/travelInfoFaculty`,
         ], //todo change precached pages
       },
     },

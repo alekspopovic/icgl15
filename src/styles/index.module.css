@@ -21,6 +21,10 @@
   margin-top: 1.5em;
 }
 
+.paddingTop {
+  padding-top: 2em;
+}
+
 th {
   background-color: var(--highlight-primary);
   color: var(--content-bg);
