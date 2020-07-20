@@ -31,8 +31,6 @@ const Rentals = () => {
     }
   `)
 
-  console.log(data)
-
   return (
     <div className={rentalStyles.rentals}>
       <div className={`${rentalStyles.rentalItem} ${rentalStyles.airbnb}`}>

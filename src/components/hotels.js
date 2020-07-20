@@ -20,7 +20,7 @@ class Hotels extends React.Component {
           </tr>
           {hotels.data.map(hotel => {
             return (
-              <tr>
+              <tr key={hotel.Hotel}>
                 <td>{hotel.Hotel}</td>
                 <td>{hotel.Category}</td>
                 <td>{hotel.Location}</td>
