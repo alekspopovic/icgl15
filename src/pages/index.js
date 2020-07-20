@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
 
-class CallForPapers extends React.Component {
+class Index extends React.Component {
   render() {
     return (
       <Layout
@@ -27,4 +27,4 @@ class CallForPapers extends React.Component {
   }
 }
 
-export default CallForPapers
+export default Index

@@ -7,7 +7,7 @@ class TouristGuide extends React.Component {
   render() {
     return (
       <Layout language="en" location={this.props.location}>
-        <SEO title="TouristGuide" pagePath={this.props.location.pathname} />
+        <SEO title="Tourist Guide" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>Tourist Guide</h1>
           <h2>Belgrade</h2>

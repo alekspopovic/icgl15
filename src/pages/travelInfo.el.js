@@ -9,7 +9,7 @@ class TravelInfo extends React.Component {
     console.log(this.props.location)
     return (
       <Layout language="el" location={this.props.location}>
-        <SEO title="TravelInfo" pagePath={this.props.location.pathname} />
+        <SEO title="Travel Info" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>Πληροφορίες Ταξιδιού - ΠΡΟΣΒΑΣΗ ΣΤΟ ΒΕΛΙΓΡΑΔΙ</h1>
           <h2>Αεροπορικώς</h2>

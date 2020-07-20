@@ -3,12 +3,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
 
-class Committees extends React.Component {
+class ScientificCommittee extends React.Component {
   render() {
     return (
       <Layout language="el" location={this.props.location}>
         <SEO
-          title="Scientific Cmmittee"
+          title="Scientific Committee"
           pagePath={this.props.location.pathname}
         />
         <div className={contentStyles.content}>
@@ -19,4 +19,4 @@ class Committees extends React.Component {
   }
 }
 
-export default Committees
+export default ScientificCommittee

@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
 
-class Committees extends React.Component {
+class OrganizingCommittee extends React.Component {
   render() {
     return (
       <Layout language="el" location={this.props.location}>
@@ -19,4 +19,4 @@ class Committees extends React.Component {
   }
 }
 
-export default Committees
+export default OrganizingCommittee

@@ -40,13 +40,6 @@ const Sidebar = ({ language, extraWide }) => {
           }
         }
       }
-      sponsorBlockAndRoll: file(relativePath: { eq: "blockandroll.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `)
 
@@ -95,17 +88,6 @@ const Sidebar = ({ language, extraWide }) => {
               fluid={data.facultyImage.childImageSharp.fluid}
               className={sidebarStyles.facultyLogo}
             />
-          </a>
-        </div>
-      </div>
-      <div className={sidebarStyles.sidebarItem}>
-        <div className={sidebarStyles.imageContainer}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.block.rs/"
-          >
-            <Img fluid={data.sponsorBlockAndRoll.childImageSharp.fluid} />
           </a>
         </div>
       </div>
