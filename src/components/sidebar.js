@@ -71,7 +71,7 @@ const Sidebar = ({ language, extraWide }) => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="http://www.bg.ac.rs/"
+            href="http://bg.ac.rs/en/index.php"
           >
             <Img fluid={data.uniImage.childImageSharp.fluid} />
           </a>
