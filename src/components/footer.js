@@ -19,51 +19,17 @@ const Footer = props => {
     <footer
       className={`${footerStyles.footer} ${offsetClass} ${landingFooterClass}`}
     >
-      {/* <div className={footerStyles.socialIcons}>
+      <span>Faculty of Philology, Department of Modern Greek Language </span>
+      <span>
+        © {new Date().getFullYear()} | Built by{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/alekspopovic/"
+          href="https://aleksandarpopovic.com/"
         >
-          <i className="fa fa-linkedin"></i>
+          Aleksandar Popović
         </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://twitter.com/alekswritescode"
-        >
-          <i className="fa fa-twitter"></i>
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.instagram.com/aleks.popovic/"
-        >
-          <i className="fa fa-instagram"></i>
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://codepen.io/aleksandarp/"
-        >
-          <i className="fa fa-codepen"></i>
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/alekspopovic"
-        >
-          <i className="fa fa-github"></i>
-        </a>
-      </div> */}
-      Faculty of Philology © {new Date().getFullYear()} | Built by{" "}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://aleksandarpopovic.com/"
-      >
-        Aleksandar Popovic
-      </a>
+      </span>
     </footer>
   )
 }

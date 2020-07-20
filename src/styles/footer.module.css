@@ -22,5 +22,7 @@
 @media only screen and (max-width: 426px) {
   .footer {
     font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
   }
 }
