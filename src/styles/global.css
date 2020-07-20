@@ -103,7 +103,7 @@ ul {
 
 @media only screen and (min-width: 768px) {
   main {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     display: block;
     /* padding-top: 10em; */
@@ -123,6 +123,7 @@ ul {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    width: 80%;
     /* padding-top: 13em; */
   }
 }

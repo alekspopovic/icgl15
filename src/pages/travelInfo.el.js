@@ -6,12 +6,11 @@ import map from "../../content/images/belgradeMap.png"
 
 class TravelInfo extends React.Component {
   render() {
-    console.log(this.props.location)
     return (
       <Layout language="el" location={this.props.location}>
         <SEO title="Travel Info" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h1>Πληροφορίες Ταξιδιού - ΠΡΟΣΒΑΣΗ ΣΤΟ ΒΕΛΙΓΡΑΔΙ</h1>
+          <h1>Πρόσβαση στο Βελιγράδι</h1>
           <h2>Αεροπορικώς</h2>
           <p>
             Εάν προτιμάτε να ταξιδέψετε με αεροπλάνο, το Βελιγράδι διαθέτει το
@@ -27,7 +26,7 @@ class TravelInfo extends React.Component {
             περίπου 1.500-2.000 Δηνάρια (15-20 €).
           </p>
           <h3>Αεροπορικές εταιρείες:</h3>
-          <p>
+          <span className={contentStyles.carriers}>
             <ul>
               <li>
                 <a
@@ -79,6 +78,8 @@ class TravelInfo extends React.Component {
                   Austrian Airlines
                 </a>
               </li>
+            </ul>
+            <ul>
               <li>
                 <a
                   target="_blank"
@@ -129,6 +130,8 @@ class TravelInfo extends React.Component {
                   Malev
                 </a>
               </li>
+            </ul>
+            <ul>
               <li>
                 <a
                   target="_blank"
@@ -180,9 +183,9 @@ class TravelInfo extends React.Component {
                 </a>
               </li>
             </ul>
-          </p>
+          </span>
           <h3>Low cost αεροπορικές εταιρείες:</h3>
-          <p>
+          <span className={contentStyles.carriers}>
             <ul>
               <li>
                 <a
@@ -202,6 +205,8 @@ class TravelInfo extends React.Component {
                   Cimber Air
                 </a>
               </li>
+            </ul>
+            <ul>
               <li>
                 <a
                   target="_blank"
@@ -220,6 +225,8 @@ class TravelInfo extends React.Component {
                   Norwegian Air Shuttle
                 </a>
               </li>
+            </ul>
+            <ul>
               <li>
                 <a
                   target="_blank"
@@ -239,7 +246,7 @@ class TravelInfo extends React.Component {
                 </a>
               </li>
             </ul>
-          </p>
+          </span>
           <p>
             Περισσότερες πληροφορίες μπορείτε να βρείτε στην ιστοσελίδα του
             <a
@@ -310,7 +317,7 @@ class TravelInfo extends React.Component {
             χλμ την ώρα).
           </p>
           <p>Απόσταση από το Βελιγράδι μέχρι τις κύριες ευρωπαϊκές πόλεις:</p>
-          <p>
+          <span className={contentStyles.distances}>
             <ul>
               <li>Άμστερνταμ 1760 χλμ</li>
               <li>Αθήνα 1090 χλμ</li>
@@ -320,6 +327,8 @@ class TravelInfo extends React.Component {
               <li>Θεσσαλονίκη 504 χλμ</li>
               <li>Κωνσταντινούπολη 928 χλμ</li>
               <li>Κοπεγχάγη 2018 χλμ</li>
+            </ul>
+            <ul>
               <li>Λονδίνο 2073 χλμ</li>
               <li>Μόναχο 1020 χλμ</li>
               <li>Μόσχα 2211 χλμ</li>
@@ -328,7 +337,7 @@ class TravelInfo extends React.Component {
               <li>Ρώμη 1280 χλμ</li>
               <li>Στοκχόλμη 2622 χλμ</li>
             </ul>
-          </p>
+          </span>
           <h2>Τελωνείo και βίζες</h2>
           <p>
             Οι πολίτες των ακόλουθων χωρών δεν χρειάζονται βίζα για να εισέλθουν
@@ -365,7 +374,7 @@ class TravelInfo extends React.Component {
             γάμο, είσαστε υποχρεωμένοι να υποβάλλετε αίτηση για άδεια προσωρινής
             διαμονής πριν από τη λήξη της περιόδου των τριών μηνών.
           </p>
-          <h1>ΠΡΟΣΒΑΣΗ ΣΤΗ ΦΙΛΟΛΟΓΙΚΗ ΣΧΟΛΗ</h1>
+          <h1>Πρόσβαση στη Φιλολογική Σχολή</h1>
           <p>
             Η Φιλολογική Σχολή βρίσκεται στο κέντρο του Βελιγραδίου, κοντά στον
             κεντρικό πεζόδρομο Knez Mihajlova. Η διεύθυνση είναι Studentski trg
@@ -481,8 +490,8 @@ class TravelInfo extends React.Component {
           <h3>Από το σιδηροδρομικό σταθμό</h3>
           <p>Η μέση τιμή του ταξί είναι περίπου 700 Δηνάρια (7 €).</p>
           <h3>Μερικές ασφαλείς επιλογές ταξί:</h3>
-          <p>
-            <ul>
+          <span>
+            <ul className={contentStyles.taxi}>
               <li>
                 <a
                   target="_blank"
@@ -520,7 +529,7 @@ class TravelInfo extends React.Component {
                 </a>
               </li>
             </ul>
-          </p>
+          </span>
           <hr />
           <p>Πηγές πληροφοριών: </p>
           <p>

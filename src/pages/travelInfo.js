@@ -6,12 +6,11 @@ import map from "../../content/images/belgradeMap.png"
 
 class TravelInfo extends React.Component {
   render() {
-    console.log(this.props.location)
     return (
       <Layout language="en" location={this.props.location}>
         <SEO title="Travel Info" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h1>Travel Info - REACHING BELGRADE</h1>
+          <h1>Reaching Belgrade</h1>
           <h2>By airplane</h2>
           <p>
             If you prefer travelling by plane, Belgrade is served by Nikola
@@ -26,8 +25,8 @@ class TravelInfo extends React.Component {
             fare to the city center is approximately 1,500-2,000 Dinars
             (15-20€).
           </p>
-          <h3>Carriers:</h3>
-          <p>
+          <h3>Carriers</h3>
+          <span className={contentStyles.carriers}>
             <ul>
               <li>
                 <a
@@ -79,6 +78,8 @@ class TravelInfo extends React.Component {
                   Austrian Airlines
                 </a>
               </li>
+            </ul>
+            <ul>
               <li>
                 <a
                   target="_blank"
@@ -129,6 +130,8 @@ class TravelInfo extends React.Component {
                   Malev
                 </a>
               </li>
+            </ul>
+            <ul>
               <li>
                 <a
                   target="_blank"
@@ -180,9 +183,9 @@ class TravelInfo extends React.Component {
                 </a>
               </li>
             </ul>
-          </p>
-          <h3>Low cost carriers:</h3>
-          <p>
+          </span>
+          <h3>Low cost carriers</h3>
+          <span className={contentStyles.carriers}>
             <ul>
               <li>
                 <a
@@ -202,6 +205,8 @@ class TravelInfo extends React.Component {
                   Cimber Air
                 </a>
               </li>
+            </ul>
+            <ul>
               <li>
                 <a
                   target="_blank"
@@ -220,6 +225,8 @@ class TravelInfo extends React.Component {
                   Norwegian Air Shuttle
                 </a>
               </li>
+            </ul>
+            <ul>
               <li>
                 <a
                   target="_blank"
@@ -239,7 +246,7 @@ class TravelInfo extends React.Component {
                 </a>
               </li>
             </ul>
-          </p>
+          </span>
           <p>
             You can find more information at the website of the
             <a
@@ -307,7 +314,7 @@ class TravelInfo extends React.Component {
             120km/hour).
           </p>
           <p>Distance from Belgrade to the main European cities:</p>
-          <p>
+          <span className={contentStyles.distances}>
             <ul>
               <li>Amsterdam 1760 km</li>
               <li>Athens 1090 km</li>
@@ -317,6 +324,8 @@ class TravelInfo extends React.Component {
               <li>Istanbul 928 km</li>
               <li>Copenhagen 2018 km</li>
               <li>London 2073 km</li>
+            </ul>
+            <ul>
               <li>Munich 1020 km</li>
               <li>Moscow 2211 km</li>
               <li>Oslo 2577 km</li>
@@ -325,7 +334,7 @@ class TravelInfo extends React.Component {
               <li>Stockholm 2622 km</li>
               <li>Thessaloniki 504 km</li>
             </ul>
-          </p>
+          </span>
           <h2>Customs and visas</h2>
           <p>
             The citizens of the following countries do not need a visa to enter
@@ -362,7 +371,7 @@ class TravelInfo extends React.Component {
             obliged to apply for a temporary resident status before the
             three-month period expires.
           </p>
-          <h1>ACCESS TO THE FACULTY OF PHILOLOGY</h1>
+          <h1>Access to the Faculty Of Philology</h1>
           <p>
             The Faculty of Philology is located in the center of Belgrade, near
             the pedestrian zone and the main pedestrian street, Knez Mihajlova.
@@ -385,18 +394,6 @@ class TravelInfo extends React.Component {
             kiosks, with one ride costing 89 dinars (around 0,90 €). The daily
             electronic ticket costs 250 dinars (around 2,50 €).
           </p>
-          <p>
-            More information about tickets and public transportation can be
-            found{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://www.gsp.rs/karte_za_prevoz.aspx"
-            >
-              here
-            </a>
-            .
-          </p>
           <img src={map} alt="faculty location" />
           <p>
             The second option is the minibus A1; its last stop being the Slavija
@@ -412,17 +409,6 @@ class TravelInfo extends React.Component {
             one ride costing 89 dinars (around 0,90 €). The daily electronic
             ticket costs 250 dinars (around 2,50 €).
           </p>
-          <p>
-            More information about tickets and public transportation can be
-            found{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://www.gsp.rs/karte_za_prevoz.aspx"
-            >
-              here
-            </a>
-          </p>
           <h3>From the main bus station</h3>
           <p>
             From the main bus station, you can take the buses no. 52, 53 and 56,
@@ -436,18 +422,6 @@ class TravelInfo extends React.Component {
             tickets (BUS PLUS) for multiple rides can be found in shops or
             kiosks, with one ride costing 89 dinars (around 0,90 €). The daily
             electronic ticket costs 250 dinars (around 2,50 €).
-          </p>
-          <p>
-            More information about tickets and public transportation can be
-            found{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://www.gsp.rs/karte_za_prevoz.aspx"
-            >
-              here
-            </a>
-            .
           </p>
           <h3>From the railway station</h3>
           <p>
@@ -490,8 +464,8 @@ class TravelInfo extends React.Component {
           <h3>From the railway station</h3>
           <p>The average taxi’s price is approximately 700 Dinars (7 €).</p>
           <h3>Some safe taxi options:</h3>
-          <p>
-            <ul>
+          <span>
+            <ul className={contentStyles.taxi}>
               <li>
                 <a
                   target="_blank"
@@ -529,7 +503,7 @@ class TravelInfo extends React.Component {
                 </a>
               </li>
             </ul>
-          </p>
+          </span>
           <hr />
           <p>Sources of information: </p>
           <p>
