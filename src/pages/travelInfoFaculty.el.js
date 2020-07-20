@@ -85,13 +85,40 @@ class TravelInfoFaculty extends React.Component {
             περιοχών και δρόμων της πόλης.
           </p>
           <h2>Με ταξί</h2>
-          <h3>Από το αεροδρόμιο Nikola Tesla</h3>
+          <h3>
+            Από το{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://beg.aero/eng"
+            >
+              αεροδρόμιο Nikola Tesla
+            </a>
+          </h3>
           <p>
             Η μέση τιμή του ταξί είναι περίπου 1.500-2.000 Δηνάρια (15-20 €).
           </p>
-          <h3>Από τον κεντρικό σταθμό λεωφορείων</h3>
+          <h3>
+            Από τον{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://www.bas.rs/en/"
+            >
+              κεντρικό σταθμό λεωφορείων
+            </a>
+          </h3>
           <p>Η μέση τιμή του ταξί είναι περίπου 500 Δηνάρια (5 €).</p>
-          <h3>Από το σιδηροδρομικό σταθμό</h3>
+          <h3>
+            Από το{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://serbianrailways.com/"
+            >
+              σιδηροδρομικό σταθμό
+            </a>
+          </h3>
           <p>Η μέση τιμή του ταξί είναι περίπου 700 Δηνάρια (7 €).</p>
           <h3>Μερικές ασφαλείς επιλογές ταξί:</h3>
           <span>

@@ -96,14 +96,41 @@ class TravelInfoFaculty extends React.Component {
             certain city areas and roads.
           </p>
           <h2>By taxi</h2>
-          <h3>From the Airport Nikola Tesla</h3>
+          <h3>
+            From the{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://beg.aero/eng"
+            >
+              Airport Nikola Tesla
+            </a>
+          </h3>
           <p>
             The average taxi’s price is approximately 1,500-2,000 Dinars (15-20
             €).
           </p>
-          <h3>From the main bus station</h3>
+          <h3>
+            From the{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://www.bas.rs/en/"
+            >
+              main bus station
+            </a>
+          </h3>
           <p>The average taxi’s price is approximately 500 Dinars (5 €).</p>
-          <h3>From the railway station</h3>
+          <h3>
+            From the{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://serbianrailways.com/"
+            >
+              railway station
+            </a>
+          </h3>
           <p>The average taxi’s price is approximately 700 Dinars (7 €).</p>
           <h3>Some safe taxi options:</h3>
           <span>
