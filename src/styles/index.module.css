@@ -25,6 +25,10 @@
   padding-top: 2em;
 }
 
+.map {
+  height: 350px;
+}
+
 th {
   background-color: var(--highlight-primary);
   color: var(--content-bg);
