@@ -9,21 +9,21 @@ const Rentals = () => {
     {
       airbnb: file(relativePath: { eq: "airbnb.png" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       bookingdotcom: file(relativePath: { eq: "bookingdotcom.png" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       stannadan: file(relativePath: { eq: "stannadan.png" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }

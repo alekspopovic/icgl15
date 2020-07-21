@@ -27,30 +27,23 @@ const Sidebar = ({ language, extraWide }) => {
 
   const data = useStaticQuery(graphql`
     {
-      uniImage: file(relativePath: { eq: "university.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       uniLogo: file(relativePath: { eq: "uni.png" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       facultyImage: file(relativePath: { eq: "faculty.png" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       poster: file(relativePath: { eq: "poster.png" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }

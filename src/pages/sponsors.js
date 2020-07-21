@@ -11,14 +11,14 @@ const Sponsors = props => {
     {
       blockAndRoll: file(relativePath: { eq: "blockandroll.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       aleks: file(relativePath: { eq: "aleks.png" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
