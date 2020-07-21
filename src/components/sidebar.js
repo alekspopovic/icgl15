@@ -52,7 +52,7 @@ const Sidebar = ({ language, extraWide }) => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href={data.poster.childImageSharp.fluid.src}
+            href={data.posterImage.childImageSharp.fluid.src}
           >
             <Img fluid={data.posterImage.childImageSharp.fluid} />
           </a>

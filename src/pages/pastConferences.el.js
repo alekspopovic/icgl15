@@ -13,6 +13,7 @@ class PastConferences extends React.Component {
       >
         <SEO title="PastConferences" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
+          <h1>Προηγούμενα συνέδρια</h1>
           <ul>
             <li>
               <a
