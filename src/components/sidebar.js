@@ -68,7 +68,7 @@ const Sidebar = ({ language, extraWide }) => {
       : "Πανεπιστήμιο του Βελιγραδίου"
 
   let facultyText =
-    language === "en" ? "Faculty of Philology" : "Σχολή Φιλολογίας"
+    language === "en" ? "Faculty of Philology" : "Φιλολογική Σχολή"
 
   return (
     <div
