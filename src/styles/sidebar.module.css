@@ -19,6 +19,7 @@
 
 .sidebarItem h3 {
   border-bottom: 1px solid var(--highlight-primary);
+  text-align: center;
 }
 
 .sidebarItem.highlighted h3 {
@@ -30,8 +31,13 @@
 }
 
 .imageContainer {
-  width: 60%;
+  width: 45%;
   margin: auto;
+  transition: transform 0.2s ease-in;
+}
+
+.imageContainer:hover {
+  transform: scale(1.05);
 }
 
 .facultyLogo {
