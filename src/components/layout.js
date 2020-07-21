@@ -83,7 +83,7 @@ const Layout = props => {
         role="button"
         tabIndex={0}
       >
-        <div>{getMenuItemLabel("abstracts", language)}</div>
+        <div>{getMenuItemLabel("participation", language)}</div>
         <div
           className={`${layoutStyles.dropdownContent} ${
             language === "en"
