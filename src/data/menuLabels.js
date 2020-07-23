@@ -22,7 +22,7 @@ const labels = {
     organizingCommittee: "organizing committee",
     scientificCommittee: "scientific committee",
     reviewers: "reviewers",
-    socialProgramme: "social programme",
+    socialProgramme: "gala dinner",
     sponsors: "sponsors",
   },
   sr: {
@@ -64,7 +64,7 @@ const labels = {
     organizingCommittee: "ΟΡΓΑΝΩΤΙΚΗ ΕΠΙΤΡΟΠΗ",
     scientificCommittee: "ΕΠΙΣΤΗΜΟΝΙΚΗ ΕΠΙΤΡΟΠΗ",
     reviewers: "ΑΞΙΟΛΟΓΗΤΕΣ",
-    socialProgramme: "ΚΟΙΝΩΝΙΚΟ ΠΡΟΓΡΑΜΜΑ",
+    socialProgramme: "ΕΠΙΣΗΜΟ ΔΕΙΠΝΟ",
     sponsors: "ΧΟΡΗΓΟΙ",
   },
 }

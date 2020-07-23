@@ -9,7 +9,7 @@ class SocialProgramme extends React.Component {
       <Layout language="en" location={this.props.location}>
         <SEO title="Social Programme" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h2>To be added</h2>
+          <h2>To be announced</h2>
           <hr />
         </div>
       </Layout>
