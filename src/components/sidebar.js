@@ -8,6 +8,7 @@ import uniLogo from "../assets/uniLogo.png"
 import facultyLogo from "../assets/ff.gif"
 // import facultyLogo from "../assets/facultyLogo.png"
 import posterImage from "../assets/posterImage.png"
+import posterImageMini from "../assets/posterImageMini.png"
 
 const Sidebar = ({ language, extraWide }) => {
   // const data = useStaticQuery(graphql`
@@ -61,7 +62,7 @@ const Sidebar = ({ language, extraWide }) => {
             // href={data.posterImage.childImageSharp.fluid.src}
           >
             {/* <Img fluid={data.posterImage.childImageSharp.fluid} /> */}
-            <img src={posterImage} alt="ICGL15 poster" />
+            <img src={posterImageMini} alt="ICGL15 poster" />
           </a>
         </div>
       </div>
