@@ -8,7 +8,12 @@ import Rentals from "../components/rentals"
 class Accommodation extends React.Component {
   render() {
     return (
-      <Layout language="en" location={this.props.location} extraWide={true}>
+      <Layout
+        language="en"
+        location={this.props.location}
+        extraWide={true}
+        isSidebarDisabled={true}
+      >
         <SEO title="Accommodation" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>Accommodation</h1>

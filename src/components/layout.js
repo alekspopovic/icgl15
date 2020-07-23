@@ -286,7 +286,7 @@ const Layout = props => {
         {children}
         {sidebar}
       </main>
-      <Footer isSidebarDisabled={isSidebarDisabled} />
+      <Footer />
     </React.Fragment>
   )
 }
