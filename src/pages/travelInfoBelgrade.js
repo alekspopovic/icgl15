@@ -393,6 +393,15 @@ class TravelInfoBelgrade extends React.Component {
               Public City Transport
             </a>
           </p>
+          <p className={contentStyles.disclaimer}>
+            <strong>
+              We highly suggest for all participants to check all information on
+              the{" "}
+              <a href="http://www.mfa.gov.rs/en/">
+                official website of Serbian Ministry of Foreign Affairs
+              </a>
+            </strong>
+          </p>
         </div>
       </Layout>
     )
