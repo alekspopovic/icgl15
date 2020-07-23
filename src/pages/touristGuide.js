@@ -125,51 +125,41 @@ class TouristGuide extends React.Component {
           <p>
             The University of Belgrade is the oldest and largest university in
             Serbia, and one of the most important educational and research
-            centers in Europe. Founded in 1808 as the Belgrade Higher School in
-            revolutionary Serbia, by 1838 it merged with the Kragujevac-based
-            departments into a single university. The University has around
-            97,700 enrolled students and over 4,800 members of academic staff.
-            The University comprises 31 faculties, 12 research institutes, the
-            university library, and 9 university centers. The faculties are
-            organized into 4 groups: social sciences and humanities; medical
-            sciences; natural sciences and mathematics; and technological
-            sciences.
+            centers in Europe. It was founded in 1808 as the Belgrade Higher
+            School in revolutionary Serbia and by 1838 it merged with other
+            Department in Kragujevac into a single university. Nowadays, the
+            University of Belgrade has around 97,700 enrolled students and over
+            4,800 academic members. The University comprises 31 departments, 12
+            research institutes, the university library, and 9 university
+            centers. The faculties are organized into 4 groups: Social Sciences
+            and Humanities, Medical Sciences, Natural Sciences and Mathematics,
+            and Technological Sciences.
           </p>
           <h2>The Faculty of Philology</h2>
           <p>
-            The Faculty of Philology trains and educates its students in the
-            academic study or practice in linguistics and philology. It has been
-            nurturing the tradition of higher education stemming from the Lyceum
-            since 1873 and has been developing philological disciplines and
-            growing as an individual Faculty since 1960. The faculty is divided
-            into 30 different departments, which possess their own libraries, it
-            operates several research centers and publishes a number of
-            periodical publications. The studies are comprised by the
-            disciplines of language, literature, culture and library and
-            information science. The Faculty boasts numerous cultural
-            manifestations and is proud of its scientific publications.
-            Monographs, including those written by the Faculty’s professors, are
-            also an important pillar supporting further academic achievement.{" "}
+            The Faculty of Philology immerses its students in the academic study
+            and research of various domains in linguistics and philology, in
+            general. Since 1873, young people, having attended the Lyceum, have
+            the opportunity to continue the tertiary education tradition,
+            crossing over into University. Following this tradition, the Faculty
+            of Philology has been developing philological disciplines. It has
+            been growing as an autonomous Faculty since 1960. Nowadays, the
+            Faculty is divided into 30 different departments (of different
+            linguistic and literary studies), which are equipped with their own
+            libraries. Moreover, it runs several research centers and publishes
+            a large number of periodical publications. The Faculty is renowned
+            for the publication of significant scientific papers and the
+            organization of cultural events.
           </p>
-          {/* <h2>The Department of Neohellenic Studies</h2> */}
           <hr />
-          <p>Information sources: </p>
           <p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://en.wikipedia.org/wiki/University_of_Belgrade#cite_note-201819stats-4"
-            >
-              University of Belgrade Wikipedia entry
-            </a>
-          </p>
-          <p>
+            For more information visit:{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="http://new.fil.bg.ac.rs/lang/sr/fakultet/o-fakultetu/"
             >
-              University of Belgrade website
+              http://new.fil.bg.ac.rs/lang/sr/fakultet/o-fakultetu/
             </a>
           </p>
         </div>
