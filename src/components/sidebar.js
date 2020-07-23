@@ -5,7 +5,8 @@ import sidebarStyles from "../styles/sidebar.module.css"
 import "font-awesome/css/font-awesome.min.css"
 import SocialIcons from "./socialIcons"
 import uniLogo from "../assets/uniLogo.png"
-import facultyLogo from "../assets/facultyLogo.png"
+import facultyLogo from "../assets/ff.gif"
+// import facultyLogo from "../assets/facultyLogo.png"
 import posterImage from "../assets/posterImage.png"
 
 const Sidebar = ({ language, extraWide }) => {

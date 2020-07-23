@@ -34,7 +34,8 @@ class ContactForm extends React.Component {
               icon={faMapMarkerAlt}
               title="address"
             />
-            Studentski Trg 3, 11000 Beograd (Студентски трг 3, 11000 Београд)
+            University of Belgrade, Faculty of Philology, Department of Modern
+            Greek Studies, Studentski trg 3, 11000 Belgrade
           </p>
           <p>
             <FontAwesomeIcon
@@ -43,6 +44,14 @@ class ContactForm extends React.Component {
               title="phone"
             />
             +381-11-202-16-09
+          </p>
+          <p>
+            <FontAwesomeIcon
+              className={contactListStyles.contactIcon}
+              icon={faPhoneAlt}
+              title="phone"
+            />
+            +381-11-202-16-06
           </p>
           <p>
             <FontAwesomeIcon

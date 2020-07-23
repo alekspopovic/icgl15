@@ -1,6 +1,6 @@
 .contactContent {
   text-align: center;
-  width: 50%;
+  width: 70%;
 }
 
 .contactItem {
@@ -74,12 +74,18 @@ form div {
 @media only screen and (max-width: 1366px) {
   .contactContent {
     width: 70%;
+    margin: 0 auto;
+  }
+
+  .contactItem {
+    margin-right: 0;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .contactContent {
     width: 100%;
+    margin: 0 auto;
     margin-top: 2em;
   }
 }
