@@ -23,24 +23,18 @@ class Registration extends React.Component {
             <tbody>
               <tr>
                 <td>Presenter/Author (Regular)</td>
-                <td>80 euro</td>
-                <td>
-                  100 euro <strong>(excluding bank transaction fee)</strong>
-                </td>
+                <td>80 euro*</td>
+                <td>100 euro*</td>
               </tr>
               <tr>
                 <td>Presenter/Author (Student)</td>
-                <td>40 euro</td>
-                <td>
-                  60 euro <strong>(excluding bank transaction fee)</strong>
-                </td>
+                <td>40 euro*</td>
+                <td>60 euro*</td>
               </tr>
               <tr>
                 <td>Attendee (Regular)</td>
-                <td>80 euro</td>
-                <td>
-                  100 euro <strong>(excluding bank transaction fee)</strong>
-                </td>
+                <td>80 euro*</td>
+                <td>100 euro*</td>
               </tr>
               <tr>
                 <td>Attendee (Student)</td>
@@ -49,6 +43,30 @@ class Registration extends React.Component {
               </tr>
             </tbody>
           </table>
+
+          <div className={contentStyles.disclaimer}>
+            <strong>* All values are excluding bank transaction fee.</strong>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>ORDERING CUSTOMER</th>
+                <th>REASON</th>
+                <th>SWIFT</th>
+                <th>IBAN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Name and Surname</td>
+                <td>ICGL15 participation fee</td>
+                <td>NBSRRSBGXXX</td>
+                <td>RS35840000000005779097</td>
+              </tr>
+            </tbody>
+          </table>
+
           <Button
             isExternal={true}
             url={PaymentInstructions}
