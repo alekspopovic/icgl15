@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Announcements from "../components/announcements"
 import contentStyles from "../styles/index.module.css"
 
 class Index extends React.Component {
@@ -21,6 +22,7 @@ class Index extends React.Component {
             <strong>16-19 Σεπτεμβρίου 2021</strong>.
           </p>
           <hr />
+          <Announcements language="el" />
         </div>
       </Layout>
     )
