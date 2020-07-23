@@ -1,37 +1,39 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+//import { useStaticQuery, graphql } from "gatsby"
+//import Img from "gatsby-image"
 import sidebarStyles from "../styles/sidebar.module.css"
 import "font-awesome/css/font-awesome.min.css"
-// import NewsLink from "./newsLink"
 import SocialIcons from "./socialIcons"
+import uniLogo from "../assets/uniLogo.png"
+import facultyLogo from "../assets/facultyLogo.png"
+import posterImage from "../assets/posterImage.png"
 
 const Sidebar = ({ language, extraWide }) => {
-  const data = useStaticQuery(graphql`
-    {
-      uniLogoImage: file(relativePath: { eq: "uniLogo.png" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      facultyLogoImage: file(relativePath: { eq: "facultyLogo.png" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      posterImage: file(relativePath: { eq: "posterImage.png" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   {
+  //     uniLogoImage: file(relativePath: { eq: "uniLogo.png" }) {
+  //       childImageSharp {
+  //         fluid(quality: 100) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //     facultyLogoImage: file(relativePath: { eq: "facultyLogo.png" }) {
+  //       childImageSharp {
+  //         fluid(quality: 100) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //     posterImage: file(relativePath: { eq: "posterImage.png" }) {
+  //       childImageSharp {
+  //         fluid(quality: 100) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   let universityText =
     language === "en"
@@ -48,13 +50,17 @@ const Sidebar = ({ language, extraWide }) => {
       }`}
     >
       <div className={sidebarStyles.sidebarItem}>
-        <div className={sidebarStyles.imageContainer}>
+        <div
+          className={`${sidebarStyles.imageContainer} ${sidebarStyles.poster}`}
+        >
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href={data.posterImage.childImageSharp.fluid.src}
+            href={posterImage}
+            // href={data.posterImage.childImageSharp.fluid.src}
           >
-            <Img fluid={data.posterImage.childImageSharp.fluid} />
+            {/* <Img fluid={data.posterImage.childImageSharp.fluid} /> */}
+            <img src={posterImage} alt="ICGL15 poster" />
           </a>
         </div>
       </div>
@@ -66,7 +72,8 @@ const Sidebar = ({ language, extraWide }) => {
             rel="noopener noreferrer"
             href="http://bg.ac.rs/en/index.php"
           >
-            <Img fluid={data.uniLogoImage.childImageSharp.fluid} />
+            {/* <Img fluid={data.uniLogoImage.childImageSharp.fluid} /> */}
+            <img src={uniLogo} alt="University of Belgrade Logo" />
           </a>
         </div>
       </div>
@@ -78,10 +85,11 @@ const Sidebar = ({ language, extraWide }) => {
             rel="noopener noreferrer"
             href="http://www.fil.bg.ac.rs/"
           >
-            <Img
+            {/* <Img
               fluid={data.facultyLogoImage.childImageSharp.fluid}
               className={sidebarStyles.facultyLogo}
-            />
+            /> */}
+            <img src={facultyLogo} alt="Faculty of Philology Logo" />
           </a>
         </div>
       </div>
