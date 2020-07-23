@@ -33,7 +33,7 @@ const Announcements = ({ language }) => {
 
   console.log(language)
 
-  let heading = language === "en" ? "Announcements" : "Ανακοινώσεις"
+  let heading = language === "en" ? "News" : "Νέα"
 
   return (
     <div className={announcementStyles.announcements}>

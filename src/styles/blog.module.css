@@ -1,5 +1,5 @@
 .blogContent {
-  width: 50%;
+  width: 70%;
   margin: 1em 2em 2em 0;
   display: flex;
   justify-content: space-between;
@@ -86,7 +86,8 @@ blockquote {
 
 @media only screen and (max-width: 1366px) {
   .blogContent {
-    width: 65%;
+    width: 100%;
+    margin: 2rem auto 0 auto;
   }
 
   article {

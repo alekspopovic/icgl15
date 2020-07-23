@@ -4,6 +4,10 @@ import SEO from "../components/seo"
 import PaginationUrl from "../components/paginationUrl"
 import blogStyles from "../styles/blog.module.css"
 import Link from "gatsby-link"
+import newsStyles from "../styles/news.module.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBell } from "@fortawesome/free-regular-svg-icons"
+import contentStyles from "../styles/index.module.css"
 
 class News extends React.Component {
   render() {
@@ -22,29 +26,37 @@ class News extends React.Component {
         location={this.props.location}
       >
         <SEO title={seoTitle} pagePath={this.props.location.pathname} />
-        <div className={blogStyles.blogContent}>
-          {group.map(({ node }) => (
-            <article key={node.fields.slug}>
-              <header>
-                <h2>
-                  <Link to={node.fields.slug}>
-                    {node.frontmatter.title || node.fields.slug}
-                  </Link>
-                </h2>
-                <div className={blogStyles.date}>{node.frontmatter.date}</div>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-                <div className={blogStyles.readMore}>
-                  <Link to={node.fields.slug}>Read more &#187;</Link>
+        <div className={contentStyles.content}>
+          <h1>News / Νέα</h1>
+          {group.map(({ node }) => {
+            let splitDate = node.frontmatter.date.split(" ")
+            let day = splitDate[0]
+            let monthAndYear = splitDate[1].replace(",", ", ")
+            return (
+              <div key={node.fields.slug} className={newsStyles.newsItem}>
+                <div className={newsStyles.dateContainer}>
+                  <div className={newsStyles.day}>{day}</div>
+                  <div className={newsStyles.monthAndYear}>{monthAndYear}</div>
+                  <div className={newsStyles.dateIconContainer}>
+                    <FontAwesomeIcon
+                      className={newsStyles.dateIcon}
+                      icon={faBell}
+                      title="Announcement"
+                    />
+                  </div>
                 </div>
-              </section>
-            </article>
-          ))}
+                <div className={newsStyles.newsContent}>
+                  <h3>
+                    <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+                  </h3>
+                  <div>{node.excerpt}</div>
+                  <div className={blogStyles.readMore}>
+                    <Link to={node.fields.slug}>Read more &#187;</Link>
+                  </div>
+                </div>
+              </div>
+            )
+          })}
         </div>
         <div className={blogStyles.paginationUrls}>
           <PaginationUrl
