@@ -46,7 +46,7 @@ class News extends React.Component {
                   </div>
                 </div>
                 <div className={newsStyles.newsContent}>
-                  <h3>
+                  <h3 className={newsStyles.newsContentTitle}>
                     <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
                   </h3>
                   <div>{node.excerpt}</div>

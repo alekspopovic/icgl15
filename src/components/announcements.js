@@ -31,8 +31,6 @@ const Announcements = ({ language }) => {
     <NewsLink key={edge.node.id} news={edge.node} />
   ))
 
-  console.log(language)
-
   let heading = language === "en" ? "News" : "Νέα"
 
   return (

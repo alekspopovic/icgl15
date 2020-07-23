@@ -24,7 +24,7 @@ const NewsLink = ({ news }) => {
         </div>
       </div>
       <div className={newsStyles.newsContent}>
-        <h3>
+        <h3 className={newsStyles.newsContentTitle}>
           <Link to={news.fields.slug}>{news.frontmatter.title}</Link>
         </h3>
         <div>{news.excerpt}</div>
