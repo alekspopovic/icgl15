@@ -1,5 +1,5 @@
 .blogPost {
-  width: 50%;
+  width: 70%;
   margin: 2em 2em 2em 0;
   padding: 2em 5em;
 }
@@ -45,9 +45,10 @@ article section h2 {
 
 @media only screen and (max-width: 1366px) {
   .blogPost {
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 1em;
+    width: 100%;
+    /* margin-left: 15%;
+    margin-top: 1em; */
+    margin: 1em auto 0 auto;
   }
 
   .postNavigation {
@@ -111,7 +112,6 @@ article section h2 {
   .blogPost {
     width: 100%;
     margin-left: 0;
-    margin-top: 0;
     padding: 1em 2em;
     border: none;
     border-radius: 0;
