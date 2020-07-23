@@ -12,7 +12,7 @@ class BookOfAbstracts extends React.Component {
           pagePath={this.props.location.pathname}
         />
         <div className={contentStyles.content}>
-          <h2>To be added</h2>
+          <h2>To be announced</h2>
           <hr />
         </div>
       </Layout>

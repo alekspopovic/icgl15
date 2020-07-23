@@ -12,7 +12,24 @@ class OrganizingCommittee extends React.Component {
           pagePath={this.props.location.pathname}
         />
         <div className={contentStyles.content}>
-          <h2>To be announced</h2>
+          <h2>ΟΡΓΑΝΩΤΙΚΗ ΕΠΙΤΡΟΠΗ</h2>
+          <ul>
+            <li>Dina Dmitrović</li>
+            <li>Ana Elaković Nenadović</li>
+            <li>Anka Janković</li>
+            <li>Martha Lampropoulou</li>
+            <li>Ivana Milojević</li>
+            <li>Predrag Mutavdžić</li>
+            <li>Vojkan Stojičić</li>
+            <li>Ljiljana Vulović</li>
+          </ul>
+
+          <h2>ΓΡΑΜΜΑΤΕΙΑΚΗ ΥΠΟΣΤΗΡΙΞΗ</h2>
+          <ul>
+            <li>Μaja Baćić</li>
+            <li>Antonina Kostić</li>
+            <li>Dragana Tkalac</li>
+          </ul>
         </div>
       </Layout>
     )

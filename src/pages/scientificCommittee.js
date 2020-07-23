@@ -12,7 +12,17 @@ class ScientificCommittee extends React.Component {
           pagePath={this.props.location.pathname}
         />
         <div className={contentStyles.content}>
-          <h2>To be announced</h2>
+          <h2>Scientific Committee</h2>
+          <ul>
+            <li>Dejan Dželebdžić</li>
+            <li>Ana Elaković Nenadović</li>
+            <li>Anka Janković</li>
+            <li>Tamara Kostić Pahnoglou</li>
+            <li>Predrag Mutavdžić</li>
+            <li>Ifigenija Radulović</li>
+            <li>Vojkan Stojičić</li>
+            <li>Darko Todorović</li>
+          </ul>
         </div>
       </Layout>
     )

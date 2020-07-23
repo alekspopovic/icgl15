@@ -9,7 +9,7 @@ class Proceedings extends React.Component {
       <Layout language="el" location={this.props.location}>
         <SEO title="Proceedings" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h2>To be added</h2>
+          <h2>θα ανακοινωθεί</h2>
           <hr />
         </div>
       </Layout>
