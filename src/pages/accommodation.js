@@ -20,7 +20,7 @@ class Accommodation extends React.Component {
           <h2>Rentals</h2>
           <Rentals />
           <h2>Nearby Hotels</h2>
-          <Hotels />
+          <Hotels language="en" />
         </div>
       </Layout>
     )

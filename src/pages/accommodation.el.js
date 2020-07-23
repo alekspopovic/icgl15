@@ -17,10 +17,9 @@ class Accommodation extends React.Component {
         <SEO title="Accommodation" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>ΔΙΑΜΟΝΗ</h1>
-          <h2>Ιδιωτική Διαμονή</h2>
           <Rentals />
           <h2>Κοντινά ξενοδοχεία</h2>
-          <Hotels />
+          <Hotels language="el" />
         </div>
       </Layout>
     )
