@@ -1,5 +1,6 @@
 .sidebar {
-  margin: 2em 0;
+  margin: 2em 1em 2em 0;
+  width: 30%;
 }
 
 .sidebarItem {
@@ -58,16 +59,15 @@
 
 @media only screen and (max-width: 1366px) {
   .sidebar {
-    width: 70%;
-    margin: 2rem auto 0 auto;
+    width: 25%;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1024px) {
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (max-width: 768px) {
   .sidebar {
-    width: 25%;
+    width: 100%;
   }
 }

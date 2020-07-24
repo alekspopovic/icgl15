@@ -1,12 +1,13 @@
 .content {
   box-shadow: var(--shadow);
   background: var(--content-bg);
-  padding: 2em 1em;
+  padding: 4em;
   padding-top: 0 !important;
-  margin-top: 2em;
+  margin: 2em 2em 2em 0;
   height: 100%;
   border: 2px solid var(--highlight-primary);
   border-radius: 5px;
+  width: 78%;
 }
 
 .content h2,
@@ -26,7 +27,7 @@
 }
 
 .paddingTop {
-  padding-top: 2em;
+  padding-top: 3rem;
 }
 
 .map {
@@ -71,21 +72,19 @@ th {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .content {
-    padding: 3em 2em;
-  }
-}
-
-@media only screen and (min-width: 1366px) {
+@media only screen and (max-width: 1366px) {
   .content {
     width: 70%;
-    margin: 2em 2em 2em 0;
+    margin: 2em 2em 2em 1em;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  #table {
+  .content {
+    margin: 2em auto;
+  }
+
+  .table {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
@@ -99,7 +98,19 @@ th {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding: 3em 2em;
+  }
+}
+
 @media only screen and (max-width: 426px) {
+  .content {
+    width: 100%;
+    padding: 3em 2em;
+  }
+
   .content h2 {
     font-size: 1.5em;
   }

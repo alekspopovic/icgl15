@@ -24,7 +24,7 @@ class OrganizingCommittee extends React.Component {
             <li>Ljiljana Vulović</li>
           </ul>
 
-          <h2>Secretarial support</h2>
+          <h2>Secretarial Support</h2>
           <ul>
             <li>Μaja Baćić</li>
             <li>Antonina Kostić</li>

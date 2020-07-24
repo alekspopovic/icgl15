@@ -40,7 +40,7 @@ class Hotels extends React.Component {
     let meterText = language === "en" ? "m" : "μ"
 
     return (
-      <table id={contentStyles.table}>
+      <table className={contentStyles.table}>
         <tbody>
           {tableHeading}
           {hotelData.map(hotel => {

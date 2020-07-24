@@ -28,15 +28,20 @@ class ContactForm extends React.Component {
           className={`${contactListStyles.contactItem} ${contactListStyles.contactInfo}`}
         >
           <h2>{this.getContactItemLabel("info")}</h2>
-          <p>
+          <div className={contactListStyles.addressContainer}>
             <FontAwesomeIcon
               className={contactListStyles.contactIcon}
               icon={faMapMarkerAlt}
               title="address"
             />
-            University of Belgrade, Faculty of Philology, Department of Modern
-            Greek Studies, Studentski trg 3, 11000 Belgrade
-          </p>
+            <ul className={contactListStyles.address}>
+              <li>University of Belgrade</li>
+              <li>Faculty of Philology</li>
+              <li>Department of Modern</li>
+              <li>Greek Studies</li>
+              <li>Studentski trg 3, 11000 Belgrade</li>
+            </ul>
+          </div>
           <p>
             <FontAwesomeIcon
               className={contactListStyles.contactIcon}

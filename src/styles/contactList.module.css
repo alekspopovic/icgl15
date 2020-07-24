@@ -1,6 +1,6 @@
 .contactContent {
   text-align: center;
-  width: 70%;
+  width: 80%;
 }
 
 .contactItem {
@@ -14,13 +14,6 @@
 
 .contactInfo {
   text-align: left;
-}
-
-.contactIcon {
-  color: var(--highlight-primary);
-  font-size: 1.5em;
-  margin-right: 0.5em;
-  transform: translateY(3px);
 }
 
 .contactButton {
@@ -71,6 +64,27 @@ form div {
   margin-top: 1em;
 }
 
+.addressContainer {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.contactIcon {
+  color: var(--highlight-primary);
+  font-size: 1.5em;
+  margin-right: 0.5em;
+  transform: translateY(3px);
+}
+
+ul.address {
+  list-style: none;
+  margin: 0;
+}
+
+ul.address li {
+  margin: 0;
+}
+
 @media only screen and (max-width: 1366px) {
   .contactContent {
     width: 70%;
@@ -84,20 +98,20 @@ form div {
 
 @media only screen and (max-width: 1200px) {
   .contactContent {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
-    margin-top: 2em;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .contactContent {
-    width: 100%;
-    margin-top: 2em;
-  }
 }
 
 @media only screen and (max-width: 768px) {
+  .contactContent {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .contactItem {
     width: 100%;
   }

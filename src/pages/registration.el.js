@@ -12,7 +12,7 @@ class Registration extends React.Component {
         <SEO title="Registration" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>Εγγραφή</h1>
-          <table>
+          <table className={contentStyles.table}>
             <thead>
               <tr>
                 <th>Κατηγορίες</th>
@@ -51,7 +51,7 @@ class Registration extends React.Component {
             </strong>
           </div>
 
-          <table>
+          <table className={contentStyles.table}>
             <thead>
               <tr>
                 <th>ΟΝΟΜΑΤΕΠΩΝΥΜΟ ΚΑΤΑΘΕΤΗ</th>
