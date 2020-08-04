@@ -45,7 +45,15 @@ class Registration extends React.Component {
           </table>
 
           <div className={contentStyles.disclaimer}>
-            <strong>* All values are excluding bank transaction fee.</strong>
+            <p>
+              <strong>* All values are excluding bank transaction fee.</strong>
+            </p>
+            <p>
+              <strong>
+                * The fee for participation will be paid exclusively via bank
+                transfer to the account given below.
+              </strong>
+            </p>
           </div>
 
           <table className={contentStyles.table}>

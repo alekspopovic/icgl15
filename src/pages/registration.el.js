@@ -45,10 +45,19 @@ class Registration extends React.Component {
           </table>
 
           <div className={contentStyles.disclaimer}>
-            <strong>
-              * Οι διάφορες χρεώσεις (π.χ. έμβασμα) και τα τυχόν έξοδα της
-              τράπεζας επιβαρύνουν τον καταθέτη
-            </strong>
+            <p>
+              <strong>
+                * Οι διάφορες χρεώσεις (π.χ. έμβασμα) και τα τυχόν έξοδα της
+                τράπεζας επιβαρύνουν τον καταθέτη
+              </strong>
+            </p>
+            <p>
+              <strong>
+                * Η καταβολή του χρηματικού ποσού για τη συμμετοχή θα
+                καταβάλλεται αποκλειστικά μέσω τραπέζης στον λογαριασμό που
+                παρατίθεται πιο κάτω.
+              </strong>
+            </p>
           </div>
 
           <table className={contentStyles.table}>
