@@ -17,7 +17,7 @@ class Registration extends React.Component {
               <tr>
                 <th>Categories</th>
                 <th>Early (Until 21/6/2021)</th>
-                <th>Late (After 22/6/2019)</th>
+                <th>Late (After 22/6/2021)</th>
               </tr>
             </thead>
             <tbody>

@@ -31,6 +31,45 @@ class CallForPapers extends React.Component {
             phonology, pragmatics, psycholinguistics, semantics,
             sociolinguistics, syntax).
           </p>
+          <h3>Invited Speakers</h3>
+          <ul>
+            <li>Prof. Aleksander Loma, University of Belgrade</li>
+            <li>Prof., Zoe Gavriilidou, Democritus University of Thrace</li>
+            <li>Prof., Costas Canakis, University of the Aegean</li>
+            <li>
+              Associate Prof. Stavroula Tsiplakou, Open University of Cyprus
+            </li>
+          </ul>
+          <h3>Abstract submission</h3>
+          <p>
+            Those who wish to participate in ICGL15 with either an oral
+            presentation or a poster are invited to submit their abstract by
+            <strong> 15th January 2021</strong> through the EasyChair platform
+            at the address provided below. Notification of acceptance will be
+            sent by <strong>31st March 2021</strong>. The languages of the
+            conference are Greek and English. Presentations should be 20 minutes
+            long, followed by a 10-minute discussion. The abstract should not
+            exceed 500 words, excluding references.
+          </p>
+          <p>Abstract submission page: …………………</p>
+          <h3>Multiple presentations policy</h3>
+          <p>
+            Each author may submit up to two abstracts: either one
+            single-authored and one co-authored or two co-authored.
+          </p>
+          <h3>Information</h3>
+          <p>
+            Information about registration, accommodation, traveling etc., is
+            being uploaded at the conference’s website:……… For any queries,
+            please, contact us at:{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto:icgl15@fil.bg.ac.rs"
+            >
+              icgl15@fil.bg.ac.rs
+            </a>
+          </p>
           <hr />
         </div>
       </Layout>

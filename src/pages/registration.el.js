@@ -17,7 +17,7 @@ class Registration extends React.Component {
               <tr>
                 <th>Κατηγορίες</th>
                 <th>Κόστος συμμετοχής (μέχρι και 21/6/2021)</th>
-                <th>Κόστος συμμετοχής (από 22/6/2019)</th>
+                <th>Κόστος συμμετοχής (από 22/6/2021)</th>
               </tr>
             </thead>
             <tbody>
