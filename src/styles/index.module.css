@@ -3,7 +3,7 @@
   background: var(--content-bg);
   padding: 4em;
   padding-top: 0 !important;
-  margin: 2em 2em 2em 0;
+  margin: 2em 2em 4em 0;
   height: 100%;
   border: 2px solid var(--highlight-primary);
   border-radius: 5px;
