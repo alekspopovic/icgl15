@@ -270,7 +270,7 @@ class TravelInfoBelgrade extends React.Component {
             and most European countries. The two major coach stations are
             located one next to the other, in the city center, near the Central
             Railway Station. Tickets can be purchased at the main bus station
-            (Glavna autobus kastanica).
+            (Glavna autobuska stanica).
           </p>
           <p>
             You can find more information about the timetables and prices at the
@@ -313,7 +313,7 @@ class TravelInfoBelgrade extends React.Component {
             lack sufficient road signs, therefore, it is better to bring always
             a detailed map with you. Speed limits are in accordance with the
             international standards (e.g. on a highway the maximum speed is
-            120km/hour).
+            130km/hour).
           </p>
           <p>Distance from Belgrade to the main European cities:</p>
           <span className={contentStyles.distances}>
@@ -340,15 +340,32 @@ class TravelInfoBelgrade extends React.Component {
           <h2>Customs and visas</h2>
           <p>
             The citizens of the following countries do not need a visa to enter
-            Serbia and they have the possibility to stay in the country up to 90
-            days: Andorra, Argentina, Australia, Austria, Belgium, Belarus,
-            Bosnia and Herzegovina, Bulgaria, Czech Republic, Croatia, Cyprus,
-            Denmark, Estonia, Finland, France, Germany, Great Britain, Greece,
-            Hungary, Holy, Ireland, Iceland, Italy, Israel, Latvia,
-            Lichtenstein, Lithuania, Luxembourg, Macedonia, Malta, Monaco,
-            Netherlands, Norway, Poland, Portugal, Romania, Russian Federation,
-            San Marino, Slovakia, Slovenia, Spain, Switzerland, Sweden, U.S.A.,
-            Vatican.
+            Serbia and they have the possibility to stay in the country for:
+            <ul>
+              <li>
+                up to 90 days within any 180 days: All European Union citizens,
+                Albania, Andorra, Antigua and Barbuda, Argentina, Armenia,
+                Australia, Azerbaijan, Bahrain, Bolivia, Bosnia and Herzegovina,
+                Brazil, Canada, Chile, Costa Rica, Cuba, Dominica, Georgia,
+                Grenada, Holy See, Iceland, Israel, Japan, Kuwait, Kyrgyzstan,
+                Liechtenstein, Macau, Mexico, Moldova, Monaco, Mongolia,
+                Montenegro, New Zealand, North Macedonia, Norway, Oman, Palau,
+                Peru, Qatar, Saint Kitts and Nevis, San Marino, Seychelles,
+                Singapore, South Korea, Switzerland, Trinidad and Tobago,
+                Tunisia, Turkey, United Arab Emirates, United Kingdom, United
+                States, Uruguay
+              </li>
+              <li>
+                30 days: Belarus, China, Colombia, Kazakhstan, Russia, Suriname
+              </li>
+              <li>30 days within 60-day period: Ukraine</li>
+              <li>
+                30 days days within one-year period: Bahamas, Barbados, Burundi,
+                Colombia, Guinea-Bissau, India, Indonesia, Paraguay, Saint
+                Vincent and the Grenadines
+              </li>
+              <li>14 days: Hong Kong</li>
+            </ul>
           </p>
           <p>
             On the other hand, people from other countries should get in touch
@@ -395,8 +412,7 @@ class TravelInfoBelgrade extends React.Component {
           </p>
           <p className={contentStyles.disclaimer}>
             <strong>
-              We highly suggest for all participants to check all information on
-              the{" "}
+              It is highly suggested to check all information on the{" "}
               <a href="http://www.mfa.gov.rs/en/">
                 official website of Serbian Ministry of Foreign Affairs
               </a>

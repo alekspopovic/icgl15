@@ -46,7 +46,8 @@ class TouristGuide extends React.Component {
             Belgrade is one of the oldest cities in Europe. The area around
             Belgrade was inhabited in the Palaeolithic and Mesolithic eras,
             while one of the most important prehistoric cultures of Europe, the
-            Vinča culture, evolved within the Belgrade area in the 6th
+            Vinča culture, evolved within the Belgrade area in the 6
+            <sup>th</sup>
             millennium BC.
           </p>
           <p>
@@ -54,7 +55,7 @@ class TouristGuide extends React.Component {
             known as Singidunum by the Romans. Due to its location, Singidunum
             became an important crossroad for the Roman provinces of Moesia,
             Dacia, Pannonia and Dalmatia. This city of very tumultuous history
-            changed hands among the Sarmatians, Goths, and Gepidae.{" "}
+            changed hands among the Sarmatians, Goths, and Gepidae.
           </p>
           <p>
             It was later held by the Franks and the Bulgars, and in the 11th
@@ -70,15 +71,15 @@ class TouristGuide extends React.Component {
             capital of Serbia.
           </p>
           <p>
-            After the World War I Belgrade became the capital of the new Kingdom
-            of Serbs, Croats and Slovenes, renamed the Kingdom of Yugoslavia in
-            1929. During the period after the World War II, Belgrade grew
-            rapidly as the capital and the largest city of Yugoslavia
-            (1918-2003), developing as a major industrial centre. In 1948, the
-            construction of New Belgrade started and in 1958, Belgrade's first
-            television station began broadcasting. Today, this modern European
-            city attracts tourists from all over the world, offering them a
-            unique experience.
+            After the World War I, Belgrade became the capital of the new
+            Kingdom of Serbs, Croats and Slovenes, renamed the Kingdom of
+            Yugoslavia in 1929. During the period after the World War II,
+            Belgrade grew rapidly as the capital and the largest city of
+            Yugoslavia (1918-2003), developing as a major industrial centre. In
+            1948, the construction of New Belgrade started and in 1958,
+            Belgrade's first television station began broadcasting. Today, this
+            modern European city attracts tourists from all over the world,
+            offering them a unique experience.
           </p>
           <p>Sources of information:</p>
           <ul>
@@ -144,12 +145,12 @@ class TouristGuide extends React.Component {
             crossing over into University. Following this tradition, the Faculty
             of Philology has been developing philological disciplines. It has
             been growing as an autonomous Faculty since 1960. Nowadays, the
-            Faculty is divided into 30 different departments (of different
-            linguistic and literary studies), which are equipped with their own
-            libraries. Moreover, it runs several research centers and publishes
-            a large number of periodical publications. The Faculty is renowned
-            for the publication of significant scientific papers and the
-            organization of cultural events.
+            Faculty is divided into multiple departments (of different
+            linguistic and literary studies) equipped with their own libraries
+            and teaching over 30 languages. Moreover, it runs several research
+            centers and publishes a large number of periodical publications. The
+            Faculty is renowned for the publication of significant scientific
+            papers and the organization of cultural events.
           </p>
           <hr />
           <p>

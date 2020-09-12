@@ -14,14 +14,30 @@ class ScientificCommittee extends React.Component {
         <div className={contentStyles.content}>
           <h2>Scientific Committee</h2>
           <ul>
-            <li>Dejan Dželebdžić</li>
-            <li>Ana Elaković Nenadović</li>
-            <li>Anka Janković</li>
-            <li>Tamara Kostić Pahnoglou</li>
-            <li>Predrag Mutavdžić</li>
-            <li>Ifigenija Radulović</li>
-            <li>Vojkan Stojičić</li>
-            <li>Darko Todorović</li>
+            <li>
+              Dželebdžić Dejan, Faculty of Philosophy, University of Belgrade
+            </li>
+            <li>
+              Elaković-Nenadović Ana, Faculty of Philology, University of
+              Belgrade
+            </li>
+            <li>Janković Anka, Faculty of Philology, University of Belgrade</li>
+            <li>
+              Kostić-Pahnoglou Tamara, Faculty of Philosophy, University of Niš
+            </li>
+            <li>
+              Mutavdžić Predrag, Faculty of Philology, University of Belgrade{" "}
+            </li>
+            <li>
+              Radulović Ifigenija, Faculty of Philology, University of Novi Sad
+            </li>
+            <li>
+              Stojičić Vojkan, Faculty of Philology, University of Belgrade
+            </li>
+            <li>
+              {" "}
+              Todorović Darko, Faculty of Philosophy, University of Belgrade
+            </li>
           </ul>
         </div>
       </Layout>
