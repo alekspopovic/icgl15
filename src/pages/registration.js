@@ -54,6 +54,14 @@ class Registration extends React.Component {
                 transfer to the account given below.
               </strong>
             </p>
+            <p>
+              If you belong to the last category (attendee-student), please
+              confirm your participation by sending your personal details (name,
+              last name, affiliation and email address) via the{" "}
+              <a target="_blank" rel="noopener noreferrer" href="/contact">
+                Contact section.
+              </a>
+            </p>
           </div>
 
           <table className={contentStyles.table}>

@@ -58,6 +58,15 @@ class Registration extends React.Component {
                 παρατίθεται πιο κάτω.
               </strong>
             </p>
+            <p>
+              Αν ανήκετε στην τελευταία κατηγορία (ακροατής-φοιτητικό),
+              παρακαλούμε να επιβεβαιώσετε τη συμμετοχή σας στέλνοντας τα
+              προσωπικά σας στοιχεία (όνομα, επίθετο, ακαδημαϊκό ίδρυμα και
+              ηλεκτρονική διεύθυνση), μέσω της{" "}
+              <a target="_blank" rel="noopener noreferrer" href="/el/contact">
+                ετικέτας 'Επικοινωνία'.
+              </a>
+            </p>
           </div>
 
           <table className={contentStyles.table}>
