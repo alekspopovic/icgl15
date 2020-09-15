@@ -10,7 +10,9 @@ class CallForPapers extends React.Component {
         <SEO title="Call for Papers" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h2>16-19 Σεπτεμβρίου 2021</h2>
-          <h3>1η Πρόσκληση υποβολής περιλήψεων</h3>
+          <h3>
+            1<sup>η</sup> Πρόσκληση υποβολής περιλήψεων
+          </h3>
           <p>Αγαπητοί/ές Συνάδελφοι,</p>
           <p>
             Το Τμήμα Νεοελληνικών Σπουδών του Πανεπιστημίου του Βελιγραδίου με

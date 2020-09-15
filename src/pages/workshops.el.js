@@ -8,9 +8,7 @@ class Workshops extends React.Component {
     return (
       <Layout language="el" location={this.props.location}>
         <SEO title="Workshops" pagePath={this.props.location.pathname} />
-        <div className={contentStyles.content}>
-          <h1>ICGL13 / Workshops</h1>
-        </div>
+        <div className={contentStyles.content}></div>
       </Layout>
     )
   }

@@ -17,7 +17,7 @@ class Index extends React.Component {
           <p className={contentStyles.paddingTop}>Dear Colleagues,</p>
           <p>
             The Department of Modern Greek Studies, Faculty of Philology,
-            University of Belgrade, is pleased to announce the 15<sup>th</sup>
+            University of Belgrade, is pleased to announce the 15<sup>th</sup>{" "}
             International Conference on Greek Linguistics, which will be held in
             Belgrade, <strong>16-19 September 2021</strong>.
           </p>

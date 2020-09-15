@@ -10,7 +10,9 @@ class CallForPapers extends React.Component {
         <SEO title="Call for Papers" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h2>16-19 September 2021</h2>
-          <h3>1st Call for papers</h3>
+          <h3>
+            1<sup>st</sup> Call for papers
+          </h3>
           <p>Dear Colleagues,</p>
           <p>
             The Department of Modern Greek Studies, Faculty of Philology,
@@ -44,12 +46,19 @@ class CallForPapers extends React.Component {
           <p>
             Those who wish to participate in ICGL15 with either an oral
             presentation or a poster are invited to submit their abstract by
-            <strong> 15th January 2021</strong> through the EasyChair platform
-            at the address provided below. Notification of acceptance will be
-            sent by <strong>31st March 2021</strong>. The languages of the
-            conference are Greek and English. Presentations should be 20 minutes
-            long, followed by a 10-minute discussion. The abstract should not
-            exceed 500 words, excluding references.
+            <strong>
+              {" "}
+              15<sup>th</sup> January 2021
+            </strong>{" "}
+            through the EasyChair platform at the address provided below.
+            Notification of acceptance will be sent by{" "}
+            <strong>
+              31<sup>st</sup> March 2021
+            </strong>
+            . The languages of the conference are Greek and English.
+            Presentations should be 20 minutes long, followed by a 10-minute
+            discussion. The abstract should not exceed 500 words, excluding
+            references.
           </p>
           <p>Abstract submission page: …………………</p>
           <h3>Multiple presentations policy</h3>

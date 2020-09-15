@@ -51,18 +51,22 @@ class TouristGuide extends React.Component {
             millennium BC.
           </p>
           <p>
-            Τhe city was founded by the Celts in the 4thcentury BCE and it was
-            known as Singidunum by the Romans. Due to its location, Singidunum
-            became an important crossroad for the Roman provinces of Moesia,
-            Dacia, Pannonia and Dalmatia. This city of very tumultuous history
-            changed hands among the Sarmatians, Goths, and Gepidae.
+            Τhe city was founded by the Celts in the 4<sup>th</sup> century BCE
+            and it was known as Singidunum by the Romans. Due to its location,
+            Singidunum became an important crossroad for the Roman provinces of
+            Moesia, Dacia, Pannonia and Dalmatia. This city of very tumultuous
+            history changed hands among the Sarmatians, Goths, and Gepidae.
           </p>
           <p>
-            It was later held by the Franks and the Bulgars, and in the 11th
-            century became a frontier town of Byzantium. In the 13th century it
-            came under the Serbian rule, and in 1402 despot Stefan Lazarević
-            made it the capital of Serbia. The Ottoman Turks besieged the city
-            in 1440, and until the 19th century it was in their hands.
+            It was later held by the Franks and the Bulgars, and in the 11
+            <sup>th </sup>
+            century became a frontier town of Byzantium. In the 13<sup>
+              th
+            </sup>{" "}
+            century it came under the Serbian rule, and in 1402 despot Stefan
+            Lazarević made it the capital of Serbia. The Ottoman Turks besieged
+            the city in 1440, and until the 19<sup>th</sup> century it was in
+            their hands.
           </p>
           <p>
             During the Turkish period Belgrade was a significant commercial

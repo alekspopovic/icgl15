@@ -20,7 +20,7 @@ const Announcements = ({ language }) => {
               title
             }
             id
-            excerpt(pruneLength: 160)
+            excerpt(pruneLength: 160, format: MARKDOWN)
           }
         }
       }
