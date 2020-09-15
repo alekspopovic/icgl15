@@ -1,42 +1,13 @@
 import React from "react"
-//import { useStaticQuery, graphql } from "gatsby"
-//import Img from "gatsby-image"
 import sidebarStyles from "../styles/sidebar.module.css"
 import "font-awesome/css/font-awesome.min.css"
 import SocialIcons from "./socialIcons"
 import uniLogo from "../assets/uniLogo.png"
 import facultyLogo from "../assets/ff.gif"
-// import facultyLogo from "../assets/facultyLogo.png"
 import posterImage from "../assets/posterImage.png"
 import posterImageMini from "../assets/posterImageMini.png"
 
 const Sidebar = ({ language, extraWide }) => {
-  // const data = useStaticQuery(graphql`
-  //   {
-  //     uniLogoImage: file(relativePath: { eq: "uniLogo.png" }) {
-  //       childImageSharp {
-  //         fluid(quality: 100) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //     facultyLogoImage: file(relativePath: { eq: "facultyLogo.png" }) {
-  //       childImageSharp {
-  //         fluid(quality: 100) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //     posterImage: file(relativePath: { eq: "posterImage.png" }) {
-  //       childImageSharp {
-  //         fluid(quality: 100) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
   let universityText =
     language === "en"
       ? "University of Belgrade"
@@ -55,13 +26,7 @@ const Sidebar = ({ language, extraWide }) => {
         <div
           className={`${sidebarStyles.imageContainer} ${sidebarStyles.poster}`}
         >
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={posterImage}
-            // href={data.posterImage.childImageSharp.fluid.src}
-          >
-            {/* <Img fluid={data.posterImage.childImageSharp.fluid} /> */}
+          <a target="_blank" rel="noopener noreferrer" href={posterImage}>
             <img src={posterImageMini} alt="ICGL15 poster" />
           </a>
         </div>
@@ -74,7 +39,6 @@ const Sidebar = ({ language, extraWide }) => {
             rel="noopener noreferrer"
             href="http://bg.ac.rs/en/index.php"
           >
-            {/* <Img fluid={data.uniLogoImage.childImageSharp.fluid} /> */}
             <img src={uniLogo} alt="University of Belgrade Logo" />
           </a>
         </div>
@@ -87,10 +51,6 @@ const Sidebar = ({ language, extraWide }) => {
             rel="noopener noreferrer"
             href="http://www.fil.bg.ac.rs/"
           >
-            {/* <Img
-              fluid={data.facultyLogoImage.childImageSharp.fluid}
-              className={sidebarStyles.facultyLogo}
-            /> */}
             <img src={facultyLogo} alt="Faculty of Philology Logo" />
           </a>
         </div>
