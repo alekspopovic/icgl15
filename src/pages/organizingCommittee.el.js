@@ -13,10 +13,6 @@ class OrganizingCommittee extends React.Component {
         />
         <div className={contentStyles.content}>
           <h2>ΟΡΓΑΝΩΤΙΚΗ ΕΠΙΤΡΟΠΗ</h2>
-          <p>
-            <strong>Πρόεδρος:</strong> Stojičić Vojkan, Φιλολογική Σχολή,
-            Πανεπιστήμιο του Βελιγραδίου
-          </p>
           <ul>
             <li>
               Dmitrović Dina, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
@@ -26,7 +22,7 @@ class OrganizingCommittee extends React.Component {
               Βελιγραδίου
             </li>
             <li>
-              Janković Anka, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
+              Rađenović Anka, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
             </li>
             <li>
               Lampropoulou Martha, Φιλολογική Σχολή, Πανεπιστήμιο του
@@ -37,6 +33,10 @@ class OrganizingCommittee extends React.Component {
             </li>
             <li>
               Mutavdžić Predrag, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
+            </li>
+            <li>
+              Stojičić Vojkan, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου,
+              Πρόεδρος
             </li>
             <li>
               Vulović Ljiljana, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου

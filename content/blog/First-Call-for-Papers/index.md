@@ -1,6 +1,6 @@
 ---
 title: First Call for Papers
-date: "2020-07-13"
+date: "2020-10-20"
 description: "Dear Colleagues,
 
 The Department of Modern Greek Studies, Faculty of Philology, University of Belgrade, is pleased to announce the 15th International Conference on Greek Linguistics, which will be held in Belgrade, 16-19 September 2021."

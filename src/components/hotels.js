@@ -13,10 +13,10 @@ class Hotels extends React.Component {
           <th>Hotel</th>
           <th>Category</th>
           <th>Location</th>
-          <th>Distance from University</th>
+          <th>Distance from the Faculty</th>
           <th>Find on Map</th>
-          <th>Access to market and restaurants</th>
-          <th>Access to public transport</th>
+          {/* <th>Access to market and restaurants</th>
+          <th>Access to public transport</th> */}
           <th>Parking</th>
           <th>Website</th>
         </tr>
@@ -25,10 +25,10 @@ class Hotels extends React.Component {
           <th>Ξενοδοχείο</th>
           <th>Κατηγορία</th>
           <th>Τοποθεσία</th>
-          <th>Απόσταση από το Πανεπιστήμιο</th>
+          <th>Απόσταση από τη Σχολή</th>
           <th>Εύρεση στον χάρτη</th>
-          <th>Απόσταση από σουπερμάρκετ και εστιατόρια</th>
-          <th>Απόσταση από μέσα μαζικής μεταφοράς</th>
+          {/* <th>Απόσταση από σουπερμάρκετ και εστιατόρια</th>
+          <th>Απόσταση από μέσα μαζικής μεταφοράς</th> */}
           <th>Στάθμευση</th>
           <th>Ιστότοπος</th>
         </tr>
@@ -62,8 +62,8 @@ class Hotels extends React.Component {
                     {mapText}
                   </a>
                 </td>
-                <td>{hotel.AccessToMarketAndRestaurants}</td>
-                <td>{hotel.AccessToPublicMeansOfTransportation}</td>
+                {/* <td>{hotel.AccessToMarketAndRestaurants}</td>
+                <td>{hotel.AccessToPublicMeansOfTransportation}</td> */}
                 <td>{hotel.ParkingServices}</td>
                 <td>
                   {hotel.HotelWebsiteUrl &&

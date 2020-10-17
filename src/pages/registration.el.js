@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
 import PaymentInstructions from "../../static/payment_instructions.pdf"
 import Button from "../components/button"
+import { Link } from "gatsby"
 
 class Registration extends React.Component {
   render() {
@@ -16,8 +17,8 @@ class Registration extends React.Component {
             <thead>
               <tr>
                 <th>Κατηγορίες</th>
-                <th>Κόστος συμμετοχής (μέχρι και 21/6/2021)</th>
-                <th>Κόστος συμμετοχής (από 22/6/2021)</th>
+                <th>Κόστος συμμετοχής (μέχρι και 21/5/2021)</th>
+                <th>Κόστος συμμετοχής (από 21/6/2021)</th>
               </tr>
             </thead>
             <tbody>
@@ -48,7 +49,7 @@ class Registration extends React.Component {
             <p>
               <strong>
                 * Οι διάφορες χρεώσεις (π.χ. έμβασμα) και τα τυχόν έξοδα της
-                τράπεζας επιβαρύνουν τον καταθέτη
+                τράπεζας επιβαρύνουν τον καταθέτη.
               </strong>
             </p>
             <p>
@@ -63,9 +64,7 @@ class Registration extends React.Component {
               παρακαλούμε να επιβεβαιώσετε τη συμμετοχή σας στέλνοντας τα
               προσωπικά σας στοιχεία (όνομα, επίθετο, ακαδημαϊκό ίδρυμα και
               ηλεκτρονική διεύθυνση) μέσω της{" "}
-              <a target="_blank" rel="noopener noreferrer" href="/el/contact">
-                ετικέτας 'Επικοινωνία'.
-              </a>
+              <Link to="/el/contact">ετικέτας «Επικοινωνία».</Link>
             </p>
           </div>
 
@@ -108,7 +107,7 @@ class Registration extends React.Component {
           <ul>
             <li>
               Όλοι οι συμμετέχοντες με ανακοίνωση στο συνέδριο πρέπει να έχουν
-              εγγραφεί έως τις 30 Ιουνίου.
+              εγγραφεί έως τις 22 Ιουνίου.
             </li>
             <li>
               Για κάθε ανακοίνωση (είτε προφορική είτε αναρτημένη ανακοίνωση),

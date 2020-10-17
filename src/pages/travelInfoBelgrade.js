@@ -312,65 +312,13 @@ class TravelInfoBelgrade extends React.Component {
             condition but you have to pay several tolls to Belgrade. Local roads
             lack sufficient road signs, therefore, it is better to bring always
             a detailed map with you. Speed limits are in accordance with the
-            international standards (e.g. on a highway the maximum speed is
-            130km/hour).
+            international standards.
           </p>
-          <p>Distance from Belgrade to the main European cities:</p>
-          <span className={contentStyles.distances}>
-            <ul>
-              <li>Amsterdam 1760 km</li>
-              <li>Athens 1090 km</li>
-              <li>Vienna 621 km</li>
-              <li>Berlin 1489 km</li>
-              <li>Budapest 383 km</li>
-              <li>Istanbul 928 km</li>
-              <li>Copenhagen 2018 km</li>
-              <li>London 2073 km</li>
-            </ul>
-            <ul>
-              <li>Munich 1020 km</li>
-              <li>Moscow 2211 km</li>
-              <li>Oslo 2577 km</li>
-              <li>Prague 901 km</li>
-              <li>Rome 1280 km</li>
-              <li>Stockholm 2622 km</li>
-              <li>Thessaloniki 504 km</li>
-            </ul>
-          </span>
           <h2>Customs and visas</h2>
           <p>
-            The citizens of the following countries do not need a visa to enter
-            Serbia and they have the possibility to stay in the country for:
-            <ul>
-              <li>
-                up to 90 days within any 180 days: All European Union citizens,
-                Albania, Andorra, Antigua and Barbuda, Argentina, Armenia,
-                Australia, Azerbaijan, Bahrain, Bolivia, Bosnia and Herzegovina,
-                Brazil, Canada, Chile, Costa Rica, Cuba, Dominica, Georgia,
-                Grenada, Holy See, Iceland, Israel, Japan, Kuwait, Kyrgyzstan,
-                Liechtenstein, Macau, Mexico, Moldova, Monaco, Mongolia,
-                Montenegro, New Zealand, North Macedonia, Norway, Oman, Palau,
-                Peru, Qatar, Saint Kitts and Nevis, San Marino, Seychelles,
-                Singapore, South Korea, Switzerland, Trinidad and Tobago,
-                Tunisia, Turkey, United Arab Emirates, United Kingdom, United
-                States, Uruguay
-              </li>
-              <li>
-                30 days: Belarus, China, Colombia, Kazakhstan, Russia, Suriname
-              </li>
-              <li>30 days within 60-day period: Ukraine</li>
-              <li>
-                30 days days within one-year period: Bahamas, Barbados, Burundi,
-                Colombia, Guinea-Bissau, India, Indonesia, Paraguay, Saint
-                Vincent and the Grenadines
-              </li>
-              <li>14 days: Hong Kong</li>
-            </ul>
-          </p>
-          <p>
-            On the other hand, people from other countries should get in touch
-            with the Serbian Embassy or Consular Office in their own country and
-            apply for an entry visa. The details of the procedure can vary. You
+            The participants are kindly asked to get in touch with the Serbian
+            Embassy or Consular Office in their own country and apply for an
+            entry visa, if needed. The details of the procedure can vary. You
             may be asked to provide some of the following documentation:
             invitation letter from a Serbian resident or organization, voucher
             from your accommodation provider (e.g. hotel) medical insurance,

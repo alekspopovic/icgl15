@@ -13,10 +13,6 @@ class OrganizingCommittee extends React.Component {
         />
         <div className={contentStyles.content}>
           <h2>Organizing Committee</h2>
-          <p>
-            <strong>Chair:</strong> Stojičić Vojkan, Faculty of Philology,
-            University of Belgrade
-          </p>
           <ul>
             <li>
               Dmitrović Dina, Faculty of Philology, University of Belgrade
@@ -25,7 +21,9 @@ class OrganizingCommittee extends React.Component {
               Elaković-Nenadović Ana, Faculty of Philology, University of
               Belgrade
             </li>
-            <li>Janković Anka, Faculty of Philology, University of Belgrade</li>
+            <li>
+              Rađenović Anka, Faculty of Philology, University of Belgrade
+            </li>
             <li>
               Lampropoulou Martha, Faculty of Philology, University of Belgrade
             </li>
@@ -34,6 +32,10 @@ class OrganizingCommittee extends React.Component {
             </li>
             <li>
               Mutavdžić Predrag, Faculty of Philology, University of Belgrade
+            </li>
+            <li>
+              Stojičić Vojkan, Faculty of Philology, University of Belgrade,
+              Chair
             </li>
             <li>
               Vulović Ljiljana, Faculty of Philology, University of Belgrade

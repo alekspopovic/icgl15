@@ -31,7 +31,7 @@ class ScientificCommittee extends React.Component {
               Mutavdžić Predrag, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
             </li>
             <li>
-              Radulović Ifigenija, Φιλολογική Σχολή, Πανεπιστήμιο του Νόβι Σαντ
+              Radulović Ifigenija, Φιλοσοφική Σχολή, Πανεπιστήμιο του Νόβι Σαντ
             </li>
             <li>
               Stojičić Vojkan, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου

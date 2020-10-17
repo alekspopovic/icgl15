@@ -16,7 +16,7 @@ class CallForPapers extends React.Component {
           <p>Dear Colleagues,</p>
           <p>
             The Department of Modern Greek Studies, Faculty of Philology,
-            University of Belgrade, is pleased to announce the 15<sup>th</sup>
+            University of Belgrade, is pleased to announce the 15<sup>th</sup>{" "}
             International Conference on Greek Linguistics, which will be held in
             Belgrade, <strong>16-19 September 2021</strong>.
           </p>
@@ -35,9 +35,10 @@ class CallForPapers extends React.Component {
           </p>
           <h3>Invited Speakers</h3>
           <ul>
-            <li>Prof. Aleksander Loma, University of Belgrade</li>
+            <li>Prof. Aleksandar Loma, University of Belgrade</li>
             <li>Prof. Zoe Gavriilidou, Democritus University of Thrace</li>
             <li>Prof. Costas Canakis, University of the Aegean</li>
+            <li>Prof. Eleni Karantzola, University of the Aegean</li>
             <li>
               Associate Prof. Stavroula Tsiplakou, Open University of Cyprus
             </li>
@@ -60,7 +61,16 @@ class CallForPapers extends React.Component {
             discussion. The abstract should not exceed 500 words, excluding
             references.
           </p>
-          <p>Abstract submission page: …………………</p>
+          <p>
+            Abstract submission page:{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://easychair.org/conferences/?conf=icgl15"
+            >
+              https://easychair.org/conferences/?conf=icgl15
+            </a>
+          </p>
           <h3>Multiple presentations policy</h3>
           <p>
             Each author may submit up to two abstracts: either one
@@ -69,8 +79,15 @@ class CallForPapers extends React.Component {
           <h3>Information</h3>
           <p>
             Information about registration, accommodation, traveling etc., is
-            being uploaded at the conference’s website:……… For any queries,
-            please, contact us at:{" "}
+            being uploaded at the conference’s website:{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://www.fil.bg.ac.rs/icgl15"
+            >
+              www.fil.bg.ac.rs/icgl15
+            </a>
+            . For any queries, please, contact us at:{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"

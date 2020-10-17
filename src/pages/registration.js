@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
 import PaymentInstructions from "../../static/payment_instructions.pdf"
 import Button from "../components/button"
+import { Link } from "gatsby"
 
 class Registration extends React.Component {
   render() {
@@ -16,8 +17,8 @@ class Registration extends React.Component {
             <thead>
               <tr>
                 <th>Categories</th>
-                <th>Early (Until 21/6/2021)</th>
-                <th>Late (After 22/6/2021)</th>
+                <th>Early (Until 21/5/2021)</th>
+                <th>Late (After 21/6/2021)</th>
               </tr>
             </thead>
             <tbody>
@@ -58,9 +59,7 @@ class Registration extends React.Component {
               If you belong to the last category (attendee-student), please
               confirm your participation by sending your personal details (name,
               last name, affiliation and email address) via the{" "}
-              <a target="_blank" rel="noopener noreferrer" href="/contact">
-                Contact section.
-              </a>
+              <Link to="/contact">Contact section.</Link>
             </p>
           </div>
 
@@ -102,8 +101,8 @@ class Registration extends React.Component {
           <h2>Please note the following</h2>
           <ul>
             <li>
-              All presenters (authors) at the conference must register by the
-              30th June.
+              All presenters (authors) at the conference must register by the 22
+              <sup>nd</sup> of June.
             </li>
             <li>
               For each oral / poster presentation, at least 1 author must

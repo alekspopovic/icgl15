@@ -29,7 +29,7 @@ class ScientificCommittee extends React.Component {
               Mutavdžić Predrag, Faculty of Philology, University of Belgrade{" "}
             </li>
             <li>
-              Radulović Ifigenija, Faculty of Philology, University of Novi Sad
+              Radulović Ifigenija, Faculty of Philosophy, University of Novi Sad
             </li>
             <li>
               Stojičić Vojkan, Faculty of Philology, University of Belgrade

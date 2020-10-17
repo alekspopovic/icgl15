@@ -13,7 +13,7 @@ const hotels = {
       HotelWebsiteUrl: "https://www.squarenine.rs/",
     },
     {
-      Hotel: "Feel Belgrade Κέντρο",
+      Hotel: "Feel Belgrade",
       Category: "3*",
       Location: "Κέντρο",
       DistanceFromUniversity: "100",
