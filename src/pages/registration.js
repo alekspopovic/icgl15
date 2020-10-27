@@ -18,7 +18,7 @@ class Registration extends React.Component {
               <tr>
                 <th>Categories</th>
                 <th>Early (Until 21/5/2021)</th>
-                <th>Late (After 21/6/2021)</th>
+                <th>Late (Until 22/6/2021)</th>
               </tr>
             </thead>
             <tbody>
@@ -114,8 +114,8 @@ class Registration extends React.Component {
             </li>
             <li>
               If none of the authors of an oral / poster presentation has
-              registered by the 30th of June, their presentation will not be
-              included in the program of the conference.{" "}
+              registered by the 22<sup>nd</sup> of June, their presentation will
+              not be included in the program of the conference.{" "}
             </li>
           </ul>
 

@@ -22,9 +22,6 @@ class OrganizingCommittee extends React.Component {
               Belgrade
             </li>
             <li>
-              Rađenović Anka, Faculty of Philology, University of Belgrade
-            </li>
-            <li>
               Lampropoulou Martha, Faculty of Philology, University of Belgrade
             </li>
             <li>
@@ -32,6 +29,9 @@ class OrganizingCommittee extends React.Component {
             </li>
             <li>
               Mutavdžić Predrag, Faculty of Philology, University of Belgrade
+            </li>
+            <li>
+              Rađenović Anka, Faculty of Philology, University of Belgrade
             </li>
             <li>
               Stojičić Vojkan, Faculty of Philology, University of Belgrade,

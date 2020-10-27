@@ -71,7 +71,7 @@ class ContactForm extends React.Component {
           <h2>{this.getContactItemLabel("heading")}</h2>
           <form
             target="_blank"
-            action="https://formsubmit.co/8283715e05ca45c0023e1973e99ab73e"
+            action="https://formsubmit.co/icgl15@fil.bg.ac.rs"
             method="POST"
           >
             <input

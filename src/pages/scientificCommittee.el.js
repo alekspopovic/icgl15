@@ -22,9 +22,6 @@ class ScientificCommittee extends React.Component {
               Βελιγραδίου
             </li>
             <li>
-              Janković Anka, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
-            </li>
-            <li>
               Kostić-Pahnoglou Tamara, Φιλοσοφική Σχολή, Πανεπιστήμιο του Νις
             </li>
             <li>
@@ -32,6 +29,9 @@ class ScientificCommittee extends React.Component {
             </li>
             <li>
               Radulović Ifigenija, Φιλοσοφική Σχολή, Πανεπιστήμιο του Νόβι Σαντ
+            </li>
+            <li>
+              Rađenović Anka, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
             </li>
             <li>
               Stojičić Vojkan, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου

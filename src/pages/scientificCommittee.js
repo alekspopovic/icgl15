@@ -21,7 +21,6 @@ class ScientificCommittee extends React.Component {
               Elaković-Nenadović Ana, Faculty of Philology, University of
               Belgrade
             </li>
-            <li>Janković Anka, Faculty of Philology, University of Belgrade</li>
             <li>
               Kostić-Pahnoglou Tamara, Faculty of Philosophy, University of Niš
             </li>
@@ -30,6 +29,9 @@ class ScientificCommittee extends React.Component {
             </li>
             <li>
               Radulović Ifigenija, Faculty of Philosophy, University of Novi Sad
+            </li>
+            <li>
+              Rađenović Anka, Faculty of Philology, University of Belgrade
             </li>
             <li>
               Stojičić Vojkan, Faculty of Philology, University of Belgrade

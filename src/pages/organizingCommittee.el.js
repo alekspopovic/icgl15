@@ -22,9 +22,6 @@ class OrganizingCommittee extends React.Component {
               Βελιγραδίου
             </li>
             <li>
-              Rađenović Anka, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
-            </li>
-            <li>
               Lampropoulou Martha, Φιλολογική Σχολή, Πανεπιστήμιο του
               Βελιγραδίου
             </li>
@@ -33,6 +30,9 @@ class OrganizingCommittee extends React.Component {
             </li>
             <li>
               Mutavdžić Predrag, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
+            </li>
+            <li>
+              Rađenović Anka, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
             </li>
             <li>
               Stojičić Vojkan, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου,
