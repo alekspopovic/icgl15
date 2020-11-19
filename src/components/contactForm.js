@@ -98,7 +98,7 @@ class ContactForm extends React.Component {
             <input
               type="hidden"
               name="_next"
-              value="https://aleksandarpopovic.com/" //todo ubaciti link sajta kada bude live
+              value="http://icgl15.fil.bg.ac.rs/"
             ></input>
             <input
               type="hidden"
@@ -107,11 +107,7 @@ class ContactForm extends React.Component {
             ></input>
             <input type="hidden" name="_replyto"></input>
             <div>
-              <button
-                // onClick={displayMessage}
-                type="submit"
-                className={buttonStyles.button}
-              >
+              <button type="submit" className={buttonStyles.button}>
                 {this.getContactItemLabel("submitLabel")}
               </button>
             </div>
