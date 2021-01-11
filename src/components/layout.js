@@ -68,6 +68,8 @@ const Layout = props => {
     setIsInformationMenuOpen(false)
   }
 
+  console.log(language)
+
   let stickyMenu = (
     <div id={layoutStyles.menu} className={isMenuOpen ? layoutStyles.show : ""}>
       <Link
@@ -96,6 +98,16 @@ const Layout = props => {
             to={formatMenuUrl("/callForPapers/", language)}
           >
             <div>{getMenuItemLabel("callForPapers", language)}</div>
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/secondCallForPapers/", language)}
+          >
+            <div
+              dangerouslySetInnerHTML={{
+                __html: getMenuItemLabel("secondCallForPapers", language),
+              }}
+            />
           </Link>
           <Link
             activeClassName={layoutStyles.active}
