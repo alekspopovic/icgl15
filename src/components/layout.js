@@ -111,6 +111,16 @@ const Layout = props => {
           </Link>
           <Link
             activeClassName={layoutStyles.active}
+            to={formatMenuUrl("/thirdCallForPapers/", language)}
+          >
+            <div
+              dangerouslySetInnerHTML={{
+                __html: getMenuItemLabel("thirdCallForPapers", language),
+              }}
+            />
+          </Link>
+          <Link
+            activeClassName={layoutStyles.active}
             to={formatMenuUrl("/registration/", language)}
           >
             <div>{getMenuItemLabel("registration", language)}</div>

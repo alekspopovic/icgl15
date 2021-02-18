@@ -17,8 +17,8 @@ class Registration extends React.Component {
             <thead>
               <tr>
                 <th>Categories</th>
-                <th>Early (Until 21/5/2021)</th>
-                <th>Late (Until 22/6/2021)</th>
+                <th>Early (Until 30/04/2022)</th>
+                <th>Late (Until 15/06/2022)</th>
               </tr>
             </thead>
             <tbody>
@@ -101,8 +101,8 @@ class Registration extends React.Component {
           <h2>Please note the following</h2>
           <ul>
             <li>
-              All presenters (authors) at the conference must register by the 22
-              <sup>nd</sup> of June.
+              All presenters (authors) at the conference must register by the 15
+              <sup>th</sup> of June 2022.
             </li>
             <li>
               For each oral / poster presentation, at least 1 author must
@@ -114,8 +114,8 @@ class Registration extends React.Component {
             </li>
             <li>
               If none of the authors of an oral / poster presentation has
-              registered by the 22<sup>nd</sup> of June, their presentation will
-              not be included in the program of the conference.{" "}
+              registered by the 15<sup>th</sup> of June 2022, their presentation
+              will not be included in the program of the conference.{" "}
             </li>
           </ul>
 

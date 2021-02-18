@@ -5,7 +5,7 @@ import SocialIcons from "./socialIcons"
 import uniLogo from "../assets/uniLogo.png"
 import facultyLogo from "../assets/ff.gif"
 import posterImage from "../assets/posterImage.png"
-import posterImageMini from "../assets/posterImageMini.png"
+import posterImageMini from "../assets/posterImageMini.jpg"
 
 const Sidebar = ({ language, extraWide }) => {
   let universityText =

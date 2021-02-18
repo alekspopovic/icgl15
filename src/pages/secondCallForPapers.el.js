@@ -7,7 +7,10 @@ class SecondCallForPapers extends React.Component {
   render() {
     return (
       <Layout language="el" location={this.props.location}>
-        <SEO title="Call for Papers" pagePath={this.props.location.pathname} />
+        <SEO
+          title="Second Call for Papers"
+          pagePath={this.props.location.pathname}
+        />
         <div className={contentStyles.content}>
           <h2>16-19 Σεπτεμβρίου 2021</h2>
           <h3>
