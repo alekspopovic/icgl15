@@ -17,37 +17,37 @@ class Registration extends React.Component {
             <thead>
               <tr>
                 <th>Categories</th>
-                <th>Early (Until 30/04/2022)</th>
-                <th>Late (Until 15/06/2022)</th>
+                <th>Until 15/06/2022)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Presenter/Author (Regular)</td>
-                <td>80 euro*</td>
-                <td>100 euro*</td>
+                <td>50 euro*</td>
               </tr>
               <tr>
                 <td>Presenter/Author (Student)</td>
-                <td>40 euro*</td>
-                <td>60 euro*</td>
+                <td>20 euro*</td>
               </tr>
               <tr>
-                <td>Attendee (Regular)</td>
-                <td>80 euro*</td>
-                <td>100 euro*</td>
+                <td>Online participant (Regular)</td>
+                <td>50 euro*</td>
               </tr>
               <tr>
-                <td>Attendee (Student)</td>
-                <td>free of charge</td>
-                <td>free of charge</td>
+                <td>Online participant (Student)</td>
+                <td>20 euro*</td>
               </tr>
             </tbody>
           </table>
 
           <div className={contentStyles.disclaimer}>
             <p>
-              <strong>* All values are excluding bank transaction fee.</strong>
+              <strong>
+                * All values are excluding bank transaction fee. Τhe bank
+                transaction fee varies from bank to bank, occasionally two banks
+                may intervene as intermediaries. In any case, the deposit
+                involves the participation and the transaction fee.
+              </strong>
             </p>
             <p>
               <strong>
