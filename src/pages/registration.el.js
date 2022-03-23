@@ -35,7 +35,7 @@ class Registration extends React.Component {
               </tr>
               <tr>
                 <td>Συμμετοχή ως διαδικτυακός ακροατής (Φοιτητικό)</td>
-                <td>20 ευρώ*</td>
+                <td>δωρεάν</td>
               </tr>
             </tbody>
           </table>
