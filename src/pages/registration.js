@@ -89,15 +89,6 @@ class Registration extends React.Component {
             isCentered={true}
           />
 
-          <h2>Participation package</h2>
-          <p>
-            The fee includes: conference attendance, the conference bag and
-            inclusions (book of abstracts, program etc.), participation in
-            coffee breaks and light meals, sightseeing tours of Belgrade and
-            publication of the presented papers in the printed or electronic
-            proceedings (after the peer review process).
-          </p>
-
           <h2>Please note the following</h2>
           <ul>
             <li>
