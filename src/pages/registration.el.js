@@ -13,6 +13,14 @@ class Registration extends React.Component {
         <SEO title="Registration" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>Εγγραφή</h1>
+          <p>
+            <strong>
+              Θα θέλαμε να σας ενημερώσουμε ότι οι εγγραφές έχουν ολοκληρωθεί.
+              Σας ευχαριστούμε πολύ! Για οποιαδήποτε άλλη εκκρεμότητα,
+              επικοινωνήστε στο ακόλουθο email:{" "}
+              <a href="mailto:icgl15@fil.bg.ac.rs">icgl15@fil.bg.ac.rs</a>
+            </strong>
+          </p>
           <table className={contentStyles.table}>
             <thead>
               <tr>
@@ -65,32 +73,6 @@ class Registration extends React.Component {
               <Link to="/el/contact">ετικέτας «Επικοινωνία».</Link>
             </p>
           </div>
-
-          <table className={contentStyles.table}>
-            <thead>
-              <tr>
-                <th>ΟΝΟΜΑΤΕΠΩΝΥΜΟ ΚΑΤΑΘΕΤΗ</th>
-                <th>ΑΙΤΙΟΛΟΓΙΑ ΠΛΗΡΩΜΗΣ</th>
-                <th>SWIFT</th>
-                <th>IBAN</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Όνομα και επώνυμο</td>
-                <td>ICGL15 participation fee</td>
-                <td>NBSRRSBGXXX</td>
-                <td>RS35840000000005779097</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <Button
-            isExternal={true}
-            url={PaymentInstructions}
-            text="Λήψη οδηγιών πληρωμής"
-            isCentered={true}
-          />
 
           <h2>Παρακαλούμε να λάβετε υπόψη τα εξής</h2>
           <ul>

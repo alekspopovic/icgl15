@@ -13,6 +13,14 @@ class Registration extends React.Component {
         <SEO title="Registration" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
           <h1>Registration</h1>
+          <p>
+            <strong>
+              We would like to inform you that the registration is now closed.
+              Thank you very much! Please contact us at the following email for
+              further information or issues still pending:{" "}
+              <a href="mailto:icgl15@fil.bg.ac.rs">icgl15@fil.bg.ac.rs</a>
+            </strong>
+          </p>
           <table className={contentStyles.table}>
             <thead>
               <tr>
@@ -62,32 +70,6 @@ class Registration extends React.Component {
               <Link to="/contact">Contact section.</Link>
             </p>
           </div>
-
-          <table className={contentStyles.table}>
-            <thead>
-              <tr>
-                <th>ORDERING CUSTOMER</th>
-                <th>REASON</th>
-                <th>SWIFT</th>
-                <th>IBAN</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Name and Surname</td>
-                <td>ICGL15 participation fee</td>
-                <td>NBSRRSBGXXX</td>
-                <td>RS35840000000005779097</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <Button
-            isExternal={true}
-            url={PaymentInstructions}
-            text="Download Payment Instructions"
-            isCentered={true}
-          />
 
           <h2>Please note the following</h2>
           <ul>
