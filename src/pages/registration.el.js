@@ -2,8 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
-import PaymentInstructions from "../../static/payment_instructions.pdf"
-import Button from "../components/button"
 import { Link } from "gatsby"
 
 class Registration extends React.Component {

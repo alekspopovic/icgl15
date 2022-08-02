@@ -1,5 +1,5 @@
 ---
-title: Registrations are Complete
+title: Registration is Now Closed
 date: "2022-08-02"
 description: "We would like to inform you that the registration is now closed. Thank you very much! Please contact us at the following email for further information or issues..."
 ---
