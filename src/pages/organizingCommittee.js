@@ -48,6 +48,9 @@ class OrganizingCommittee extends React.Component {
               Kostić Antonina, Faculty of Philology, University of Belgrade
             </li>
             <li>
+              Milanović Aleksandra, Faculty of Philology, University of Belgrade
+            </li>
+            <li>
               Tkalac Dragana, Faculty of Philology, University of Belgrade
             </li>
           </ul>

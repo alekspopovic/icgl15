@@ -2,6 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
+import programmePreviewImage from "../assets/programmePreview.png"
+import programmePdf from "../assets/programme.pdf"
+import EmbeddedPdf from "../components/embeddedPdf"
 
 class Programme extends React.Component {
   render() {
@@ -9,7 +12,13 @@ class Programme extends React.Component {
       <Layout language="en" location={this.props.location}>
         <SEO title="Programme" pagePath={this.props.location.pathname} />
         <div className={contentStyles.content}>
-          <h2>To be announced</h2>
+          <h2>Programme</h2>
+          <EmbeddedPdf
+            pdf={programmePdf}
+            previewImage={programmePreviewImage}
+            altText="download programme"
+          />
+          <hr />
         </div>
       </Layout>
     )

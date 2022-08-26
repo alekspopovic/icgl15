@@ -1,0 +1,14 @@
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.imageContainer img {
+    margin: 0;
+    transition: transform 0.2s ease-in;
+}
+
+.imageContainer img:hover {
+    transform: scale(1.05);
+}

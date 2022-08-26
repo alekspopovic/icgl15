@@ -49,6 +49,10 @@ class OrganizingCommittee extends React.Component {
               Kostić Antonina, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
             </li>
             <li>
+              Milanović Aleksandra, Φιλολογική Σχολή, Πανεπιστήμιο του
+              Βελιγραδίου
+            </li>
+            <li>
               Tkalac Dragana, Φιλολογική Σχολή, Πανεπιστήμιο του Βελιγραδίου
             </li>
           </ul>

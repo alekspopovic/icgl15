@@ -25,7 +25,7 @@ class ScientificCommittee extends React.Component {
               Kostić-Pahnoglou Tamara, Faculty of Philosophy, University of Niš
             </li>
             <li>
-              Mutavdžić Predrag, Faculty of Philology, University of Belgrade{" "}
+              Mutavdžić Predrag, Faculty of Philology, University of Belgrade
             </li>
             <li>
               Radulović Ifigenija, Faculty of Philosophy, University of Novi Sad
@@ -37,7 +37,6 @@ class ScientificCommittee extends React.Component {
               Stojičić Vojkan, Faculty of Philology, University of Belgrade
             </li>
             <li>
-              {" "}
               Todorović Darko, Faculty of Philosophy, University of Belgrade
             </li>
           </ul>

@@ -68,8 +68,6 @@ const Layout = props => {
     setIsInformationMenuOpen(false)
   }
 
-  console.log(language)
-
   let stickyMenu = (
     <div id={layoutStyles.menu} className={isMenuOpen ? layoutStyles.show : ""}>
       <Link
