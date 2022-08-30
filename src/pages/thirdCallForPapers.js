@@ -39,7 +39,6 @@ class ThirdCallForPapers extends React.Component {
           </p>
           <h3>Invited Speakers</h3>
           <ul>
-            <li>Prof. Aleksandar Loma, University of Belgrade</li>
             <li>Prof. Zoe Gavriilidou, Democritus University of Thrace</li>
             <li>Prof. Costas Canakis, University of the Aegean</li>
             <li>Prof. Eleni Karantzola, University of the Aegean</li>
