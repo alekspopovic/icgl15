@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
 import programmePreviewImage from "../assets/programmePreview.png"
-import programmePdf from "../assets/programmeV6.pdf"
+import programmePdf from "../assets/programmeV7.pdf"
 import EmbeddedPdf from "../components/embeddedPdf"
 
 class Programme extends React.Component {

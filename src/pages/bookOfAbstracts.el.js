@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import contentStyles from "../styles/index.module.css"
 import abstractsPreviewImage from "../assets/abstractsPreview.png"
-import bookOfAbstractsPdf from "../assets/bookOfAbstractsV6.pdf"
+import bookOfAbstractsPdf from "../assets/bookOfAbstractsV7.pdf"
 import EmbeddedPdf from "../components/embeddedPdf"
 
 class BookOfAbstracts extends React.Component {
