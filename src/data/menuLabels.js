@@ -26,6 +26,7 @@ const labels = {
     reviewers: "REVIEWERS",
     socialProgramme: "GALA DINNER",
     sponsors: "SPONSORS",
+    speeches: "KEYNOTE SPEAKERS' SPEECHES",
   },
   sr: {
     home: "početna",
@@ -70,6 +71,7 @@ const labels = {
     reviewers: "ΑΞΙΟΛΟΓΗΤΕΣ",
     socialProgramme: "ΕΠΙΣΗΜΟ ΔΕΙΠΝΟ",
     sponsors: "ΧΟΡΗΓΟΙ",
+    speeches: "ΟΜΙΛΙΕΣ ΠΡΟΣΚΕΚΛΗΜΕΝΩΝ ΟΜΙΛΗΤΩΝ",
   },
 }
 

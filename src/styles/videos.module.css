@@ -1,0 +1,34 @@
+.videosContainer {
+  display: flex;
+  height: 100%;
+  padding-top: 1.5em;
+}
+
+video {
+  width: 100%;
+}
+
+.video h3 {
+  margin-top: 0;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.video h4 {
+  font-size: 1.3em;
+  font-style: italic;
+  letter-spacing: normal;
+}
+
+
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 426px) {
+}
