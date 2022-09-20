@@ -8,14 +8,12 @@
 }
 
 article {
-  overflow: hidden;
   margin: 1em auto;
   padding: 2em 3em;
   background-color: var(--content-bg);
   border-radius: 5px;
   box-shadow: var(--shadow);
   height: 100%;
-
   border: 2px solid var(--highlight-primary);
 }
 
@@ -60,30 +58,6 @@ blockquote {
   padding: 2em;
 }
 
-.paginationUrls {
-  width: 75%;
-  margin: auto;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  letter-spacing: 2px;
-
-  display: none;
-}
-
-.paginationUrls div {
-  color: var(--text-dark);
-  border: 2px solid var(--text-dark);
-  padding: 15px 50px;
-  text-transform: uppercase;
-  font-weight: bold;
-  opacity: 0;
-}
-
-.paginationUrls a {
-  background: var(--dark-bg);
-}
-
 @media only screen and (max-width: 1366px) {
   .blogContent {
     width: 100%;
@@ -115,9 +89,5 @@ blockquote {
 
   article header h1 {
     font-size: 2em;
-  }
-
-  .paginationUrls {
-    width: 100%;
   }
 }

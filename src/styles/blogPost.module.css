@@ -1,5 +1,5 @@
 .blogPost {
-  width: 70%;
+  width: 100%;
   margin: 2em 2em 2em 1em;
   padding: 2em 5em;
 }
@@ -9,23 +9,17 @@ blockquote {
 }
 
 .postNavigation {
-  width: 40%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   list-style: none;
   padding: 0;
-
-  position: absolute;
-  left: 19%;
-  bottom: 4.5em;
 }
 
 .postNavigation a {
-  /* margin-right: 2em; */
-}
-
-.postNavigation a:hover {
+  margin: 0 0.25em;
+  padding: 0.5em 1em;
+  text-align: center;
 }
 
 section {
@@ -47,28 +41,17 @@ article section h2 {
   .blogPost {
     width: 100%;
   }
-
-  .postNavigation {
-    width: 49%;
-    left: 22%;
-  }
 }
 
 @media only screen and (max-width: 1200px) {
-  .postNavigation {
-    position: static;
-    width: 100%;
-    margin-top: 2em;
+  .blogPost {
+    padding: 2em 3em;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   article header h1 {
     font-size: 2em;
-  }
-
-  .paginationUrls {
-    width: 100%;
   }
 
   li {
@@ -105,10 +88,6 @@ article section h2 {
     font-size: 2em;
   }
 
-  .paginationUrls {
-    width: 100%;
-  }
-
   li {
     margin-bottom: 0;
   }
@@ -119,9 +98,11 @@ article section h2 {
     margin-top: 2em;
   }
 
+  .postNavigation {
+    flex-direction: column;
+  }
+
   .postNavigation a {
-    width: 90%;
-    margin: 0 auto 1em auto;
-    text-align: center;
+    margin: 0.25em 0;
   }
 }

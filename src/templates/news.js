@@ -58,7 +58,7 @@ class News extends React.Component {
             )
           })}
         </div>
-        <div className={blogStyles.paginationUrls}>
+        <div className={blogStyles.pagination}>
           <PaginationUrl
             className={blogStyles.newerPosts}
             contentSection={blogStyles.blogContent}

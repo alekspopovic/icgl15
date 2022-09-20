@@ -50,6 +50,14 @@
   transform: translateX(-50%);
 }
 
+.leftArrow {
+  margin-right: 0.5em;
+}
+
+.rightArrow {
+  margin-left: 0.5em;
+}
+
 @media only screen and (max-width: 1366px) {
 }
 
