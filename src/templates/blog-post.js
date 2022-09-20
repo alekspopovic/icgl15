@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
+// import Button from "../components/button"
 // import kebabCase from "lodash.kebabcase"
 
 import blogPostStyles from "../styles/blogPost.module.css"
@@ -10,30 +10,30 @@ import blogPostStyles from "../styles/blogPost.module.css"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const { previous, next } = this.props.pageContext
+    // const { previous, next } = this.props.pageContext
 
-    let postNavigation
+    // let postNavigation
 
-    if (previous || next) {
-      postNavigation = (
-        <div className={blogPostStyles.postNavigation}>
-          {previous && (
-            <Button
-              isExternal={false}
-              url={previous.fields.slug}
-              text={`← ${previous.frontmatter.title}`}
-            />
-          )}
-          {next && (
-            <Button
-              isExternal={false}
-              url={next.fields.slug}
-              text={`${next.frontmatter.title} →`}
-            />
-          )}
-        </div>
-      )
-    }
+    // if (previous || next) {
+    //   postNavigation = (
+    //     <div className={blogPostStyles.postNavigation}>
+    //       {previous && (
+    //         <Button
+    //           isExternal={false}
+    //           url={previous.fields.slug}
+    //           text={`← ${previous.frontmatter.title}`}
+    //         />
+    //       )}
+    //       {next && (
+    //         <Button
+    //           isExternal={false}
+    //           url={next.fields.slug}
+    //           text={`${next.frontmatter.title} →`}
+    //         />
+    //       )}
+    //     </div>
+    //   )
+    // }
 
     let subHeaderText = `${post.frontmatter.date} | Aleks Popovic`
 
@@ -55,7 +55,7 @@ class BlogPostTemplate extends React.Component {
           <h2>{post.frontmatter.title}</h2>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
-        {postNavigation}
+        {/* {postNavigation} */}
       </Layout>
     )
   }
