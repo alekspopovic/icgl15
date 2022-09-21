@@ -10,6 +10,8 @@ const NewsLink = ({ news }) => {
   let day = splitDate[0]
   let monthAndYear = splitDate[1].replace(",", ", ")
 
+  console.log("NEWS", news)
+
   return (
     <div className={newsStyles.newsItem}>
       <div className={newsStyles.dateContainer}>
@@ -27,7 +29,7 @@ const NewsLink = ({ news }) => {
         <h3 className={newsStyles.newsContentTitle}>
           <Link to={news.fields.slug}>{news.frontmatter.title}</Link>
         </h3>
-        <div>{news.excerpt}</div>
+        <div>{news.frontmatter.description}</div>
         <div className={blogStyles.readMore}>
           <Link to={news.fields.slug}>Read more &#187;</Link>
         </div>

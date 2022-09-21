@@ -15,6 +15,7 @@ const Announcements = ({ language }) => {
             frontmatter {
               date(formatString: "DD MM,YYYY")
               title
+              description
             }
             id
             excerpt(pruneLength: 160, format: MARKDOWN)
