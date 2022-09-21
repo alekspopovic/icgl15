@@ -76,7 +76,7 @@
   display: none;
   position: absolute;
   background-color: var(--content-bg);
-  z-index: 1;
+  z-index: 10;
   height: auto;
   top: 3.5rem;
   border-radius: 0 0 5px 5px;
